@@ -1,0 +1,1632 @@
+{
+  "fetch_icons": false,
+  "generated_by": "tools/generate_reference_pages.py",
+  "items": {
+    "ACACIA_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/acacia-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/acacia_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/acacia_leaves.png",
+      "status": "ok"
+    },
+    "ALLIUM": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/allium.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "AMERICANO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/americano.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d9ce2fb8d01f3bfa3f9f842a060e3e4b4157b9a451c78a87593932d67bfceb73",
+      "status": "ok"
+    },
+    "APPLE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/apple.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/apple.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/apple.png",
+      "status": "ok"
+    },
+    "AZALEA_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/azalea-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/azalea_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/azalea_leaves.png",
+      "status": "ok"
+    },
+    "AZURE_BLUET": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/azure-bluet.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "BACON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/bacon.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e7ba22d5df21e821a6de4b8c9d373a3aa187d8ae74f288a82d2b61f272e5",
+      "status": "ok"
+    },
+    "BAG_OF_FLOUR": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/bag-of-flour.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/b1e51a9be4d179aeb549f4ecb8a6c43a594ceb15bf3b2db5317eab78010f3210",
+      "status": "ok"
+    },
+    "BAKED_POTATO": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/baked-potato.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/baked_potato.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/baked_potato.png",
+      "status": "ok"
+    },
+    "BAKING_POWDER": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/sugar.png",
+      "render_style": "minecraft_texture",
+      "source": "base_material:SUGAR",
+      "source_kind": "base_material",
+      "source_url": "",
+      "status": "ok"
+    },
+    "BEEF": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/beef.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/beef.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/beef.png",
+      "status": "ok"
+    },
+    "BEEF_WELLINGTON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/beef-wellington.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e1cfc7c53b7b70b526fb15fdb2bb3579cd97a8954e712820bab6bd3bcbba9c4",
+      "status": "ok"
+    },
+    "BEETROOT": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/beetroot.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "BIRCH_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/birch-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/birch_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/birch_leaves.png",
+      "status": "ok"
+    },
+    "BLACK_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/black-tea.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d672c57f4c7b9e962b45b55dd7bd7886880d7eef26db6c2cce03c8ff8c48",
+      "status": "ok"
+    },
+    "BLACK_TEA_LEAVES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/black-tea-leaves.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/fcb0b69bbcb34afcfb9bf66f1534d01e1a96687294764ced29338656eecbbac0",
+      "status": "ok"
+    },
+    "BLT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/blt.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/baa9e797265d38abc02856834e37f636fe316feeb55a4a0df052ac2ffea46f99",
+      "status": "ok"
+    },
+    "BLUE_EGG": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/blue-egg.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/blue_egg.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/blue_egg.png",
+      "status": "ok"
+    },
+    "BLUE_ORCHID": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/blue-orchid.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/blue_orchid.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/blue_orchid.png",
+      "status": "ok"
+    },
+    "BOBA_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/boba-tea.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d6d91d3dbfbc01d7bd4a8691f93d7f96d4a5d2bbd3e16faa8ec7c2e58c4907bd",
+      "status": "ok"
+    },
+    "BREAD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/bread.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/baa9e797265d38abc02856834e37f636fe316feeb55a4a0df052ac2ffea46f99",
+      "status": "ok"
+    },
+    "BROWN_EGG": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/brown-egg.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/brown_egg.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/brown_egg.png",
+      "status": "ok"
+    },
+    "BROWN_MUSHROOM": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/brown-mushroom.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "BUTTER": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/butter.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/b66b19f7d635d03473891df33017c549363209a8f6328a8542c213d08525e",
+      "status": "ok"
+    },
+    "CANDY_APPLE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/candy-apple.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07",
+      "status": "ok"
+    },
+    "CANDY_CORN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/candy-corn.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/6c3a141f65d4101355e3ef0ed88da088e6d003ab6ec9106548ea13128911f334",
+      "status": "ok"
+    },
+    "CANNED_TOMATOES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/canned-tomatoes.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e95393bbf39df23ef45155f5128f2cde811400a775d33cab0590feea99323735",
+      "status": "ok"
+    },
+    "CAPPUCCINO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cappuccino.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/4af0f969061d24a3de2583a513832bc196c98f9b2c9d5a5063ae126bcc9ddb14",
+      "status": "ok"
+    },
+    "CARBONARA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/carbonara.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/8c97623aab35fdd26bee7d05574c9c3891983fb70ee21b9a4c2b04d796cf3e67",
+      "status": "ok"
+    },
+    "CARROT": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/carrot.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/carrot.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/carrot.png",
+      "status": "ok"
+    },
+    "CHEESE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cheese.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d089bda72e1985324f3014932cde0241f9f38ddb98f07358b93413d80e5ac0ed",
+      "status": "ok"
+    },
+    "CHERIMOLA_BLAN_GRAPE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cherimola-blan-grape.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d511a5ee4d17682a25f7e8a5da6ff7cd9ad9c4844c258a6de23e7f84f27f9b4",
+      "status": "ok"
+    },
+    "CHERRY_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cherry-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/cherry_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/cherry_leaves.png",
+      "status": "ok"
+    },
+    "CHICKEN": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/chicken.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/chicken.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/chicken.png",
+      "status": "ok"
+    },
+    "CHICKEN_CURRY": {
+      "minecraft_asset_version": "",
+      "path": "images/items/system/missing.png",
+      "render_style": "missing",
+      "source": "player_head",
+      "source_kind": "missing",
+      "source_url": "http://textures.minecraft.net/texture/3872242194600109033376579d47937400494443916059632342571476101138",
+      "status": "missing"
+    },
+    "CHOCOLATE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/chocolate.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/819f948d17718adace5dd6e050c586229653fef645d7113ab94d17b639cc466",
+      "status": "ok"
+    },
+    "CHOCOLATE_EGG": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/chocolate-egg.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/14a7ff9a10fdae14446499ef3bc1df13b7888d6cd2e311ccab51b8352c6093b4",
+      "status": "ok"
+    },
+    "CHORUS_FRUIT": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/chorus-fruit.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/chorus_fruit.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/chorus_fruit.png",
+      "status": "ok"
+    },
+    "CHRISTMAS_HAM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/christmas-ham.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/c7c7b2c1f28d1a4c4e8e426c917f484b13cf80237bdaa077abb41d4c410ab584",
+      "status": "ok"
+    },
+    "COCOA_BEANS": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cocoa-beans.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/cocoa_beans.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/cocoa_beans.png",
+      "status": "ok"
+    },
+    "COCONUT_MILK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/system/missing.png",
+      "render_style": "missing",
+      "source": "player_head",
+      "source_kind": "missing",
+      "source_url": "http://textures.minecraft.net/texture/a955938831ee7b84452418d151af5967ee380c5c64ea7781a806967732d88d2",
+      "status": "missing"
+    },
+    "COD": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/cod.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "COFFEE_BEANS_DARK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/coffee-beans-dark.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/6cf325c0eb63d76103a01c70f4a2ad95dcc2de68ea904e10e15dbd5306a5ec2c",
+      "status": "ok"
+    },
+    "COFFEE_BEANS_LIGHT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/coffee-beans-light.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/985032a72aa56dce44d5ccf98711e2d3e64bbb8878a8817eeb9ed43b4f8bfd90",
+      "status": "ok"
+    },
+    "COFFEE_BEANS_MEDIUM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/coffee-beans-medium.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/71b07c08b078a9274aacb4d84687c2a4f3b308f72b4cf93338b1a5f5ae330e1",
+      "status": "ok"
+    },
+    "COFFEE_CHERRY": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/coffee-cherry.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e2b35bda5ebdf135f4e71ce49726fbec5739f0adedf01c519e2aea7f51951ea2",
+      "status": "ok"
+    },
+    "COFFEE_DRINK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/coffee-drink.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/437c29be0c90ed8d371512e7f13c711d583fd50d2ea8f5ec775a0efc8dad37d3",
+      "status": "ok"
+    },
+    "COOKED_BEEF": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cooked-beef.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/cooked_beef.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/cooked_beef.png",
+      "status": "ok"
+    },
+    "COOKED_CHICKEN": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cooked-chicken.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/cooked_chicken.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/cooked_chicken.png",
+      "status": "ok"
+    },
+    "COOKED_COD": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/cooked-cod.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "COOKED_MUTTON": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cooked-mutton.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/cooked_mutton.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/cooked_mutton.png",
+      "status": "ok"
+    },
+    "COOKED_RICE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cooked-rice.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/cb70f2fb5ebf49f79ff3e873616863ae5d362fbbfc31aef2dfb93d6e17dbf2",
+      "status": "ok"
+    },
+    "COOKING_OIL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cooking-oil.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77",
+      "status": "ok"
+    },
+    "CORN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/corn.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d3a6b099cd401e3a0d64d9a16f46cd0c5ca5f7e45e6a69c27d2e473775b25fe",
+      "status": "ok"
+    },
+    "CORNFLOWER": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cornflower.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/cornflower.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/cornflower.png",
+      "status": "ok"
+    },
+    "CORNMEAL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cornmeal.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f52caed35a371ba727f2a6179decdbd1bb8130584aded8ca91c54900c7e9ee1c",
+      "status": "ok"
+    },
+    "CRANERLET_NUALA_GRAPE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/cranerlet-nuala-grape.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/1f7aac5f0f655d8f6ba146594dfdc5ad17adecc8b6b65c507982b766ce9b7a39",
+      "status": "ok"
+    },
+    "DANDELION": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/dandelion.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "DARK_OAK_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/dark-oak-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/dark_oak_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/dark_oak_leaves.png",
+      "status": "ok"
+    },
+    "DOUGH": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/dough.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e",
+      "status": "ok"
+    },
+    "DOUGHNUT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/doughnut.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/53572a1ba0663245d57bc146b979e91c07a02a1c89ad3f8751bafe2ab188644",
+      "status": "ok"
+    },
+    "DRIED_GREEN_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/dried-green-tea.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/33afb010df7ba7e0adb673bd773521cf761b4b204c63eb635cc5f35b1f605b7d",
+      "status": "ok"
+    },
+    "DRIED_KELP": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/dried-kelp.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/dried_kelp.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/dried_kelp.png",
+      "status": "ok"
+    },
+    "DRY_PASTA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/dry-pasta.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/6dc55f43e3d8420975189a70fea4df7791e4e100b4163d615b9c0d20b1dfb2be",
+      "status": "ok"
+    },
+    "EGG": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/egg.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "EGGNOG": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/eggnog.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77",
+      "status": "ok"
+    },
+    "EGGS_AND_BACON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/eggs-and-bacon.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074",
+      "status": "ok"
+    },
+    "ESPRESSO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/espresso.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/437c29be0c90ed8d371512e7f13c711d583fd50d2ea8f5ec775a0efc8dad37d3",
+      "status": "ok"
+    },
+    "FALAFEL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/falafel.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074",
+      "status": "ok"
+    },
+    "FALAFEL_WRAP": {
+      "minecraft_asset_version": "",
+      "path": "images/items/system/missing.png",
+      "render_style": "missing",
+      "source": "player_head",
+      "source_kind": "missing",
+      "source_url": "http://textures.minecraft.net/texture/8334466986616012351239126600965313337388755026909268616196160136",
+      "status": "missing"
+    },
+    "FARMERS_HOE": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/iron-hoe.png",
+      "render_style": "minecraft_texture",
+      "source": "base_material:IRON_HOE",
+      "source_kind": "base_material",
+      "source_url": "",
+      "status": "ok"
+    },
+    "FISH_AND_CHIPS": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/fish-and-chips.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d5cf50db05e7bbdd1dfaa7a0c1f0f6ddf9ae72606874d3ffb61183fb1fcb3d44",
+      "status": "ok"
+    },
+    "FLATBREAD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/flatbread.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/a0d5aa4469f492e6f0c9551d9b64dc8e5a5865b31a9a7e13783f57b16f708ac",
+      "status": "ok"
+    },
+    "FLAT_WHITE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/flat-white.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/51bdd13b4b8d58ba5c3fb021fa3715107c2833bcb38250489799cd5e7c56a669",
+      "status": "ok"
+    },
+    "FLOWERING_AZALEA_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/flowering-azalea-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/flowering_azalea_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/flowering_azalea_leaves.png",
+      "status": "ok"
+    },
+    "FRENCH_ONION_SOUP": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/french-onion-soup.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/75b769625bfd207d5d72b65c5f55417ce6531c3c8987b8b8c550d444ac3d9bd3",
+      "status": "ok"
+    },
+    "FRENCH_TOAST": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/french-toast.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/6f420de78df981581033fd633e3dc909e93fa7918fe028c73f9082c4dc6c8b70",
+      "status": "ok"
+    },
+    "FRIED_CHICKEN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/fried-chicken.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e7ba22d5df21e821a6de4b8c9d373a3aa187d8ae74f288a82d2b61f272e5",
+      "status": "ok"
+    },
+    "FRIED_EGG": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/fried-egg.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074",
+      "status": "ok"
+    },
+    "FRIED_RICE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/fried-rice.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/b1e51a9be4d179aeb549f4ecb8a6c43a594ceb15bf3b2db5317eab78010f3210",
+      "status": "ok"
+    },
+    "FRIES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/fries.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d3a6b099cd401e3a0d64d9a16f46cd0c5ca5f7e45e6a69c27d2e473775b25fe",
+      "status": "ok"
+    },
+    "GARLIC": {
+      "minecraft_asset_version": "",
+      "path": "images/items/system/missing.png",
+      "render_style": "missing",
+      "source": "player_head",
+      "source_kind": "missing",
+      "source_url": "http://textures.minecraft.net/texture/d5015389da62b325243883a936a2818989a3f91040339794695b77870a44093f",
+      "status": "missing"
+    },
+    "GINGERBREAD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/gingerbread.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/dbd7748afec6f1c69d96cd7e4200d235aabe460c23ba2086859199e00e8372e5",
+      "status": "ok"
+    },
+    "GINGERBREAD_HOUSE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/gingerbread-house.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/975fea83236ed8c49e60bd70a7e9f255dc8b7c388032dd978b161b54c33fc140",
+      "status": "ok"
+    },
+    "GLASS_BOTTLE": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/glass-bottle.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "GLOW_BERRIES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/glow-berries.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/glow_berries.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/glow_berries.png",
+      "status": "ok"
+    },
+    "GOLDEN_APPLE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/golden-apple.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/golden_apple.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/golden_apple.png",
+      "status": "ok"
+    },
+    "GRALLADINA_FRAN_GRAPE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/gralladina-fran-grape.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/84cedb968645e243e5adaeb1868696a673b907a6784188071b63d1fa9cd7b5",
+      "status": "ok"
+    },
+    "GREEN_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/green-tea.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d672c57f4c7b9e962b45b55dd7bd7886880d7eef26db6c2cce03c8ff8c48",
+      "status": "ok"
+    },
+    "GRILLED_CHEESE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/grilled-cheese.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/99f46993d615c8face3be1292b3badf897346a3de06bf847ea66d9a6974a14ff",
+      "status": "ok"
+    },
+    "HAMBURGER": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/hamburger.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/e1b0e992037ae3793e46e1fb255204c020504603ce9e8e40813197085d905556",
+      "status": "ok"
+    },
+    "HEAVY_CREAM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/heavy-cream.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77",
+      "status": "ok"
+    },
+    "HONEY_BOTTLE": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/honey-bottle.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "HOT_COCOA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/hot-cocoa.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/411511bdd55bcb82803c8039f1c155fd43062636e23d4d46c4d761c04d22c2",
+      "status": "ok"
+    },
+    "ICE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/ice.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/ice.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/ice.png",
+      "status": "ok"
+    },
+    "ICED_COFFEE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/iced-coffee.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/4568eb269c687634d3be603c3d5dbd4ca1eb4b70dc78ee0da0f34c33df930d84",
+      "status": "ok"
+    },
+    "ICE_CREAM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/ice-cream.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/a284dacadc276e00d83a305d8096fbc2fb4baa3515616317babd7aa4a66da1b0",
+      "status": "ok"
+    },
+    "IRON_HOE": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/iron-hoe.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "JAM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/jam.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/c0b8b5889ee1c6388dc6c2c5dbd70b6984aefe54319a095e64db7638097b821",
+      "status": "ok"
+    },
+    "JUNGLE_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/jungle-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/jungle_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/jungle_leaves.png",
+      "status": "ok"
+    },
+    "KEBAB": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/kebab.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/31e9359292be8de0e6467bba69260c4c7a8c1bfc08ae09bae78b6fcd612b7ca3",
+      "status": "ok"
+    },
+    "KNOWLEDGE_BOOK": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/knowledge-book.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "missing",
+      "source_url": "",
+      "status": "ok"
+    },
+    "LASAGNA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/lasagna.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/58d583d3f6a12476359ef8288b60ba355e32a3a4d97bc852323ce74c89e45143",
+      "status": "ok"
+    },
+    "LATTE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/latte.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/83eb0e1381dc94259042a3be72a2ad12a414a97cb2197be6ccd95ab14d80c940",
+      "status": "ok"
+    },
+    "LEAF_LITTER": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/leaf-litter.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/leaf_litter.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/leaf_litter.png",
+      "status": "ok"
+    },
+    "LETTUCE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/lettuce.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2",
+      "status": "ok"
+    },
+    "LILAC": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/lilac.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/lilac_top.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/lilac_top.png",
+      "status": "ok"
+    },
+    "LILY_OF_THE_VALLEY": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/lily-of-the-valley.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/lily_of_the_valley.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/lily_of_the_valley.png",
+      "status": "ok"
+    },
+    "MAC_AND_CHEESE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/mac-and-cheese.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/18cea8399f4443aeb815c5019ca7452106bbc9207947ddcc3b7f0f9e536bc089",
+      "status": "ok"
+    },
+    "MANGROVE_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/mangrove-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/mangrove_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/mangrove_leaves.png",
+      "status": "ok"
+    },
+    "MASHED_POTATOES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/mashed-potatoes.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/c7b37af8bb14617b8fc4f61b8988d6577f99aa33cf9456e72a35e09a3add1d90",
+      "status": "ok"
+    },
+    "MATCHA_LATTE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/matcha-latte.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/247f92009ebae46b28d24ee4e02eeea6dc31964c34b6b6faf461975020ae06c3",
+      "status": "ok"
+    },
+    "MATCHA_POWDER": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/matcha-powder.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/7aadb37dd556f9eefbb8ea54943e1f657fac45409e34cd99c810d4dd461bc633",
+      "status": "ok"
+    },
+    "MELOIRE_GRAPE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/meloire-grape.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/15a263d655167f000851a05a1831726e7db9e1ff83d87c423932b3e31769aa89",
+      "status": "ok"
+    },
+    "MELON_SLICE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/melon-slice.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/melon_slice.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/melon_slice.png",
+      "status": "ok"
+    },
+    "MILK_BUCKET": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/milk-bucket.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "MINCED_MEAT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/minced-meat.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/518253f3a68b4ab3e5d36c97456a2b2fc79a68662c30184a57dd6be151f0bcb9",
+      "status": "ok"
+    },
+    "MOCHA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/mocha.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/6da655e0170e9ddc782a709b9ca2240efaa7714c08b1ae99e11434611bc0da45",
+      "status": "ok"
+    },
+    "MUFFIN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/muffin.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f96ceb9eef5f24fd0aa4597550cce16ac713c1570e5723834c98936ffcf467fd",
+      "status": "ok"
+    },
+    "MUTTON": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/mutton.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/mutton.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/mutton.png",
+      "status": "ok"
+    },
+    "OAK_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/oak-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/oak_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/oak_leaves.png",
+      "status": "ok"
+    },
+    "OAT_MILK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/oat-milk.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d1267e7eaa74a5f9f989a3f2b4a2b6aa53953625e991ec7111f72f138c53bc62",
+      "status": "ok"
+    },
+    "OMELETTE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/omelette.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074",
+      "status": "ok"
+    },
+    "ONION": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/onion.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/a8dd2c50ed0b68e6f2839d1e7ea481bfc60d3de4a4249ab29f40d8d20d885065",
+      "status": "ok"
+    },
+    "ORANGE_TULIP": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/orange-tulip.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "OXEYE_DAISY": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/oxeye-daisy.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PACKED_ICE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/packed-ice.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/packed_ice.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/packed_ice.png",
+      "status": "ok"
+    },
+    "PANCAKES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/pancakes.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f8451668392022a3f77833c841c2b3178ce11a9c9750461e51dfa12e01c3b1b7",
+      "status": "ok"
+    },
+    "PAPER": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/paper.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PASTA_BOLOGNESE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/pasta-bolognese.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f23dfd4ce57786914968a2b3ba82173ba7c6cb8bc08442d4130cb09c4a000980",
+      "status": "ok"
+    },
+    "PEONY": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/peony.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/peony_top.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/peony_top.png",
+      "status": "ok"
+    },
+    "PIE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/pie.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a",
+      "status": "ok"
+    },
+    "PINK_TULIP": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/pink-tulip.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PIZZA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/pizza.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d6fa7f4c43c1cb19a8046620d9f43b88cce7fc507eb843329c0fc6e66eac3e63",
+      "status": "ok"
+    },
+    "PLANT_PROTEIN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/plant-protein.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/bb8e5237076dcd41f48aaead0553e2b555f469ac989d229e1c58b8bc95efbb0",
+      "status": "ok"
+    },
+    "POPCORN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/popcorn.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/8aece42d5eaddd6fc9158b64a83e74b94547ee1b36abce4451b5c87889b417b5",
+      "status": "ok"
+    },
+    "POPPY": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/poppy.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PORKCHOP": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/porkchop.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/porkchop.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/porkchop.png",
+      "status": "ok"
+    },
+    "POTATO": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/potato.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/potato.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/potato.png",
+      "status": "ok"
+    },
+    "POTION": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/potion.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PUFFERFISH": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/pufferfish.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "PUMPKIN": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/pumpkin.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/pumpkin_side.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/pumpkin_side.png",
+      "status": "ok"
+    },
+    "RECIPE_BOOK": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/knowledge-book.png",
+      "render_style": "minecraft_texture",
+      "source": "base_material:KNOWLEDGE_BOOK",
+      "source_kind": "base_material",
+      "source_url": "",
+      "status": "ok"
+    },
+    "RED_MUSHROOM": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/red-mushroom.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "RED_TULIP": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/red-tulip.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "RENOIT_GRAPE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/renoit-grape.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/8cdcf38a8438ed3a547f8d5b47e0801559c595f0e26c45656a76b5bf8a56f",
+      "status": "ok"
+    },
+    "RICE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/rice.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/cb70f2fb5ebf49f79ff3e873616863ae5d362fbbfc31aef2dfb93d6e17dbf2",
+      "status": "ok"
+    },
+    "ROAST_TURKEY": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/roast-turkey.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f06555706b641fdaf436c07663f923afc5ee72146f90195fb337b9de766588d",
+      "status": "ok"
+    },
+    "ROSE_BUSH": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/rose-bush.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/rose_bush_top.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/rose_bush_top.png",
+      "status": "ok"
+    },
+    "SALAD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/salad.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2",
+      "status": "ok"
+    },
+    "SALMON": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/salmon.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "SALT": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/sugar.png",
+      "render_style": "minecraft_texture",
+      "source": "base_material:SUGAR",
+      "source_kind": "base_material",
+      "source_url": "",
+      "status": "ok"
+    },
+    "SHEPHERDS_PIE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/shepherds-pie.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f30ee237290dba133da01af5f88b87cce3b94bc40c5089e988852d478fa154a2",
+      "status": "ok"
+    },
+    "SLIME_BALL": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/slime-ball.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/slime_ball.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/slime_ball.png",
+      "status": "ok"
+    },
+    "SPRUCE_LEAVES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/spruce-leaves.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/spruce_leaves.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/spruce_leaves.png",
+      "status": "ok"
+    },
+    "STICK": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/stick.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "SUGAR": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/sugar.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "SUNFLOWER": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/sunflower.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/block/sunflower_front.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/block/sunflower_front.png",
+      "status": "ok"
+    },
+    "SUSHI": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/sushi.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/169bb90e1788fee95af3f69ca1f884874646bc9f01a237cd79968ca949bddec4",
+      "status": "ok"
+    },
+    "SUSHI_ROLL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/sushi-roll.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/169bb90e1788fee95af3f69ca1f884874646bc9f01a237cd79968ca949bddec4",
+      "status": "ok"
+    },
+    "SWEET_BERRIES": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/sweet-berries.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/sweet_berries.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/sweet_berries.png",
+      "status": "ok"
+    },
+    "SWEET_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/sweet-tea.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d672c57f4c7b9e962b45b55dd7bd7886880d7eef26db6c2cce03c8ff8c48",
+      "status": "ok"
+    },
+    "TACO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/taco.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/eb16c1e717760e8942aeb6b1757eff48d927a06ff1efbb4371eab678ebab4290",
+      "status": "ok"
+    },
+    "TEA_DRINK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/tea-drink.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d672c57f4c7b9e962b45b55dd7bd7886880d7eef26db6c2cce03c8ff8c48",
+      "status": "ok"
+    },
+    "TEMPERATE_SEED_PACKET": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/temperate-seed-packet.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d2d253fc0beac3ba7f3cf59e6cdef6137bdcb1212339a2880a5831d1c0c2ba5e",
+      "status": "ok"
+    },
+    "TIN_CAN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/tin-can.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/b983aa3e7719d5888943322310197c4eaadf91f9971a667eefc45bcb606ac872",
+      "status": "ok"
+    },
+    "TOMATO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/tomato.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/4f14b58f3df65a0c6b90ee19464b2557c83ae2c9fa1b5738bb11364cd9f5b3e1",
+      "status": "ok"
+    },
+    "TOMATO_SOUP": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/tomato-soup.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/c0b8b5889ee1c6388dc6c2c5dbd70b6984aefe54319a095e64db7638097b821",
+      "status": "ok"
+    },
+    "TROPICAL_FISH": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/tropical-fish.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "TROPICAL_SEED_PACKET": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/tropical-seed-packet.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/ff41c89c8060ba36cf9c6921fcf52f4a645d6849dbc4deff236ff3894b193afd",
+      "status": "ok"
+    },
+    "VALENTINES_CHOCOLATE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/valentines-chocolate.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/8e0883d8fc419d2d7e689c8e79f032af0f97eef163788437195f2db1493175d9",
+      "status": "ok"
+    },
+    "VINEGAR": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/potion.png",
+      "render_style": "minecraft_texture",
+      "source": "base_material:POTION",
+      "source_kind": "base_material",
+      "source_url": "",
+      "status": "ok"
+    },
+    "WAFFLES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/heirloom/waffles.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/f52c3fd0fac64b934c134a06e684fb0472a158aaf679953227e478af2f800458",
+      "status": "ok"
+    },
+    "WATER_BOTTLE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/water-bottle.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/potion.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/potion.png",
+      "status": "ok"
+    },
+    "WATER_BUCKET": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/water-bucket.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/water_bucket.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/water_bucket.png",
+      "status": "ok"
+    },
+    "WHEAT": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/wheat.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/wheat.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/wheat.png",
+      "status": "ok"
+    },
+    "WHITE_TULIP": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/white-tulip.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    },
+    "WITHER_ROSE": {
+      "minecraft_asset_version": "cached",
+      "path": "images/items/minecraft/wither-rose.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft",
+      "source_kind": "minecraft_cache",
+      "source_url": "",
+      "status": "ok"
+    }
+  },
+  "minecraft_asset_version": "26.2",
+  "missing": [
+    {
+      "id": "CHICKEN_CURRY",
+      "kind": "custom",
+      "reason": "no cached custom icon"
+    },
+    {
+      "id": "COCONUT_MILK",
+      "kind": "custom",
+      "reason": "no cached custom icon"
+    },
+    {
+      "id": "FALAFEL_WRAP",
+      "kind": "custom",
+      "reason": "no cached custom icon"
+    },
+    {
+      "id": "GARLIC",
+      "kind": "custom",
+      "reason": "no cached custom icon"
+    }
+  ],
+  "use_visual_pack_icons": false
+}

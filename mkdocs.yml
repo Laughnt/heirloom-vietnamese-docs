@@ -1,0 +1,161 @@
+site_name: Heirloom Wiki
+site_description: Wiki and server-owner manual for the Heirloom Minecraft cooking, gardening, Distillery, and Cafe plugins.
+site_url: https://kernel-person.github.io/heirloom-docs/
+repo_url: https://github.com/kernel-person/heirloom-docs
+repo_name: kernel-person/heirloom-docs
+
+theme:
+  name: material
+  language: en
+  logo: images/heirloom-logo.png
+  favicon: images/heirloom-logo.png
+  palette:
+    - scheme: default
+      primary: green
+      accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - First Meal: getting-started/first-meal.md
+      - First Farm: getting-started/first-farm.md
+      - Recipe Browser: getting-started/recipe-browser.md
+  - Player Guide:
+      - Overview: player-guide/index.md
+      - Cooking Basics: player-guide/cooking.md
+      - Recipe Search: player-guide/recipe-search.md
+      - Favourite Food: player-guide/favourite-food.md
+      - Food Quality: player-guide/quality.md
+      - Advancements: player-guide/advancements.md
+      - Cooking Mastery: player-guide/mastery.md
+      - Placeable Foods And Feasts: player-guide/placeable-foods.md
+      - Seed Discovery: player-guide/seed-discovery.md
+  - Cooking Stations:
+      - Overview: stations/index.md
+      - Oven: stations/oven.md
+      - Boiling Pot: stations/boiling-pot.md
+      - Mixing Bowl: stations/mixing-bowl.md
+      - Cutting Board: stations/cutting-board.md
+      - Frying Pan: stations/frying-pan.md
+      - Barista Machine: stations/barista-machine.md
+  - Recipes:
+      - Overview: recipes/index.md
+      - Default Recipe Index: recipes/default-recipes.md
+      - Oven Recipes: recipes/station-oven.md
+      - Boiling Pot Recipes: recipes/station-boiling-pot.md
+      - Mixing Bowl Recipes: recipes/station-mixing-bowl.md
+      - Cutting Board Recipes: recipes/station-cutting-board.md
+      - Frying Pan Recipes: recipes/station-frying-pan.md
+      - Barista Recipes: recipes/station-barista-machine.md
+      - Recipe Chains: recipes/recipe-chains.md
+  - Gardening:
+      - Overview: gardening/index.md
+      - Lettuce: gardening/lettuce.md
+      - Onion: gardening/onion.md
+      - Corn: gardening/corn.md
+      - Tomato: gardening/tomato.md
+      - Rice: gardening/rice.md
+      - Plant Types: gardening/plant-types.md
+      - Seed Packets: gardening/seed-packets.md
+      - Wild Discovery And Loot: gardening/wild-discovery.md
+      - EcoEnchants: gardening/ecoenchants.md
+  - Food Systems:
+      - Overview: food-systems/index.md
+      - Dietary Properties: food-systems/dietary-properties.md
+      - Food Properties: food-systems/food-properties.md
+      - Quality And Effects: food-systems/quality-and-effects.md
+      - Favourite And Social Bonuses: food-systems/favourite-social.md
+  - Server Owners:
+      - Overview: server-owners/index.md
+      - Configuration: server-owners/configuration.md
+      - Permissions: server-owners/permissions.md
+      - Commands: server-owners/commands.md
+      - Language Files: server-owners/language-files.md
+      - Region Protection: server-owners/region-protection.md
+      - Diagnostics: server-owners/diagnostics.md
+      - Updating: server-owners/updating.md
+  - Customization:
+      - Overview: customization/index.md
+      - Custom Foods: customization/custom-foods.md
+      - Custom Recipes: customization/custom-recipes.md
+      - Custom Crops: customization/custom-crops.md
+      - Seed Acquisition: customization/seed-acquisition.md
+      - Advancements: customization/advancements.md
+      - Visual Integrations: customization/visuals-overview.md
+      - Nexo: customization/nexo.md
+      - ItemsAdder: customization/itemsadder.md
+      - Web Generator: customization/web-generator.md
+  - Addons:
+      - Distillery:
+          - Overview: addons/distillery/index.md
+          - Getting Started: addons/distillery/getting-started.md
+          - Brewing Flow: addons/distillery/brewing-flow.md
+          - Mashables And Traits: addons/distillery/mashables-traits.md
+          - Inebriation: addons/distillery/inebriation.md
+          - Configuration: addons/distillery/configuration.md
+          - Commands And Permissions: addons/distillery/commands-permissions.md
+      - Cafe:
+          - Overview: addons/cafe/index.md
+          - Getting Started: addons/cafe/getting-started.md
+          - Barista Machine: addons/cafe/barista-machine.md
+          - Coffee And Tea Flow: addons/cafe/coffee-tea.md
+          - Configuration: addons/cafe/configuration.md
+          - Commands And Permissions: addons/cafe/commands-permissions.md
+      - Future Addons: roadmap.md
+  - Reference:
+      - Overview: reference/index.md
+      - Commands: reference/commands.md
+      - Permissions: reference/permissions.md
+      - Config Files: reference/config-files.md
+      - Item IDs: reference/items.md
+      - Vanilla Ingredients: reference/vanilla-items.md
+      - Crop IDs: reference/crops.md
+      - Recipe Summary: reference/recipes.md
+      - Recipe Actions And Rules: reference/recipe-actions-rules.md
+      - JSON Fields: reference/json-fields.md
+      - Visual IDs: reference/visual-ids.md
+      - Legacy Configuration Path: reference/configuration-files.md
+      - Legacy Customization Path: reference/customization.md
+  - Gallery: gallery.md
+  - Media Needed: media-needed.md
+  - Legacy Paths:
+      - Core Cooking Stations: core/cooking-stations.md
+      - Core Recipes: core/recipes.md
+      - Core Custom Foods: core/custom-foods.md
+      - Core Gardening: core/gardening.md
+      - Core Dietary Properties: core/dietary-properties.md
+      - Core Visual Integrations: core/visual-integrations.md
+      - Core Admin Configuration: core/admin-configuration.md
+      - Distillery Overview: distillery/overview.md
+      - Distillery Getting Started: distillery/getting-started.md
+      - Distillery Brewing Flow: distillery/brewing-flow.md
+      - Distillery Mashables And Traits: distillery/mashables-traits.md
+      - Distillery Inebriation: distillery/inebriation.md
+      - Distillery Admin Configuration: distillery/admin-configuration.md
+      - Distillery Commands And Permissions: distillery/commands-permissions.md
