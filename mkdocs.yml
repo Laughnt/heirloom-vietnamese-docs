@@ -27,6 +27,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/navigation-scroll.js
+
 markdown_extensions:
   - admonition
   - attr_list
