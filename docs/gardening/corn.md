@@ -1,13 +1,18 @@
 # Corn
 
-| Field       | Value                                     |
-| ----------- | ----------------------------------------- |
-| Item        | [`CORN`](../reference/items.md#item-corn) |
-| Plant type  | `TALL_PLANT`                              |
-| Base growth | 480 seconds                               |
-| Stages      | 5                                         |
-| Permission  | `heirloom.crop.corn`                      |
-| Replants    | `yes`                                     |
+<figure class="hl-figure">
+  <img src="../../images/gardening/corn.webp" alt="Corn field showing tall crop visuals.">
+  <figcaption>Corn field showing tall crop visuals.</figcaption>
+</figure>
+
+| Field | Value |
+| --- | --- |
+| Item | [`CORN`](../reference/items.md#item-corn) |
+| Plant type | `TALL_PLANT` |
+| Base growth | 480 seconds |
+| Stages | 5 |
+| Permission | `heirloom.crop.corn` |
+| Replants | `yes` |
 
 ## Planting
 

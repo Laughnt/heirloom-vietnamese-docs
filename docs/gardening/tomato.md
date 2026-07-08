@@ -1,13 +1,18 @@
 # Tomato
 
-| Field       | Value                                         |
-| ----------- | --------------------------------------------- |
-| Item        | [`TOMATO`](../reference/items.md#item-tomato) |
-| Plant type  | `VINE`                                        |
-| Base growth | 420 seconds                                   |
-| Stages      | 4                                             |
-| Permission  | `heirloom.crop.tomato`                        |
-| Replants    | `yes`                                         |
+<figure class="hl-figure">
+  <img src="../../images/gardening/tomato.webp" alt="Tomato crop growing as a vine.">
+  <figcaption>Tomato crop growing as a vine.</figcaption>
+</figure>
+
+| Field | Value |
+| --- | --- |
+| Item | [`TOMATO`](../reference/items.md#item-tomato) |
+| Plant type | `VINE` |
+| Base growth | 420 seconds |
+| Stages | 4 |
+| Permission | `heirloom.crop.tomato` |
+| Replants | `yes` |
 
 ## Planting
 

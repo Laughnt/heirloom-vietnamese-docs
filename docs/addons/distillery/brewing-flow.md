@@ -1,5 +1,10 @@
 # Distillery Brewing Flow
 
+<figure class="hl-figure">
+  <img src="../../../images/distillery/D_mashing_fruit.gif" alt="Fruit and grain processing starts with mashing or stomping.">
+  <figcaption>Fruit and grain processing starts with mashing or stomping.</figcaption>
+</figure>
+
 ## Main Flow
 
 1. Mash or stomp ingredients.
