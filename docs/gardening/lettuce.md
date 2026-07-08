@@ -1,18 +1,13 @@
 # Lettuce
 
-<figure class="hl-figure">
-  <img src="../../images/gardening/lettuce.webp" alt="Lettuce crop planted as a short ground crop.">
-  <figcaption>Lettuce crop planted as a short ground crop.</figcaption>
-</figure>
-
-| Field | Value |
-| --- | --- |
-| Item | [`LETTUCE`](../reference/items.md#item-lettuce) |
-| Plant type | `SHORT_PLANT` |
-| Base growth | 300 seconds |
-| Stages | 4 |
-| Permission | `heirloom.crop.lettuce` |
-| Replants | `yes` |
+| Field       | Value                                           |
+| ----------- | ----------------------------------------------- |
+| Item        | [`LETTUCE`](../reference/items.md#item-lettuce) |
+| Plant type  | `SHORT_PLANT`                                   |
+| Base growth | 300 seconds                                     |
+| Stages      | 4                                               |
+| Permission  | `heirloom.crop.lettuce`                         |
+| Replants    | `yes`                                           |
 
 ## Planting
 
