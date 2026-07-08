@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600" role="img" aria-labelledby="title desc">
+  <title id="title">Heirloom Distillery Addon Banner</title>
+  <desc id="desc">Distillery banner using the same background style as the main Heirloom logo and a real grape player head from the item list.</desc>
+
+  <defs>
+    <radialGradient id="paper" cx="40%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#f3f0e5" />
+      <stop offset="100%" stop-color="#dcd8c8" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <rect width="1920" height="600" fill="#dcd8c8" />
+  <rect x="0" y="0" width="1920" height="600" fill="url(#paper)" />
+  <rect x="0" y="0" width="1920" height="18" fill="#31383a" />
+  <rect x="0" y="582" width="1920" height="18" fill="#31383a" />
+
+  <g opacity="0.22">
+    <circle cx="1600" cy="300" r="310" fill="none" stroke="#647a63" stroke-width="9" />
+    <path d="M 1335 338 A 265 265 0 0 1 1865 338 L 1865 352 L 1335 352 Z" fill="#647a63" />
+  </g>
+
+  <g transform="translate(80 46)" filter="url(#shadow)">
+    <circle cx="252" cy="252" r="230" fill="#f7f4eb" stroke="#31383a" stroke-width="12" />
+    <circle cx="252" cy="252" r="198" fill="none" stroke="#647a63" stroke-width="8" />
+    <path d="M 84 268 A 168 168 0 0 1 420 268 L 420 282 L 84 282 Z" fill="#667a63" />
+    <rect x="132" y="126" width="240" height="240" rx="20" fill="#ede9dc" />
+    <image href="https://mc-heads.net/head/d511a5ee4d17682a25f7e8a5da6ff7cd9ad9c4844c258a6de23e7f84f27f9b4/512" x="138" y="132" width="228" height="228" preserveAspectRatio="xMidYMid meet" />
+  </g>
+
+  <g transform="translate(560 112)">
+    <text x="0" y="108" font-family="Georgia, serif" font-size="95" font-weight="700" fill="#31383a" letter-spacing="2">HEIRLOOM</text>
+    <text x="0" y="216" font-family="Georgia, serif" font-size="95" font-weight="700" fill="#31383a" letter-spacing="2">DISTILLERY</text>
+    <rect x="0" y="248" width="980" height="74" rx="10" fill="#647a63" />
+    <text x="34" y="300" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#f4efe2" letter-spacing="1">GROW  STOMP  FERMENT  DISTILL</text>
+    <text x="0" y="390" font-family="Arial, sans-serif" font-size="39" fill="#4f5555">Wine, ale, and spirits with trait-driven brewing chemistry.</text>
+  </g>
+</svg>

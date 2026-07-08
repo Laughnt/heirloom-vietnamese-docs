@@ -1,15 +1,10 @@
 # Advancements
 
-<figure class="hl-figure">
-  <img src="../../images/showcase/advancements.png" alt="Heirloom has native advancement progress.">
-  <figcaption>Heirloom has native advancement progress.</figcaption>
-</figure>
-
 Heirloom tracks food discovery, crop harvesting, recipe progress, collection goals, and quality milestones.
 
 Commands:
 
-```text
+```
 /hl advancements
 /hl adv
 /hl progress
