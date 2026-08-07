@@ -34,14 +34,25 @@ def seed_cached_icon(temp_docs: Path, item_id: str) -> None:
     shutil.copyfile(source, target)
 
 
-def manifest_for_mode(use_visual_pack_icons: bool) -> dict:
+def manifest_for_mode(use_visual_pack_icons: bool, item_id: str = "TOMATO") -> tuple[dict, Path]:
     with tempfile.TemporaryDirectory() as tmp:
         temp_docs = Path(tmp)
-        seed_cached_icon(temp_docs, "tomato")
+        cached = DOCS_ROOT / "docs/images/items/heirloom" / f"{item_id.lower().replace('_', '-')}.png"
+        if cached.exists():
+            seed_cached_icon(temp_docs, item_id.lower().replace("_", "-"))
         generator = load_generator(temp_docs)
         generator.ensure_icon_assets(fetch_icons=False, use_visual_pack_icons=use_visual_pack_icons)
         manifest_path = temp_docs / "docs/images/items/icon-manifest.json"
-        return json.loads(manifest_path.read_text(encoding="utf-8"))["items"]["TOMATO"]
+        entry = json.loads(manifest_path.read_text(encoding="utf-8"))["items"][item_id]
+        preview = temp_docs / "docs" / entry["path"]
+        preview_bytes = preview.read_bytes() if preview.exists() else b""
+        copied_preview = Path(tmp) / "captured-preview.png"
+        copied_preview.write_bytes(preview_bytes)
+        if preview_bytes:
+            width, height, pixels = generator.read_png_rgba(preview_bytes)
+            entry["_dimensions"] = [width, height]
+            entry["_corner"] = list(pixels[0])
+        return entry, copied_preview
 
 
 def tiny_skin_png(generator) -> bytes:
@@ -106,13 +117,19 @@ def removed_visual_packs_do_not_leave_public_preview_files() -> None:
 def main() -> int:
     assert not (PLUGIN_ROOT / "packs/Heirloom-Cafe-Visual-Pack-v1.0.0").exists()
     assert not (PLUGIN_ROOT / "packs/Heirloom-Cafe-Visual-Pack-v1.0.0.zip").exists()
-    default_entry = manifest_for_mode(False)
-    visual_entry = manifest_for_mode(True)
+    default_entry, _ = manifest_for_mode(False)
+    tomato_entry, _ = manifest_for_mode(True, "TOMATO")
+    corn_entry, _ = manifest_for_mode(True, "CORN")
+    asian_entry, _ = manifest_for_mode(True, "ASIAN_MISO_SOUP")
 
     assert default_entry["source_kind"] != "visual_pack", default_entry
     assert default_entry["path"].startswith("images/items/heirloom/"), default_entry
-    assert visual_entry["source_kind"] == "visual_pack", visual_entry
-    assert visual_entry["path"].startswith("images/items/visual-pack/"), visual_entry
+    assert tomato_entry["source_kind"] != "visual_pack", tomato_entry
+    assert corn_entry["source_kind"] != "visual_pack", corn_entry
+    assert asian_entry["source_kind"] == "visual_pack", asian_entry
+    assert asian_entry["path"].startswith("images/items/visual-pack/"), asian_entry
+    assert asian_entry["_dimensions"] == [63, 63], asian_entry
+    assert asian_entry["_corner"] == [255, 253, 245, 255], asian_entry
     stale_player_head_source_refreshes_when_texture_changes()
     removed_visual_packs_do_not_leave_public_preview_files()
     return 0

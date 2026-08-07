@@ -78,7 +78,7 @@ def main() -> int:
         width, height, pixels = generator.read_png_rgba(public_preview.read_bytes())
         assert (width, height) == (63, 63)
         assert all(alpha == 255 for _red, _green, _blue, alpha in pixels)
-        assert pixels[0] == (245, 242, 235, 255)
+        assert pixels[0] == (255, 253, 245, 255)
         assert generator.ICON_MANIFEST["ASIAN_DUMPLING_MEAT"]["render_style"] == "protected_preview_63_front_relief"
         assert public_preview.read_bytes() != source_preview.read_bytes()
 

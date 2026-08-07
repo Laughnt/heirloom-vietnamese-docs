@@ -279,15 +279,20 @@ def collect_vanilla_item_ids() -> set[str]:
 VANILLA_ITEM_IDS = collect_vanilla_item_ids()
 
 
-def load_local_visual_pack_icons() -> dict[str, Path]:
-    icons: dict[str, Path] = {}
+WIKI_VISUAL_PREVIEW_PACKS = {"Heirloom-Asian-Food-Pack-v1.0.0"}
+
+
+def load_local_visual_pack_icons() -> dict[str, tuple[str, Path]]:
+    icons: dict[str, tuple[str, Path]] = {}
     packs_root = PLUGIN_ROOT / "packs"
     if not packs_root.exists():
         return icons
     for png in packs_root.glob("*/shared/assets/heirloom/textures/item/*.png"):
-        icons[png.stem.upper()] = png
+        pack_name = png.relative_to(packs_root).parts[0]
+        icons[png.stem.upper()] = (pack_name, png)
     for png in packs_root.glob("*/textures/*.png"):
-        icons[png.stem.upper()] = png
+        pack_name = png.relative_to(packs_root).parts[0]
+        icons[png.stem.upper()] = (pack_name, png)
     return icons
 
 
@@ -881,7 +886,7 @@ def write_public_visual_preview(source: Path, target: Path) -> None:
     """Render a crisp, nearly front-facing relief tile without publishing source pixels."""
     width, height, pixels = read_png_rgba(source.read_bytes())
     output_size = 63
-    paper = (245, 242, 235, 255)
+    paper = (255, 253, 245, 255)
     canvas = [paper] * (output_size * output_size)
     scale = max(1, 48 // max(width, height))
     front_width = width * scale
@@ -1125,8 +1130,13 @@ def ensure_custom_icon(item: dict, fetch_icons: bool, use_visual_pack_icons: boo
     texture = item.get("texture")
     base = str(item.get("base_material", "")).upper()
     previous = existing_manifest_entry(item_id)
-    local_pack_icon = LOCAL_VISUAL_PACK_ICONS.get(item_id)
-    if use_visual_pack_icons and local_pack_icon and local_pack_icon.exists():
+    local_visual = LOCAL_VISUAL_PACK_ICONS.get(item_id)
+    pack_name, local_pack_icon = local_visual if local_visual else ("", Path())
+    if (
+        use_visual_pack_icons
+        and pack_name in WIKI_VISUAL_PREVIEW_PACKS
+        and local_pack_icon.is_file()
+    ):
         rel = icon_rel_for_visual_pack(item_id)
         target = DOCS_ROOT / "docs" / rel
         target.parent.mkdir(parents=True, exist_ok=True)

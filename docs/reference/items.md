@@ -20,7 +20,7 @@ Source-derived reference for bundled Heirloom custom items. Use these IDs in com
 | <img class="hl-item-icon" src="../../images/items/heirloom/chocolate.png" alt="CHOCOLATE" title="CHOCOLATE"> | <span id="item-chocolate"></span>`CHOCOLATE` | Chocolate | PLAYER_HEAD | yes | CHOCOLATE |
 | <img class="hl-item-icon" src="../../images/items/heirloom/cooked-rice.png" alt="COOKED_RICE" title="COOKED_RICE"> | <span id="item-cooked-rice"></span>`COOKED_RICE` | Cooked Rice | PLAYER_HEAD | yes | COOKED_RICE |
 | <img class="hl-item-icon" src="../../images/items/heirloom/cooking-oil.png" alt="COOKING_OIL" title="COOKING_OIL"> | <span id="item-cooking-oil"></span>`COOKING_OIL` | Oil | PLAYER_HEAD | no | COOKING_OIL |
-| <img class="hl-item-icon" src="../../images/items/visual-pack/corn.png" alt="CORN" title="CORN"> | <span id="item-corn"></span>`CORN` | Corn | PLAYER_HEAD | yes | CORN |
+| <img class="hl-item-icon" src="../../images/items/heirloom/corn.png" alt="CORN" title="CORN"> | <span id="item-corn"></span>`CORN` | Corn | PLAYER_HEAD | yes | CORN |
 | <img class="hl-item-icon" src="../../images/items/heirloom/cornmeal.png" alt="CORNMEAL" title="CORNMEAL"> | <span id="item-cornmeal"></span>`CORNMEAL` | Cornmeal | PLAYER_HEAD | no | CORNMEAL |
 | <img class="hl-item-icon" src="../../images/items/heirloom/cranerlet-nuala-grape.png" alt="CRANERLET_NUALA_GRAPE" title="CRANERLET_NUALA_GRAPE"> | <span id="item-cranerlet-nuala-grape"></span>`CRANERLET_NUALA_GRAPE` | ⚗ Cranerlet Nuala Grape | PLAYER_HEAD | yes | CRANERLET_NUALA_GRAPE |
 | <img class="hl-item-icon" src="../../images/items/heirloom/dough.png" alt="DOUGH" title="DOUGH"> | <span id="item-dough"></span>`DOUGH` | Dough | PLAYER_HEAD | no | DOUGH |
@@ -66,7 +66,7 @@ Source-derived reference for bundled Heirloom custom items. Use these IDs in com
 | <img class="hl-item-icon" src="../../images/items/heirloom/taco.png" alt="TACO" title="TACO"> | <span id="item-taco"></span>`TACO` | Taco | PLAYER_HEAD | yes | TACO |
 | <img class="hl-item-icon" src="../../images/items/heirloom/temperate-seed-packet.png" alt="TEMPERATE_SEED_PACKET" title="TEMPERATE_SEED_PACKET"> | <span id="item-temperate-seed-packet"></span>`TEMPERATE_SEED_PACKET` | Temperate Seed Packet | PLAYER_HEAD | no | TEMPERATE_SEED_PACKET |
 | <img class="hl-item-icon" src="../../images/items/heirloom/tin-can.png" alt="TIN_CAN" title="TIN_CAN"> | <span id="item-tin-can"></span>`TIN_CAN` | Tin Can | PLAYER_HEAD | no | TIN_CAN |
-| <img class="hl-item-icon" src="../../images/items/visual-pack/tomato.png" alt="TOMATO" title="TOMATO"> | <span id="item-tomato"></span>`TOMATO` | Tomato | PLAYER_HEAD | yes | TOMATO |
+| <img class="hl-item-icon" src="../../images/items/heirloom/tomato.png" alt="TOMATO" title="TOMATO"> | <span id="item-tomato"></span>`TOMATO` | Tomato | PLAYER_HEAD | yes | TOMATO |
 | <img class="hl-item-icon" src="../../images/items/heirloom/tomato-soup.png" alt="TOMATO_SOUP" title="TOMATO_SOUP"> | <span id="item-tomato-soup"></span>`TOMATO_SOUP` | Tomato Soup | PLAYER_HEAD | yes | TOMATO_SOUP |
 | <img class="hl-item-icon" src="../../images/items/heirloom/tropical-seed-packet.png" alt="TROPICAL_SEED_PACKET" title="TROPICAL_SEED_PACKET"> | <span id="item-tropical-seed-packet"></span>`TROPICAL_SEED_PACKET` | Tropical Seed Packet | PLAYER_HEAD | no | TROPICAL_SEED_PACKET |
 | <img class="hl-item-icon" src="../../images/items/minecraft/potion.png" alt="VINEGAR" title="VINEGAR"> | <span id="item-vinegar"></span>`VINEGAR` | Vinegar | POTION | no | VINEGAR |

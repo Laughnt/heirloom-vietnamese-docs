@@ -922,11 +922,11 @@
     },
     "CORN": {
       "minecraft_asset_version": "",
-      "path": "images/items/visual-pack/corn.png",
-      "render_style": "protected_preview_63_front_relief",
-      "source": "visual_pack:packs/Heirloom-Tomato-Corn-Visual-Pack-v1.0.0/shared/assets/heirloom/textures/item/corn.png",
-      "source_kind": "visual_pack",
-      "source_url": "",
+      "path": "images/items/heirloom/corn.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/d3a6b099cd401e3a0d64d9a16f46cd0c5ca5f7e45e6a69c27d2e473775b25fe",
       "status": "ok"
     },
     "CORNFLOWER": {
@@ -1948,11 +1948,11 @@
     },
     "TOMATO": {
       "minecraft_asset_version": "",
-      "path": "images/items/visual-pack/tomato.png",
-      "render_style": "protected_preview_63_front_relief",
-      "source": "visual_pack:packs/Heirloom-Tomato-Corn-Visual-Pack-v1.0.0/shared/assets/heirloom/textures/item/tomato.png",
-      "source_kind": "visual_pack",
-      "source_url": "",
+      "path": "images/items/heirloom/tomato.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source": "player_head",
+      "source_kind": "player_head_texture",
+      "source_url": "http://textures.minecraft.net/texture/4f14b58f3df65a0c6b90ee19464b2557c83ae2c9fa1b5738bb11364cd9f5b3e1",
       "status": "ok"
     },
     "TOMATO_SOUP": {
