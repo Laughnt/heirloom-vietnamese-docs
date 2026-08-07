@@ -20,13 +20,13 @@ Heirloom Asian Food Pack 1.0.0 contains **47 custom items** and **29 recipe entr
 | Items | 47 |
 | Recipe entries | 29 |
 | PNG sprites | 47 |
-| Bundled provider configuration | Nexo |
+| Bundled provider configuration | Nexo, ItemsAdder, CraftEngine |
 
 ## Installation And Visual Providers
 
-Copy the files from `content/` into Heirloom's content-pack location, install the included Nexo files if Nexo is your visual provider, then run `/hl reload`. The pack always retains player-head fallbacks.
+Copy the files from `content/` into Heirloom's content-pack location, install the folder matching your visual provider, then run `/hl reload`. The pack always retains player-head fallbacks.
 
-The release includes **47 raw PNG sprites**. Nexo configuration is bundled. The same sprites are suitable for **ItemsAdder** and **CraftEngine**, but their provider-specific configuration is not bundled in this release.
+The release includes **47 raw PNG sprites** and ready-to-install configuration for **Nexo, ItemsAdder, CraftEngine**. Install only the provider used by your server.
 
 ## Items
 
