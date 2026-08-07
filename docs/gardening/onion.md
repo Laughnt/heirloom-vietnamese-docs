@@ -1,13 +1,18 @@
 # Onion
 
-| Field       | Value                                       |
-| ----------- | ------------------------------------------- |
-| Item        | [`ONION`](../reference/items.md#item-onion) |
-| Plant type  | `ALLIUM`                                    |
-| Base growth | 360 seconds                                 |
-| Stages      | 4                                           |
-| Permission  | `heirloom.crop.onion`                       |
-| Replants    | `yes`                                       |
+<figure class="hl-figure">
+  <img src="../../images/gardening/onion.webp" alt="Onion crop planted as an allium-style ground crop.">
+  <figcaption>Onion crop planted as an allium-style ground crop.</figcaption>
+</figure>
+
+| Field | Value |
+| --- | --- |
+| Item | [`ONION`](../reference/items.md#item-onion) |
+| Plant type | `ALLIUM` |
+| Base growth | 360 seconds |
+| Stages | 4 |
+| Permission | `heirloom.crop.onion` |
+| Replants | `yes` |
 
 ## Planting
 

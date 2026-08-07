@@ -14,6 +14,23 @@ mkdocs serve
 
 Open `http://127.0.0.1:8000/`.
 
+## Regenerate Source Reference
+
+The wiki generator reads bundled Core and Cafe JSON plus every release content
+pack under `../foodplugin/packs/*/content/`. It rebuilds the item reference,
+recipe pages, content-pack pages, navigation, and icon manifest together.
+
+```bash
+.venv/bin/python tools/generate_reference_pages.py --use-visual-pack-icons
+.venv/bin/python tools/check_content_pack_generation.py
+.venv/bin/python tools/check_icon_modes.py
+.venv/bin/python tools/check_recipe_slot_badges.py
+.venv/bin/mkdocs build --strict
+```
+
+Each content pack must use matching `pack` metadata in its item and recipe JSON.
+Conflicting metadata stops generation instead of publishing mixed pack data.
+
 ## Publish
 
 The included GitHub Actions workflow builds the MkDocs site and publishes it to

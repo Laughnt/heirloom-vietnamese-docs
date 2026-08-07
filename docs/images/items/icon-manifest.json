@@ -38,6 +38,429 @@
       "source_url": "minecraft/textures/item/apple.png",
       "status": "ok"
     },
+    "ASIAN_BOBA_TEA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-boba-tea.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_boba_tea.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_CHINESE_FRIED_RICE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-chinese-fried-rice.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_chinese_fried_rice.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_DANGO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-dango.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_dango.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_DIM_SUM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-dim-sum.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_dim_sum.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_DUMPLING_MEAT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-dumpling-meat.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_dumpling_meat.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_DUMPLING_SEAFOOD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-dumpling-seafood.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_dumpling_seafood.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_DUMPLING_VEGETABLE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-dumpling-vegetable.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_dumpling_vegetable.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_FEAST_BENTO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-feast-bento.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_feast_bento.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_GYOZA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-gyoza.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_gyoza.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_HOT_POT": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-hot-pot.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_hot_pot.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_COD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-cod.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_cod.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_MUSHROOM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-mushroom.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_mushroom.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_RAINBOW": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-rainbow.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_rainbow.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_SALMON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-salmon.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_salmon.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_TAMAGO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-tamago.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_tamago.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MAKI_VEGETABLE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-maki-vegetable.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_maki_vegetable.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MATCHA_ICE_CREAM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-matcha-ice-cream.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_matcha_ice_cream.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MISO_SOUP": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-miso-soup.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_miso_soup.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MOCHI": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-mochi.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_mochi.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MOCHI_BERRY": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-mochi-berry.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_mochi_berry.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_MOCHI_MATCHA": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-mochi-matcha.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_mochi_matcha.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_COD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-cod.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_cod.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_MUSHROOM": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-mushroom.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_mushroom.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_SALMON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-salmon.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_salmon.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_TAMAGO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-tamago.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_tamago.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_TOFU": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-tofu.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_tofu.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_TROPICAL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-tropical.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_tropical.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_NIGIRI_UNAGI": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-nigiri-unagi.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_nigiri_unagi.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_PEKING_DUCK": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-peking-duck.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_peking_duck.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_POKE_BOWL_COD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-poke-bowl-cod.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_poke_bowl_cod.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_POKE_BOWL_SALMON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-poke-bowl-salmon.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_poke_bowl_salmon.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_POKE_BOWL_TROPICAL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-poke-bowl-tropical.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_poke_bowl_tropical.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_PORK_BAO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-pork-bao.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_pork_bao.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_PORTABLE_BENTO": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-portable-bento.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_portable_bento.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_RICE_FLOUR": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-rice-flour.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_rice_flour.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_RICE_NOODLES": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-rice-noodles.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_rice_noodles.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SASHIMI_COD": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-sashimi-cod.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_sashimi_cod.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SASHIMI_PUFFERFISH": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-sashimi-pufferfish.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_sashimi_pufferfish.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SASHIMI_SALMON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-sashimi-salmon.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_sashimi_salmon.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SASHIMI_TROPICAL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-sashimi-tropical.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_sashimi_tropical.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SHOYU_RAMEN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-shoyu-ramen.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_shoyu_ramen.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SPRING_ROLL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-spring-roll.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_spring_roll.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_SUSHI_RICE": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-sushi-rice.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_sushi_rice.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_TAKOYAKI": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-takoyaki.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_takoyaki.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_TERIYAKI_BOWL": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-teriyaki-bowl.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_teriyaki_bowl.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_TONKOTSU_RAMEN": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-tonkotsu-ramen.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_tonkotsu_ramen.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
+    "ASIAN_UDON": {
+      "minecraft_asset_version": "",
+      "path": "images/items/visual-pack/asian-udon.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Asian-Food-Pack-v1.0.0/textures/asian_udon.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
+      "status": "ok"
+    },
     "AZALEA_LEAVES": {
       "minecraft_asset_version": "26.2",
       "path": "images/items/minecraft/azalea-leaves.png",
@@ -180,6 +603,15 @@
       "source": "player_head",
       "source_kind": "player_head_texture",
       "source_url": "http://textures.minecraft.net/texture/d6d91d3dbfbc01d7bd4a8691f93d7f96d4a5d2bbd3e16faa8ec7c2e58c4907bd",
+      "status": "ok"
+    },
+    "BOWL": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/bowl.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/bowl.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/bowl.png",
       "status": "ok"
     },
     "BREAD": {
@@ -461,6 +893,15 @@
       "source_url": "minecraft/textures/item/cooked_mutton.png",
       "status": "ok"
     },
+    "COOKED_PORKCHOP": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/cooked-porkchop.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/cooked_porkchop.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/cooked_porkchop.png",
+      "status": "ok"
+    },
     "COOKED_RICE": {
       "minecraft_asset_version": "",
       "path": "images/items/heirloom/cooked-rice.png",
@@ -481,11 +922,11 @@
     },
     "CORN": {
       "minecraft_asset_version": "",
-      "path": "images/items/heirloom/corn.png",
-      "render_style": "player_head_isometric_v2_80",
-      "source": "player_head",
-      "source_kind": "player_head_texture",
-      "source_url": "http://textures.minecraft.net/texture/d3a6b099cd401e3a0d64d9a16f46cd0c5ca5f7e45e6a69c27d2e473775b25fe",
+      "path": "images/items/visual-pack/corn.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Tomato-Corn-Visual-Pack-v1.0.0/shared/assets/heirloom/textures/item/corn.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
       "status": "ok"
     },
     "CORNFLOWER": {
@@ -701,7 +1142,7 @@
       "render_style": "player_head_isometric_v2_80",
       "source": "player_head",
       "source_kind": "player_head_texture",
-      "source_url": "http://textures.minecraft.net/texture/e7ba22d5df21e821a6de4b8c9d373a3aa187d8ae74f288a82d2b61f272e5",
+      "source_url": "http://textures.minecraft.net/texture/804c252a1042cb341c056fb723bd6bf52df533b23f3152fe1c64d4d790f8bff0",
       "status": "ok"
     },
     "FRIED_EGG": {
@@ -792,6 +1233,15 @@
       "source": "player_head",
       "source_kind": "player_head_texture",
       "source_url": "http://textures.minecraft.net/texture/84cedb968645e243e5adaeb1868696a673b907a6784188071b63d1fa9cd7b5",
+      "status": "ok"
+    },
+    "GREEN_DYE": {
+      "minecraft_asset_version": "26.2",
+      "path": "images/items/minecraft/green-dye.png",
+      "render_style": "minecraft_texture",
+      "source": "minecraft_client:minecraft/textures/item/green_dye.png",
+      "source_kind": "minecraft_client",
+      "source_url": "minecraft/textures/item/green_dye.png",
       "status": "ok"
     },
     "GREEN_TEA": {
@@ -1498,11 +1948,11 @@
     },
     "TOMATO": {
       "minecraft_asset_version": "",
-      "path": "images/items/heirloom/tomato.png",
-      "render_style": "player_head_isometric_v2_80",
-      "source": "player_head",
-      "source_kind": "player_head_texture",
-      "source_url": "http://textures.minecraft.net/texture/4f14b58f3df65a0c6b90ee19464b2557c83ae2c9fa1b5738bb11364cd9f5b3e1",
+      "path": "images/items/visual-pack/tomato.png",
+      "render_style": "protected_preview_63_front_relief",
+      "source": "visual_pack:packs/Heirloom-Tomato-Corn-Visual-Pack-v1.0.0/shared/assets/heirloom/textures/item/tomato.png",
+      "source_kind": "visual_pack",
+      "source_url": "",
       "status": "ok"
     },
     "TOMATO_SOUP": {
@@ -1628,5 +2078,336 @@
       "reason": "no cached custom icon"
     }
   ],
-  "use_visual_pack_icons": false
+  "recipe_variants": {
+    "10192f33373b914a6e2d5a23c0daa5db5f77204471a36b6161ae556d3e663": {
+      "path": "images/items/recipe-variants/10192f33373b914a6e2d5a23c0daa5db5f77204471a36b6161ae556d3e663.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/10192f33373b914a6e2d5a23c0daa5db5f77204471a36b6161ae556d3e663",
+      "status": "ok"
+    },
+    "1b1a1b5f472fb73c519bef616311d8b7b4afac9749bc51eecf886d3f9df72b43": {
+      "path": "images/items/recipe-variants/1b1a1b5f472fb73c519bef616311d8b7b4afac9749bc51eecf886d3f9df72b43.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/1b1a1b5f472fb73c519bef616311d8b7b4afac9749bc51eecf886d3f9df72b43",
+      "status": "ok"
+    },
+    "1b1cc7647afc37319d193a3d884f2e9173d020f117ba1c17df1f08ae787112d2": {
+      "path": "images/items/recipe-variants/1b1cc7647afc37319d193a3d884f2e9173d020f117ba1c17df1f08ae787112d2.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/1b1cc7647afc37319d193a3d884f2e9173d020f117ba1c17df1f08ae787112d2",
+      "status": "ok"
+    },
+    "22d96cad2781900785e983343a6da0ed349a3940e7af729ef09ace4f9c2cae3c": {
+      "path": "images/items/recipe-variants/22d96cad2781900785e983343a6da0ed349a3940e7af729ef09ace4f9c2cae3c.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/22d96cad2781900785e983343a6da0ed349a3940e7af729ef09ace4f9c2cae3c",
+      "status": "ok"
+    },
+    "38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a": {
+      "path": "images/items/recipe-variants/38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a",
+      "status": "ok"
+    },
+    "3bb079d54acf9fd56e0706379841040a31d99802cda54a4f60d4f294c3be20a6": {
+      "path": "images/items/recipe-variants/3bb079d54acf9fd56e0706379841040a31d99802cda54a4f60d4f294c3be20a6.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/3bb079d54acf9fd56e0706379841040a31d99802cda54a4f60d4f294c3be20a6",
+      "status": "ok"
+    },
+    "421cab4095e71bd925cf464990e18e43adb725db7cc175fd9d1dec820914b3de": {
+      "path": "images/items/recipe-variants/421cab4095e71bd925cf464990e18e43adb725db7cc175fd9d1dec820914b3de.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/421cab4095e71bd925cf464990e18e43adb725db7cc175fd9d1dec820914b3de",
+      "status": "ok"
+    },
+    "488a079ff61f114ad01382d19e2174b19435ba28418091007c9e67e8d5dc662": {
+      "path": "images/items/recipe-variants/488a079ff61f114ad01382d19e2174b19435ba28418091007c9e67e8d5dc662.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/488a079ff61f114ad01382d19e2174b19435ba28418091007c9e67e8d5dc662",
+      "status": "ok"
+    },
+    "4ac601a802cc6334cd5d604b091abef9d5acc217e4fb4c906213c230a89f2b8b": {
+      "path": "images/items/recipe-variants/4ac601a802cc6334cd5d604b091abef9d5acc217e4fb4c906213c230a89f2b8b.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/4ac601a802cc6334cd5d604b091abef9d5acc217e4fb4c906213c230a89f2b8b",
+      "status": "ok"
+    },
+    "53572a1ba0663245d57bc146b979e91c07a02a1c89ad3f8751bafe2ab188644": {
+      "path": "images/items/recipe-variants/53572a1ba0663245d57bc146b979e91c07a02a1c89ad3f8751bafe2ab188644.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/53572a1ba0663245d57bc146b979e91c07a02a1c89ad3f8751bafe2ab188644",
+      "status": "ok"
+    },
+    "54978dc87b527f65d41dca6d977b630c8d250b556170e020db71d82c7ecd4baa": {
+      "path": "images/items/recipe-variants/54978dc87b527f65d41dca6d977b630c8d250b556170e020db71d82c7ecd4baa.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/54978dc87b527f65d41dca6d977b630c8d250b556170e020db71d82c7ecd4baa",
+      "status": "ok"
+    },
+    "57a4976386ea44e7168451068efaa9289dafb78bbaec9642050aa3ae99558bde": {
+      "path": "images/items/recipe-variants/57a4976386ea44e7168451068efaa9289dafb78bbaec9642050aa3ae99558bde.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/57a4976386ea44e7168451068efaa9289dafb78bbaec9642050aa3ae99558bde",
+      "status": "ok"
+    },
+    "59da54ff366e738e31de92919986abb4d50ca944fa9926af63758b7448f18": {
+      "path": "images/items/recipe-variants/59da54ff366e738e31de92919986abb4d50ca944fa9926af63758b7448f18.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/59da54ff366e738e31de92919986abb4d50ca944fa9926af63758b7448f18",
+      "status": "ok"
+    },
+    "5e67933a22f39fa544bd1449fb674d39c3d441076e44418ed944b465960a9bdd": {
+      "path": "images/items/recipe-variants/5e67933a22f39fa544bd1449fb674d39c3d441076e44418ed944b465960a9bdd.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/5e67933a22f39fa544bd1449fb674d39c3d441076e44418ed944b465960a9bdd",
+      "status": "ok"
+    },
+    "6880cc973bc8f690646cca20dc7997400c4b760e4c93b870d4843c4cdf545679": {
+      "path": "images/items/recipe-variants/6880cc973bc8f690646cca20dc7997400c4b760e4c93b870d4843c4cdf545679.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/6880cc973bc8f690646cca20dc7997400c4b760e4c93b870d4843c4cdf545679",
+      "status": "ok"
+    },
+    "6d0018e92d8863102f2613a1f08e5d6b2e501ea0e32c7ffed672328bf083853e": {
+      "path": "images/items/recipe-variants/6d0018e92d8863102f2613a1f08e5d6b2e501ea0e32c7ffed672328bf083853e.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/6d0018e92d8863102f2613a1f08e5d6b2e501ea0e32c7ffed672328bf083853e",
+      "status": "ok"
+    },
+    "6f363628123af11aa6f4a899cebd094f074555a41e6d335212ee7263ad39f6": {
+      "path": "images/items/recipe-variants/6f363628123af11aa6f4a899cebd094f074555a41e6d335212ee7263ad39f6.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/6f363628123af11aa6f4a899cebd094f074555a41e6d335212ee7263ad39f6",
+      "status": "ok"
+    },
+    "8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e": {
+      "path": "images/items/recipe-variants/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e",
+      "status": "ok"
+    },
+    "90477134d2ac52569f062707b04e4a37a70a9fed6110c7d2f145f76be1cd826e": {
+      "path": "images/items/recipe-variants/90477134d2ac52569f062707b04e4a37a70a9fed6110c7d2f145f76be1cd826e.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/90477134d2ac52569f062707b04e4a37a70a9fed6110c7d2f145f76be1cd826e",
+      "status": "ok"
+    },
+    "91708ed352e17ca89c1c9485cd1db017c4c886895ab5c7c27a9ff564af2172d": {
+      "path": "images/items/recipe-variants/91708ed352e17ca89c1c9485cd1db017c4c886895ab5c7c27a9ff564af2172d.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/91708ed352e17ca89c1c9485cd1db017c4c886895ab5c7c27a9ff564af2172d",
+      "status": "ok"
+    },
+    "921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07": {
+      "path": "images/items/recipe-variants/921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07",
+      "status": "ok"
+    },
+    "925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074": {
+      "path": "images/items/recipe-variants/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/925b5d8e75c23847d20bdd90451dce0e49b51315c870b8f9b60958678ff56074",
+      "status": "ok"
+    },
+    "975fea83236ed8c49e60bd70a7e9f255dc8b7c388032dd978b161b54c33fc140": {
+      "path": "images/items/recipe-variants/975fea83236ed8c49e60bd70a7e9f255dc8b7c388032dd978b161b54c33fc140.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/975fea83236ed8c49e60bd70a7e9f255dc8b7c388032dd978b161b54c33fc140",
+      "status": "ok"
+    },
+    "9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2": {
+      "path": "images/items/recipe-variants/9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2",
+      "status": "ok"
+    },
+    "a0d5aa4469f492e6f0c9551d9b64dc8e5a5865b31a9a7e13783f57b16f708ac": {
+      "path": "images/items/recipe-variants/a0d5aa4469f492e6f0c9551d9b64dc8e5a5865b31a9a7e13783f57b16f708ac.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/a0d5aa4469f492e6f0c9551d9b64dc8e5a5865b31a9a7e13783f57b16f708ac",
+      "status": "ok"
+    },
+    "aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77": {
+      "path": "images/items/recipe-variants/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77",
+      "status": "ok"
+    },
+    "ad3b76df3aa76893a161895d981f2248fcde96dbc4042129045f95de10e18485": {
+      "path": "images/items/recipe-variants/ad3b76df3aa76893a161895d981f2248fcde96dbc4042129045f95de10e18485.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/ad3b76df3aa76893a161895d981f2248fcde96dbc4042129045f95de10e18485",
+      "status": "ok"
+    },
+    "b20008bc174e5a41355ffb574e09f79eb26da3abd7fb3f461e926f3f4da28f27": {
+      "path": "images/items/recipe-variants/b20008bc174e5a41355ffb574e09f79eb26da3abd7fb3f461e926f3f4da28f27.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/b20008bc174e5a41355ffb574e09f79eb26da3abd7fb3f461e926f3f4da28f27",
+      "status": "ok"
+    },
+    "b5bf7f7926337f3ddd3fafdae62e306d5e53904cb07af9a9bad111311f735e08": {
+      "path": "images/items/recipe-variants/b5bf7f7926337f3ddd3fafdae62e306d5e53904cb07af9a9bad111311f735e08.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/b5bf7f7926337f3ddd3fafdae62e306d5e53904cb07af9a9bad111311f735e08",
+      "status": "ok"
+    },
+    "b8828a3799e997e00e42fed55c8049f407a5ff18c5b65a25af307a234cb27e23": {
+      "path": "images/items/recipe-variants/b8828a3799e997e00e42fed55c8049f407a5ff18c5b65a25af307a234cb27e23.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/b8828a3799e997e00e42fed55c8049f407a5ff18c5b65a25af307a234cb27e23",
+      "status": "ok"
+    },
+    "baa9e797265d38abc02856834e37f636fe316feeb55a4a0df052ac2ffea46f99": {
+      "path": "images/items/recipe-variants/baa9e797265d38abc02856834e37f636fe316feeb55a4a0df052ac2ffea46f99.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/baa9e797265d38abc02856834e37f636fe316feeb55a4a0df052ac2ffea46f99",
+      "status": "ok"
+    },
+    "bb8e5237076dcd41f48aaead0553e2b555f469ac989d229e1c58b8bc95efbb0": {
+      "path": "images/items/recipe-variants/bb8e5237076dcd41f48aaead0553e2b555f469ac989d229e1c58b8bc95efbb0.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/bb8e5237076dcd41f48aaead0553e2b555f469ac989d229e1c58b8bc95efbb0",
+      "status": "ok"
+    },
+    "c0b8b5889ee1c6388dc6c2c5dbd70b6984aefe54319a095e64db7638097b821": {
+      "path": "images/items/recipe-variants/c0b8b5889ee1c6388dc6c2c5dbd70b6984aefe54319a095e64db7638097b821.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/c0b8b5889ee1c6388dc6c2c5dbd70b6984aefe54319a095e64db7638097b821",
+      "status": "ok"
+    },
+    "ca5ad4b51d9a3077bec45bc24b2ec4a403bf4401f439085b0fb361b1f6b3c5d8": {
+      "path": "images/items/recipe-variants/ca5ad4b51d9a3077bec45bc24b2ec4a403bf4401f439085b0fb361b1f6b3c5d8.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/ca5ad4b51d9a3077bec45bc24b2ec4a403bf4401f439085b0fb361b1f6b3c5d8",
+      "status": "ok"
+    },
+    "d089bda72e1985324f3014932cde0241f9f38ddb98f07358b93413d80e5ac0ed": {
+      "path": "images/items/recipe-variants/d089bda72e1985324f3014932cde0241f9f38ddb98f07358b93413d80e5ac0ed.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/d089bda72e1985324f3014932cde0241f9f38ddb98f07358b93413d80e5ac0ed",
+      "status": "ok"
+    },
+    "d53c1e87e537f1ab2774ddafb83439b336f4a777b47ad82bcb30d5fcbdf9bc": {
+      "path": "images/items/recipe-variants/d53c1e87e537f1ab2774ddafb83439b336f4a777b47ad82bcb30d5fcbdf9bc.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/d53c1e87e537f1ab2774ddafb83439b336f4a777b47ad82bcb30d5fcbdf9bc",
+      "status": "ok"
+    },
+    "d6d91d3dbfbc01d7bd4a8691f93d7f96d4a5d2bbd3e16faa8ec7c2e58c4907bd": {
+      "path": "images/items/recipe-variants/d6d91d3dbfbc01d7bd4a8691f93d7f96d4a5d2bbd3e16faa8ec7c2e58c4907bd.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/d6d91d3dbfbc01d7bd4a8691f93d7f96d4a5d2bbd3e16faa8ec7c2e58c4907bd",
+      "status": "ok"
+    },
+    "d6fa7f4c43c1cb19a8046620d9f43b88cce7fc507eb843329c0fc6e66eac3e63": {
+      "path": "images/items/recipe-variants/d6fa7f4c43c1cb19a8046620d9f43b88cce7fc507eb843329c0fc6e66eac3e63.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/d6fa7f4c43c1cb19a8046620d9f43b88cce7fc507eb843329c0fc6e66eac3e63",
+      "status": "ok"
+    },
+    "dbd7748afec6f1c69d96cd7e4200d235aabe460c23ba2086859199e00e8372e5": {
+      "path": "images/items/recipe-variants/dbd7748afec6f1c69d96cd7e4200d235aabe460c23ba2086859199e00e8372e5.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/dbd7748afec6f1c69d96cd7e4200d235aabe460c23ba2086859199e00e8372e5",
+      "status": "ok"
+    },
+    "e3518ae1b80c18f31c8f5a1c067a932291c90e35f89732a3c4543f18f9be3a9d": {
+      "path": "images/items/recipe-variants/e3518ae1b80c18f31c8f5a1c067a932291c90e35f89732a3c4543f18f9be3a9d.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/e3518ae1b80c18f31c8f5a1c067a932291c90e35f89732a3c4543f18f9be3a9d",
+      "status": "ok"
+    },
+    "ea8b03cc5a2cc34b287a41e03345ab5854388f9cfdf6bf951c591780dd9cf77b": {
+      "path": "images/items/recipe-variants/ea8b03cc5a2cc34b287a41e03345ab5854388f9cfdf6bf951c591780dd9cf77b.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/ea8b03cc5a2cc34b287a41e03345ab5854388f9cfdf6bf951c591780dd9cf77b",
+      "status": "ok"
+    },
+    "eb16c1e717760e8942aeb6b1757eff48d927a06ff1efbb4371eab678ebab4290": {
+      "path": "images/items/recipe-variants/eb16c1e717760e8942aeb6b1757eff48d927a06ff1efbb4371eab678ebab4290.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/eb16c1e717760e8942aeb6b1757eff48d927a06ff1efbb4371eab678ebab4290",
+      "status": "ok"
+    },
+    "ee0966b66000974c183416d9d62436af7371b92d578e186825291e21281869e0": {
+      "path": "images/items/recipe-variants/ee0966b66000974c183416d9d62436af7371b92d578e186825291e21281869e0.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/ee0966b66000974c183416d9d62436af7371b92d578e186825291e21281869e0",
+      "status": "ok"
+    },
+    "f30ee237290dba133da01af5f88b87cce3b94bc40c5089e988852d478fa154a2": {
+      "path": "images/items/recipe-variants/f30ee237290dba133da01af5f88b87cce3b94bc40c5089e988852d478fa154a2.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/f30ee237290dba133da01af5f88b87cce3b94bc40c5089e988852d478fa154a2",
+      "status": "ok"
+    },
+    "f3a5bcc049ff73555955138ae94ddc99f3a6e68bc422de96668aa6cb87792278": {
+      "path": "images/items/recipe-variants/f3a5bcc049ff73555955138ae94ddc99f3a6e68bc422de96668aa6cb87792278.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/f3a5bcc049ff73555955138ae94ddc99f3a6e68bc422de96668aa6cb87792278",
+      "status": "ok"
+    },
+    "f4821725a23a06b92ba7936351ccfab422905d781897c26f0b612a6df2a20": {
+      "path": "images/items/recipe-variants/f4821725a23a06b92ba7936351ccfab422905d781897c26f0b612a6df2a20.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/f4821725a23a06b92ba7936351ccfab422905d781897c26f0b612a6df2a20",
+      "status": "ok"
+    },
+    "f96ceb9eef5f24fd0aa4597550cce16ac713c1570e5723834c98936ffcf467fd": {
+      "path": "images/items/recipe-variants/f96ceb9eef5f24fd0aa4597550cce16ac713c1570e5723834c98936ffcf467fd.png",
+      "render_style": "player_head_isometric_v2_80",
+      "source_kind": "recipe_set_texture",
+      "source_url": "http://textures.minecraft.net/texture/f96ceb9eef5f24fd0aa4597550cce16ac713c1570e5723834c98936ffcf467fd",
+      "status": "ok"
+    }
+  },
+  "use_visual_pack_icons": true
 }

@@ -4,6 +4,12 @@ Heirloom cooking is physical. You build a station in the world, add visible ingr
 
 ## Station Loop Example
 
+<div class="hl-media-grid">
+  <figure class="hl-media-card"><img src="../../images/showcase/first-meal-place-egg.webp" alt="Egg displayed on station"><figcaption>Ingredients are placed into the world as visible station contents.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/first-meal-cooking-progress.webp" alt="Station cooking progress"><figcaption>Cooking starts from the station interaction, with progress shown in game.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/first-meal-wrong-furnace.webp" alt="Wrong furnace GUI interaction"><figcaption>Opening the vanilla furnace GUI is a sign you are using the wrong interaction path.</figcaption></figure>
+</div>
+
 ## The Station Loop
 
 1. Build the correct station shape.
@@ -24,15 +30,15 @@ A finished food can be changed by recipe rules, optional ingredients, inherited 
 
 Some recipes and foods return buckets or bottles. There are two common cases:
 
-* Craft return: the station gives something back when the recipe completes.
-* Consume return: eating the food gives something back afterward, such as a bottle from jam.
+- Craft return: the station gives something back when the recipe completes.
+- Consume return: eating the food gives something back afterward, such as a bottle from jam.
 
 ## Common Failure Cases
 
-* The station shape is wrong, so Heirloom never treats the block as a station.
-* The ingredient is the wrong form, such as `WHEAT` instead of `BAG_OF_FLOUR`.
-* The recipe belongs to another station or addon.
-* An optional ingredient matched the base recipe but not the rule you expected.
-* A protection plugin cancelled interaction in the region.
+- The station shape is wrong, so Heirloom never treats the block as a station.
+- The ingredient is the wrong form, such as `WHEAT` instead of `BAG_OF_FLOUR`.
+- The recipe belongs to another station or addon.
+- An optional ingredient matched the base recipe but not the rule you expected.
+- A protection plugin cancelled interaction in the region.
 
 Use `/hl search <ingredient>` when stuck. It is usually faster than guessing the next station.

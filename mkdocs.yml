@@ -114,6 +114,8 @@ nav:
       - Nexo: customization/nexo.md
       - ItemsAdder: customization/itemsadder.md
       - Web Generator: customization/web-generator.md
+  - Content Packs:
+      - Heirloom Asian Food Pack: content-packs/heirloom-asian-food-pack.md
   - Addons:
       - Distillery:
           - Overview: addons/distillery/index.md

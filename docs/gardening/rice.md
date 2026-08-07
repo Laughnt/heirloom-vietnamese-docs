@@ -1,13 +1,18 @@
 # Rice
 
-| Field       | Value                                     |
-| ----------- | ----------------------------------------- |
-| Item        | [`RICE`](../reference/items.md#item-rice) |
-| Plant type  | `AQUATIC`                                 |
-| Base growth | 360 seconds                               |
-| Stages      | 4                                         |
-| Permission  | `heirloom.crop.rice`                      |
-| Replants    | `yes`                                     |
+<figure class="hl-figure">
+  <img src="../../images/gardening/rice.webp" alt="Rice crop planted in water above soil.">
+  <figcaption>Rice crop planted in water above soil.</figcaption>
+</figure>
+
+| Field | Value |
+| --- | --- |
+| Item | [`RICE`](../reference/items.md#item-rice) |
+| Plant type | `AQUATIC` |
+| Base growth | 360 seconds |
+| Stages | 4 |
+| Permission | `heirloom.crop.rice` |
+| Replants | `yes` |
 
 ## Planting
 

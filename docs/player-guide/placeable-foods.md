@@ -1,5 +1,10 @@
 # Placeable Foods And Feasts
 
+<figure class="hl-figure">
+  <img src="../../images/showcase/christmas-placeable.png" alt="Some foods can be placed and eaten in servings.">
+  <figcaption>Some foods can be placed and eaten in servings.</figcaption>
+</figure>
+
 Some Heirloom foods can be placed and eaten in servings. The placed block stores remaining servings, remaining nutrition, remaining saturation, and food properties in block data so state survives restarts.
 
 ## How To Eat

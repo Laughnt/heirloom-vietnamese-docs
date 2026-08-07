@@ -44,7 +44,68 @@ def manifest_for_mode(use_visual_pack_icons: bool) -> dict:
         return json.loads(manifest_path.read_text(encoding="utf-8"))["items"]["TOMATO"]
 
 
+def tiny_skin_png(generator) -> bytes:
+    with tempfile.TemporaryDirectory() as tmp:
+        skin = Path(tmp) / "skin.png"
+        pixels = [(255, 0, 0, 255)] * 64 * 64
+        generator.write_png_rgba(skin, 64, 64, pixels)
+        return skin.read_bytes()
+
+
+def stale_player_head_source_refreshes_when_texture_changes() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        temp_docs = Path(tmp)
+        seed_cached_icon(temp_docs, "fried-chicken")
+        manifest_path = temp_docs / "docs/images/items/icon-manifest.json"
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        manifest_path.write_text(json.dumps({
+            "minecraft_asset_version": "",
+            "items": {
+                "FRIED_CHICKEN": {
+                    "path": "images/items/heirloom/fried-chicken.png",
+                    "source_kind": "player_head_texture",
+                    "source_url": "http://textures.minecraft.net/texture/old-fried-chicken",
+                    "render_style": "player_head_isometric_v2_80",
+                    "status": "ok",
+                }
+            },
+            "recipe_variants": {},
+        }), encoding="utf-8")
+
+        generator = load_generator(temp_docs)
+        calls = []
+        skin = tiny_skin_png(generator)
+
+        def fake_fetch(url: str) -> bytes:
+            calls.append(url)
+            return skin
+
+        generator.fetch_binary = fake_fetch
+        new_texture = "http://textures.minecraft.net/texture/new-fried-chicken"
+        generator.ensure_custom_icon({
+            "id": "FRIED_CHICKEN",
+            "base_material": "PLAYER_HEAD",
+            "texture": new_texture,
+        }, fetch_icons=True, use_visual_pack_icons=False)
+
+        assert calls == [new_texture], calls
+        assert generator.ICON_MANIFEST["FRIED_CHICKEN"]["source_url"] == new_texture
+
+
+def removed_visual_packs_do_not_leave_public_preview_files() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        temp_docs = Path(tmp)
+        stale = temp_docs / "docs/images/items/visual-pack/latte.png"
+        stale.parent.mkdir(parents=True, exist_ok=True)
+        stale.write_bytes(b"old debug preview")
+        generator = load_generator(temp_docs)
+        generator.ensure_icon_assets(fetch_icons=False, use_visual_pack_icons=True)
+        assert not stale.exists()
+
+
 def main() -> int:
+    assert not (PLUGIN_ROOT / "packs/Heirloom-Cafe-Visual-Pack-v1.0.0").exists()
+    assert not (PLUGIN_ROOT / "packs/Heirloom-Cafe-Visual-Pack-v1.0.0.zip").exists()
     default_entry = manifest_for_mode(False)
     visual_entry = manifest_for_mode(True)
 
@@ -52,6 +113,8 @@ def main() -> int:
     assert default_entry["path"].startswith("images/items/heirloom/"), default_entry
     assert visual_entry["source_kind"] == "visual_pack", visual_entry
     assert visual_entry["path"].startswith("images/items/visual-pack/"), visual_entry
+    stale_player_head_source_refreshes_when_texture_changes()
+    removed_visual_packs_do_not_leave_public_preview_files()
     return 0
 
 

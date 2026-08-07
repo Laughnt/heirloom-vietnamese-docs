@@ -31,6 +31,8 @@ if not PLUGIN_ROOT.exists():
 FETCH_ICONS = False
 USE_VISUAL_PACK_ICONS = False
 ICON_MANIFEST: dict[str, dict[str, str]] = {}
+RECIPE_VARIANT_MANIFEST: dict[str, dict[str, str]] = {}
+SOURCE_LOGO_MANIFEST: dict[str, str] = {}
 MISSING_ICON_ROWS: list[tuple[str, str, str]] = []
 MINECRAFT_ASSET_INDEX: dict[str, dict] | None = None
 MINECRAFT_CLIENT_JAR: zipfile.ZipFile | None = None
@@ -73,6 +75,63 @@ def title_from_id(value: str) -> str:
     return value.replace("_", " ").title()
 
 
+def discover_content_packs() -> list[dict]:
+    """Load distributable JSON content packs from the plugin repository."""
+    packs_root = PLUGIN_ROOT / "packs"
+    if not packs_root.exists():
+        return []
+
+    discovered: list[dict] = []
+    for pack_dir in sorted(path for path in packs_root.iterdir() if path.is_dir()):
+        content_dir = pack_dir / "content"
+        if not content_dir.is_dir():
+            continue
+
+        item_files = sorted(content_dir.glob("custom_items*.json"))
+        recipe_files = sorted(content_dir.glob("recipes*.json"))
+        if not item_files and not recipe_files:
+            continue
+
+        metadata: dict | None = None
+        items: list[dict] = []
+        recipes: list[dict] = []
+        for path in [*item_files, *recipe_files]:
+            data = read_json(path)
+            candidate = data.get("pack")
+            if not isinstance(candidate, dict) or not candidate.get("id") or not candidate.get("name"):
+                raise ValueError(f"Content pack metadata missing from {path}")
+            normalized = {
+                "id": str(candidate["id"]),
+                "name": str(candidate["name"]),
+                "version": str(candidate.get("version", "unknown")),
+                "override_strength": int(candidate.get("override_strength", 0)),
+            }
+            if metadata is None:
+                metadata = normalized
+            elif metadata != normalized:
+                raise ValueError(f"Conflicting content pack metadata in {pack_dir}")
+            items.extend(data.get("custom_items", []) or [])
+            recipes.extend(data.get("recipes", []) or [])
+
+        if metadata is None:
+            continue
+        providers = []
+        for provider, folder in (("Nexo", "nexo"), ("ItemsAdder", "itemsadder"), ("CraftEngine", "craftengine")):
+            if (pack_dir / folder).is_dir():
+                providers.append(provider)
+        discovered.append({
+            **metadata,
+            "directory": pack_dir,
+            "item_files": item_files,
+            "recipe_files": recipe_files,
+            "items": items,
+            "recipes": recipes,
+            "providers": providers,
+            "texture_count": len(list((pack_dir / "textures").glob("*.png"))),
+        })
+    return discovered
+
+
 def station_key(station: str | None) -> str:
     if not station:
         return "Unknown"
@@ -92,6 +151,9 @@ def station_key(station: str | None) -> str:
     return aliases.get(normalized, station.replace("_", " ").title())
 
 
+CONTENT_PACKS = discover_content_packs()
+
+
 def load_items():
     specs = [
         ("Core", PLUGIN_ROOT / "heirloom-core/src/main/resources/custom_items.json"),
@@ -107,6 +169,13 @@ def load_items():
             row = dict(item)
             row["_source"] = source
             row["_addon"] = row.get("addon") or ("cafe" if source == "Cafe" else "core")
+            items.append(row)
+    for pack in CONTENT_PACKS:
+        for item in pack["items"]:
+            row = dict(item)
+            row["_source"] = pack["name"]
+            row["_addon"] = pack["id"]
+            row["_pack_id"] = pack["id"]
             items.append(row)
     return items
 
@@ -126,6 +195,16 @@ def load_recipes():
             row = dict(recipe)
             row["_source"] = source
             row["_addon"] = row.get("addon") or ("cafe" if source == "Cafe" else "core")
+            row["_station"] = station_key(row.get("station") or row.get("stationName"))
+            row["_sequence"] = len(recipes)
+            row["_source_index"] = recipe_index
+            recipes.append(row)
+    for pack in CONTENT_PACKS:
+        for recipe_index, recipe in enumerate(pack["recipes"]):
+            row = dict(recipe)
+            row["_source"] = pack["name"]
+            row["_addon"] = pack["id"]
+            row["_pack_id"] = pack["id"]
             row["_station"] = station_key(row.get("station") or row.get("stationName"))
             row["_sequence"] = len(recipes)
             row["_source_index"] = recipe_index
@@ -160,6 +239,7 @@ SEEDS = read_json(PLUGIN_ROOT / "heirloom-core/src/main/resources/seed_acquisiti
 ENCHANTS = read_json(PLUGIN_ROOT / "heirloom-core/src/main/resources/enchantment_integrations.json")
 
 ITEM_BY_ID = {item["id"].upper(): item for item in ITEMS if "id" in item}
+ITEM_ID_BY_VISUAL_ID = {str(item.get("visual_id", "")).upper(): item["id"].upper() for item in ITEMS if item.get("visual_id") and item.get("id")}
 RECIPE_BY_ID: dict[str, dict] = {}
 RECIPE_ID_COUNTS = defaultdict(int)
 for recipe in RECIPES:
@@ -205,6 +285,8 @@ def load_local_visual_pack_icons() -> dict[str, Path]:
     if not packs_root.exists():
         return icons
     for png in packs_root.glob("*/shared/assets/heirloom/textures/item/*.png"):
+        icons[png.stem.upper()] = png
+    for png in packs_root.glob("*/textures/*.png"):
         icons[png.stem.upper()] = png
     return icons
 
@@ -293,6 +375,52 @@ def sync_marketing_images() -> None:
         convert_marketing_asset(source, target_base, int(config.get("max_width", 1400)))
 
 
+def source_logo_specs() -> dict[str, tuple[str, Path]]:
+    exports = PLUGIN_ROOT / "logo/exports"
+    core_logo = PLUGIN_ROOT / "logo/heirloom-logo.png"
+    specs = {
+        "Core": ("core.png", core_logo),
+        "World": ("core.png", core_logo),
+        "Festive": ("core.png", core_logo),
+        "Cafe": ("cafe.png", exports / "heirloom-cafe-logo-transparent.png"),
+        "Distillery": ("distillery.png", exports / "heirloom-distillery-logo-transparent.png"),
+    }
+    for pack in CONTENT_PACKS:
+        if pack["id"] == "heirloom_asian_food":
+            specs[pack["name"]] = (
+                "heirloom-asian-food-pack.png",
+                exports / "heirloom-chinese-japanese-food-pack-transparent.png",
+            )
+            continue
+        pack_slug = slug(pack["name"])
+        for candidate in (
+            exports / f"{pack_slug}-transparent.png",
+            exports / f"{pack_slug}-marketplace.png",
+        ):
+            if candidate.is_file():
+                specs[pack["name"]] = (f"{pack_slug}.png", candidate)
+                break
+    return specs
+
+
+def sync_source_logos() -> None:
+    SOURCE_LOGO_MANIFEST.clear()
+    target_root = DOCS_ROOT / "docs/images/sources"
+    target_root.mkdir(parents=True, exist_ok=True)
+    active_filenames: set[str] = set()
+    for source, (filename, logo_source) in source_logo_specs().items():
+        if not logo_source.is_file():
+            continue
+        target = target_root / filename
+        if filename not in active_filenames:
+            write_logo_thumbnail(logo_source, target)
+            active_filenames.add(filename)
+        SOURCE_LOGO_MANIFEST[source] = f"images/sources/{filename}"
+    for stale in target_root.glob("*.png"):
+        if stale.name not in active_filenames:
+            stale.unlink()
+
+
 def marketing_asset_rel(key: str) -> str | None:
     config = MARKETING_IMAGE_ASSETS.get(key)
     if not config:
@@ -313,6 +441,18 @@ def marketing_asset_src(key: str, prefix: str) -> str | None:
 
 def attr(value) -> str:
     return html.escape(str(value), quote=True)
+
+
+def source_badge(source: str, image_prefix: str = "../") -> str:
+    logo = SOURCE_LOGO_MANIFEST.get(source)
+    if not logo:
+        return md_escape(source)
+    label = attr(source)
+    return (
+        f'<span class="hl-source-badge" title="{label}">'
+        f'<img class="hl-source-logo" src="{image_prefix}{logo}" alt="{label}">'
+        f'</span>'
+    )
 
 
 def read_png_rgba(data: bytes) -> tuple[int, int, list[tuple[int, int, int, int]]]:
@@ -425,6 +565,17 @@ def write_png_rgba(path: Path, width: int, height: int, pixels: list[tuple[int, 
     data += chunk(b"IEND", b"")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(data)
+
+
+def write_logo_thumbnail(source: Path, target: Path, size: int = 96) -> None:
+    width, height, pixels = read_png_rgba(source.read_bytes())
+    output: list[tuple[int, int, int, int]] = []
+    for y in range(size):
+        source_y = min(height - 1, int((y + 0.5) * height / size))
+        for x in range(size):
+            source_x = min(width - 1, int((x + 0.5) * width / size))
+            output.append(pixels[source_y * width + source_x])
+    write_png_rgba(target, size, size, output)
 
 
 def png_dimensions(path: Path) -> tuple[int, int] | None:
@@ -726,6 +877,247 @@ def icon_rel_for_visual_pack(item_id: str) -> str:
     return f"images/items/visual-pack/{slug(item_id)}.png"
 
 
+def write_public_visual_preview(source: Path, target: Path) -> None:
+    """Render a crisp, nearly front-facing relief tile without publishing source pixels."""
+    width, height, pixels = read_png_rgba(source.read_bytes())
+    output_size = 63
+    paper = (245, 242, 235, 255)
+    canvas = [paper] * (output_size * output_size)
+    scale = max(1, 48 // max(width, height))
+    front_width = width * scale
+    front_height = height * scale
+    depth = 3
+    origin_x = (output_size - front_width - depth) // 2
+    origin_y = (output_size - front_height - depth) // 2
+
+    def blend_pixel(x: int, y: int, color: tuple[int, int, int, int]) -> None:
+        if not (0 <= x < output_size and 0 <= y < output_size):
+            return
+        red, green, blue, alpha = color
+        opacity = alpha / 255
+        background = canvas[y * output_size + x]
+        canvas[y * output_size + x] = (
+            round(red * opacity + background[0] * (1 - opacity)),
+            round(green * opacity + background[1] * (1 - opacity)),
+            round(blue * opacity + background[2] * (1 - opacity)),
+            255,
+        )
+
+    def draw_block(x: int, y: int, color: tuple[int, int, int, int]) -> None:
+        for pixel_y in range(y, y + scale):
+            for pixel_x in range(x, x + scale):
+                blend_pixel(pixel_x, pixel_y, color)
+
+    # A shallow lower-right extrusion provides depth while keeping the face almost flat.
+    for offset in range(depth, 0, -1):
+        for source_y in range(height):
+            for source_x in range(width):
+                red, green, blue, alpha = pixels[source_y * width + source_x]
+                if alpha == 0:
+                    continue
+                draw_block(
+                    origin_x + source_x * scale + offset,
+                    origin_y + source_y * scale + offset,
+                    (round(red * 0.48), round(green * 0.48), round(blue * 0.48), alpha),
+                )
+
+    for source_y in range(height):
+        for source_x in range(width):
+            red, green, blue, alpha = pixels[source_y * width + source_x]
+            if alpha == 0:
+                continue
+            block_x = origin_x + source_x * scale
+            block_y = origin_y + source_y * scale
+            draw_block(block_x, block_y, (red, green, blue, alpha))
+
+            above_clear = source_y == 0 or pixels[(source_y - 1) * width + source_x][3] == 0
+            left_clear = source_x == 0 or pixels[source_y * width + source_x - 1][3] == 0
+            highlight = (
+                round(red + (255 - red) * 0.14),
+                round(green + (255 - green) * 0.14),
+                round(blue + (255 - blue) * 0.14),
+                alpha,
+            )
+            if above_clear:
+                for pixel_x in range(block_x, block_x + scale):
+                    blend_pixel(pixel_x, block_y, highlight)
+            if left_clear:
+                for pixel_y in range(block_y, block_y + scale):
+                    blend_pixel(block_x, pixel_y, highlight)
+
+    write_png_rgba(target, output_size, output_size, canvas)
+
+
+def icon_rel_for_recipe_variant(texture_url: str) -> str:
+    return f"images/items/recipe-variants/{texture_hash(texture_url)}.png"
+
+
+def resolve_visual_item_id(value: str) -> str:
+    upper = str(value).upper()
+    if upper in ITEM_BY_ID:
+        return upper
+    return ITEM_ID_BY_VISUAL_ID.get(upper, upper)
+
+
+def output_name_after_actions(actions: list[dict], fallback: str) -> str:
+    name = fallback
+    for action in actions or []:
+        action_type = str(action.get("type", "")).upper()
+        if action_type == "SET_PROPERTY" and str(action.get("key", "")).upper() == "NAME":
+            name = str(action.get("value", name))
+        elif action_type == "PREPEND_NAME":
+            name = str(action.get("value", "")) + name
+        elif action_type == "APPEND_NAME":
+            name = name + str(action.get("value", ""))
+    return " ".join(name.split()) or fallback
+
+
+def output_visual_source_from_actions(actions: list[dict]) -> tuple[str, str] | None:
+    source = None
+    visual_source = None
+    for action in actions or []:
+        action_type = str(action.get("type", "")).upper()
+        value = str(action.get("value", "")).strip()
+        if not value:
+            continue
+        if action_type == "SET_TEXTURE":
+            source = ("texture", value)
+        elif action_type == "SET_VISUAL_ITEM":
+            item_id = resolve_visual_item_id(value)
+            visual_source = ("item", item_id)
+            if item_id in ITEM_BY_ID or source is None:
+                source = ("item", item_id)
+    if USE_VISUAL_PACK_ICONS and visual_source and visual_source[1] in LOCAL_VISUAL_PACK_ICONS:
+        return visual_source
+    return source
+
+
+def output_item_visual_key(item_id: str) -> str:
+    upper = item_id.upper()
+    item = ITEM_BY_ID.get(upper)
+    if item and item.get("texture"):
+        return f"texture:{texture_hash(str(item["texture"]))}"
+    return f"item:{upper}"
+
+
+def output_variant_key(source: tuple[str, str]) -> str:
+    source_type, value = source
+    if source_type == "texture":
+        return f"texture:{texture_hash(value)}"
+    return output_item_visual_key(resolve_visual_item_id(value))
+
+
+def output_variant_from_source(source: tuple[str, str], label: str) -> dict:
+    source_type, value = source
+    if source_type == "texture":
+        return {
+            "kind": "texture",
+            "texture": value,
+            "key": output_variant_key(source),
+            "label": label,
+        }
+    item_id = resolve_visual_item_id(value)
+    return {
+        "kind": "item",
+        "item_id": item_id,
+        "key": output_variant_key(("item", item_id)),
+        "label": label,
+    }
+
+
+def rule_matcher_label(rule: dict) -> str:
+    matcher = rule.get("matcher") or {}
+    for key in ("custom_item", "item"):
+        if key in matcher:
+            return title_from_id(str(matcher[key]).upper())
+    matchers = rule.get("matchers") or []
+    if matchers:
+        labels = []
+        for matcher in matchers:
+            for key in ("custom_item", "item"):
+                if key in matcher:
+                    labels.append(title_from_id(str(matcher[key]).upper()))
+                    break
+        if labels:
+            return " + ".join(labels)
+    return ""
+
+
+def recipe_output_variant_data(recipe: dict | None) -> list[dict]:
+    if not recipe:
+        return []
+    output_id = str(recipe.get("output", "")).upper()
+    if not output_id:
+        return []
+    fallback_name = title_from_id(output_id)
+    base_name = output_name_after_actions(recipe.get("actions", []) or [], fallback_name)
+    base_source = output_visual_source_from_actions(recipe.get("actions", []) or []) or ("item", output_id)
+
+    variants: list[dict] = []
+    seen: set[str] = set()
+
+    def add_variant(source: tuple[str, str], label: str) -> None:
+        variant = output_variant_from_source(source, label)
+        if variant["key"] in seen:
+            return
+        seen.add(variant["key"])
+        variants.append(variant)
+
+    add_variant(base_source, f"Default {base_name}")
+    for rule in recipe.get("rules", []) or []:
+        actions = rule.get("actions", []) or []
+        source = output_visual_source_from_actions(actions)
+        if not source:
+            continue
+        label = output_name_after_actions(actions, base_name)
+        if label == base_name:
+            matcher_label = rule_matcher_label(rule)
+            label = f"{matcher_label} {base_name}" if matcher_label else f"Variant {len(variants) + 1}"
+        add_variant(source, label)
+    return variants
+
+
+def ensure_recipe_variant_texture_icon(texture_url: str, fetch_icons: bool, label: str = "recipe variant") -> None:
+    key = texture_hash(texture_url)
+    rel = icon_rel_for_recipe_variant(texture_url)
+    target = DOCS_ROOT / "docs" / rel
+    previous = EXISTING_ICON_MANIFEST.get("recipe_variants", {}).get(key, {})
+    should_refresh = fetch_icons and previous.get("render_style") != PLAYER_HEAD_RENDER_STYLE
+    if fetch_icons and (should_refresh or not target.exists()):
+        try:
+            w, h, pixels = render_isometric_head_icon(fetch_binary(texture_url))
+            write_png_rgba(target, w, h, pixels)
+        except Exception:
+            if not target.exists():
+                record_missing("recipe_variant", key, f"remote player-head fetch unavailable for {label}; add local variant icon")
+    if target.exists():
+        RECIPE_VARIANT_MANIFEST[key] = {
+            "path": rel,
+            "source_kind": "recipe_set_texture",
+            "source_url": texture_url,
+            "render_style": PLAYER_HEAD_RENDER_STYLE,
+            "status": "ok",
+        }
+        return
+    record_missing("recipe_variant", key, f"no cached recipe variant icon for {label}")
+    RECIPE_VARIANT_MANIFEST[key] = {
+        "path": "images/items/system/missing.png",
+        "source_kind": "missing",
+        "source_url": texture_url,
+        "render_style": "missing",
+        "status": "missing",
+    }
+
+
+def ensure_recipe_variant_assets(fetch_icons: bool) -> None:
+    RECIPE_VARIANT_MANIFEST.clear()
+    (DOCS_ROOT / "docs/images/items/recipe-variants").mkdir(parents=True, exist_ok=True)
+    for recipe in RECIPES:
+        for variant in recipe_output_variant_data(recipe):
+            if variant.get("kind") == "texture":
+                ensure_recipe_variant_texture_icon(str(variant["texture"]), fetch_icons, str(variant.get("label", "recipe variant")))
+
+
 def ensure_custom_icon(item: dict, fetch_icons: bool, use_visual_pack_icons: bool = False) -> None:
     item_id = str(item.get("id", "")).upper()
     if not item_id:
@@ -738,14 +1130,13 @@ def ensure_custom_icon(item: dict, fetch_icons: bool, use_visual_pack_icons: boo
         rel = icon_rel_for_visual_pack(item_id)
         target = DOCS_ROOT / "docs" / rel
         target.parent.mkdir(parents=True, exist_ok=True)
-        if not target.exists() or target.read_bytes() != local_pack_icon.read_bytes():
-            shutil.copyfile(local_pack_icon, target)
+        write_public_visual_preview(local_pack_icon, target)
         ICON_MANIFEST[item_id] = {
             "path": rel,
             "source": f"visual_pack:{local_pack_icon.relative_to(PLUGIN_ROOT)}",
             "source_kind": "visual_pack",
             "source_url": "",
-            "render_style": "texture_2d",
+            "render_style": "protected_preview_63_front_relief",
             "minecraft_asset_version": "",
             "status": "ok",
         }
@@ -753,7 +1144,11 @@ def ensure_custom_icon(item: dict, fetch_icons: bool, use_visual_pack_icons: boo
     rel = icon_rel_for_custom(item_id)
     target = DOCS_ROOT / "docs" / rel
     if texture:
-        should_refresh = fetch_icons and previous.get("render_style") != PLAYER_HEAD_RENDER_STYLE
+        should_refresh = fetch_icons and (
+            previous.get("render_style") != PLAYER_HEAD_RENDER_STYLE
+            or previous.get("source_kind") != "player_head_texture"
+            or previous.get("source_url") != texture
+        )
         if fetch_icons and (should_refresh or not target.exists()):
             try:
                 w, h, pixels = render_isometric_head_icon(fetch_binary(texture))
@@ -856,6 +1251,7 @@ def ensure_icon_assets(fetch_icons: bool, use_visual_pack_icons: bool = False) -
     (items_root / "heirloom").mkdir(parents=True, exist_ok=True)
     (items_root / "minecraft").mkdir(parents=True, exist_ok=True)
     (items_root / "visual-pack").mkdir(parents=True, exist_ok=True)
+    (items_root / "recipe-variants").mkdir(parents=True, exist_ok=True)
     (items_root / "system").mkdir(parents=True, exist_ok=True)
     write_system_icon(items_root / "system/missing.png", (245, 242, 235, 255), (198, 93, 59, 255))
     write_system_icon(items_root / "system/tag.png", (250, 248, 245, 255), (85, 107, 47, 255))
@@ -864,12 +1260,22 @@ def ensure_icon_assets(fetch_icons: bool, use_visual_pack_icons: bool = False) -
         ensure_vanilla_icon(iid, fetch_icons)
     for item in sorted(ITEMS, key=lambda i: str(i.get("id", ""))):
         ensure_custom_icon(item, fetch_icons, use_visual_pack_icons)
+    ensure_recipe_variant_assets(fetch_icons)
+    active_visual_previews = {
+        Path(entry["path"]).name
+        for entry in ICON_MANIFEST.values()
+        if entry.get("source_kind") == "visual_pack" and entry.get("path")
+    }
+    for preview in (items_root / "visual-pack").glob("*.png"):
+        if preview.name not in active_visual_previews:
+            preview.unlink()
     manifest = {
         "generated_by": "tools/generate_reference_pages.py",
         "fetch_icons": fetch_icons,
         "use_visual_pack_icons": use_visual_pack_icons,
         "minecraft_asset_version": MINECRAFT_ASSET_VERSION or EXISTING_ICON_MANIFEST.get("minecraft_asset_version", ""),
         "items": ICON_MANIFEST,
+        "recipe_variants": RECIPE_VARIANT_MANIFEST,
         "missing": [
             {"kind": kind, "id": item_id, "reason": reason}
             for kind, item_id, reason in sorted(MISSING_ICON_ROWS)
@@ -988,14 +1394,61 @@ def recipe_output_link(output_id: str, prefix: str = "../recipes/") -> str:
     return f"`{upper}`"
 
 
+def variant_icon_img(variant: dict, output_id: str, image_prefix: str = "../", css_class: str = "") -> str:
+    classes = "hl-item-icon"
+    if css_class:
+        classes += f" {css_class}"
+    label = variant.get("label") or output_id.upper()
+    if variant.get("kind") == "item":
+        return icon_img(str(variant.get("item_id", output_id)), image_prefix, label, css_class)
+    key = texture_hash(str(variant.get("texture", "")))
+    entry = RECIPE_VARIANT_MANIFEST.get(key, {"path": "images/items/system/missing.png", "status": "missing"})
+    if entry.get("status") != "ok":
+        classes += " hl-icon-missing"
+    return f'<img class="{classes}" src="{image_prefix}{entry["path"]}" alt="{attr(label)}" title="{attr(label)}">'
+
+
+def output_variant_tray(variants: list[dict], output_id: str, image_prefix: str = "../") -> str:
+    if len(variants) <= 1:
+        return ""
+    entries = []
+    for variant in variants:
+        icon = variant_icon_img(variant, output_id, image_prefix, "hl-output-variant-icon")
+        label = variant.get("label") or output_id.upper()
+        entries.append(
+            f'<span class="hl-output-variant-entry">{icon}'
+            f'<span class="hl-output-variant-label">{attr(label)}</span></span>'
+        )
+    return f'<span class="hl-output-variant-tray" role="list">{"".join(entries)}</span>'
+
+
+def output_variants_detail(recipe: dict, image_prefix: str = "../") -> str:
+    variants = recipe_output_variant_data(recipe)
+    if len(variants) <= 1:
+        return ""
+    return '<span class="hl-output-variant-list">' + "".join(
+        f'<span class="hl-output-variant-entry">'
+        f'{variant_icon_img(variant, str(recipe.get("output", "")), image_prefix, "hl-output-variant-icon")}'
+        f'<span class="hl-output-variant-label">{attr(variant.get("label") or recipe.get("output", ""))}</span></span>'
+        for variant in variants
+    ) + "</span>"
+
+
 def output_icon_cell(output_id: str, recipe_prefix: str = "../recipes/", reference_prefix: str = "../reference/", image_prefix: str = "../", recipe: dict | None = None) -> str:
     upper = output_id.upper()
     href = recipe_output_html_href(upper, recipe_prefix, reference_prefix, recipe)
-    visual = icon_img(upper, image_prefix, title=upper, css_class="hl-output-icon")
-    body = f'{visual}<span class="hl-output-name">{upper}</span>'
+    variants = recipe_output_variant_data(recipe) if recipe else []
+    primary = variants[0] if variants else {"kind": "item", "item_id": upper, "label": upper}
+    visual = variant_icon_img(primary, upper, image_prefix, "hl-output-icon")
+    caret = '<span class="hl-output-variant-caret" aria-hidden="true"></span>' if len(variants) > 1 else ""
+    body = f'<span class="hl-output-icon-frame">{visual}{caret}</span><span class="hl-output-name">{upper}</span>'
     if href:
-        return f'<a class="hl-output-item" href="{attr(href)}">{body}</a>'
-    return f'<span class="hl-output-item">{body}</span>'
+        output = f'<a class="hl-output-item" href="{attr(href)}">{body}</a>'
+    else:
+        output = f'<span class="hl-output-item">{body}</span>'
+    if len(variants) > 1:
+        return f'<span class="hl-output-with-variants">{output}{output_variant_tray(variants, upper, image_prefix)}</span>'
+    return output
 
 
 def format_options(options: list[dict], prefix: str = "../reference/") -> str:
@@ -1396,7 +1849,7 @@ def station_recipe_table(station: str, recipe_prefix: str = "../recipes/", refer
             recipe_link(recipe),
             output_visual_row(recipe, recipe_prefix, reference_prefix, image_prefix),
             ingredient_icon_strip(recipe, reference_prefix, image_prefix),
-            recipe.get("_source", ""),
+            source_badge(recipe.get("_source", ""), image_prefix),
         ])
     if not rows:
         return "No bundled recipes currently use this station."
@@ -1602,7 +2055,7 @@ def build_recipe_index() -> str:
             sections.append(f"### {rid} {{ #{recipe_anchor(recipe)} }}")
             rows = [
                 ["Output", output_visual_row(recipe, "#", "../../reference/", "../../")],
-                ["Source", recipe.get("_source", "")],
+                ["Source", source_badge(recipe.get("_source", ""), "../../")],
                 ["Processing time", f"{recipe.get('processing_time', 0)} ticks"],
                 ["Visual inputs", ingredient_icon_strip(recipe, "../../reference/", "../../")],
                 ["Ingredients", ingredient_summary(recipe)],
@@ -1615,10 +2068,169 @@ def build_recipe_index() -> str:
     return "\n".join(sections)
 
 
+def item_behavior_summary(item: dict) -> str:
+    details = []
+    if item.get("edible"):
+        details.append(f'{item.get("food_value", 0)} hunger / {item.get("saturation", 0)} saturation')
+        details.append(str(item.get("animation", "EAT")).lower())
+    if item.get("consume_return"):
+        details.append(f'returns {str(item["consume_return"]).lower().replace("_", " ")}')
+    if item.get("placeable_servings"):
+        details.append(f'{item["placeable_servings"]} placeable servings')
+    if item.get("feast"):
+        details.append("feast")
+    effects = item.get("effects", []) or []
+    if effects:
+        details.append("effects: " + ", ".join(str(effect.get("type", "")).title() for effect in effects))
+    return "; ".join(details) if details else "ingredient"
+
+
+def build_content_pack_page(
+    pack: dict,
+    banner_rel: str | None = None,
+    catalog_rel: str | None = None,
+) -> str:
+    pack_items = [item for item in ITEMS if item.get("_pack_id") == pack["id"]]
+    pack_recipes = [recipe for recipe in RECIPES if recipe.get("_pack_id") == pack["id"]]
+    configured = ", ".join(pack["providers"]) or "none"
+    textures = int(pack.get("texture_count", 0))
+    sections = [
+        f'# {pack["name"]}',
+        "",
+    ]
+    if banner_rel:
+        sections.extend([image(f"../../{banner_rel}", f'{pack["name"]} promotional banner.'), ""])
+    if catalog_rel:
+        sections.extend([
+            image(
+                f"../../{catalog_rel}",
+                f'{pack["name"]} protected catalog preview; source textures are not published.',
+            ),
+            "",
+        ])
+    sections.extend([
+        f'{pack["name"]} {pack["version"]} contains **{len(pack_items)} custom items** and **{len(pack_recipes)} recipe entries**. '
+        "The PNG sprites can be used as a visual pack without Heirloom. Heirloom 2.9+ adds the cooking stations, recipe matching, food behavior, dynamic variants, and placeable feasts.",
+        "",
+        table(["Field", "Value"], [
+            ["Pack ID", f'`{pack["id"]}`'],
+            ["Version", f'`{pack["version"]}`'],
+            ["Recipe override strength", str(pack["override_strength"])],
+            ["Items", str(len(pack_items))],
+            ["Recipe entries", str(len(pack_recipes))],
+            ["PNG sprites", str(textures)],
+            ["Bundled provider configuration", configured],
+        ]),
+        "",
+        "## Installation And Visual Providers",
+        "",
+        "Copy the files from `content/` into Heirloom's content-pack location, install the included Nexo files if Nexo is your visual provider, then run `/hl reload`. The pack always retains player-head fallbacks.",
+        "",
+        f'The release includes **{textures} raw PNG sprites**. Nexo configuration is bundled. The same sprites are suitable for **ItemsAdder** and **CraftEngine**, but their provider-specific configuration is not bundled in this release.',
+        "",
+        "## Items",
+        "",
+    ])
+    item_rows = []
+    for item in sorted(pack_items, key=lambda row: str(row.get("id", ""))):
+        iid = str(item.get("id", "")).upper()
+        item_rows.append([
+            icon_img(iid, "../../"),
+            item_link(iid, "../reference/"),
+            item.get("name", title_from_id(iid)),
+            item_behavior_summary(item),
+        ])
+    sections.extend([table(["Icon", "Item ID", "Name", "Behavior"], item_rows), ""])
+
+    sections.extend(["## Recipes", ""])
+    for station in sorted({recipe["_station"] for recipe in pack_recipes}):
+        sections.extend([f"### {station}", ""])
+        recipe_rows = []
+        for recipe in sorted(
+            [row for row in pack_recipes if row["_station"] == station],
+            key=lambda row: (str(row.get("id", "")), row.get("_source_index", 0)),
+        ):
+            recipe_rows.append([
+                recipe_link(recipe, "../recipes/"),
+                output_visual_row(recipe, "../../recipes/", "../../reference/", "../../"),
+                ingredient_icon_strip(recipe, "../../reference/", "../../"),
+                ingredient_summary(recipe, "../reference/"),
+                f'{recipe.get("processing_time", 0)} ticks',
+            ])
+        sections.extend([table(["Recipe", "Output", "Inputs", "Ingredient rules", "Time"], recipe_rows), ""])
+
+    override_ids = []
+    non_pack_ids = {
+        str(recipe.get("id", "")).upper()
+        for recipe in RECIPES
+        if recipe.get("_pack_id") != pack["id"]
+    }
+    for recipe in pack_recipes:
+        rid = str(recipe.get("id", "")).upper()
+        if rid in non_pack_ids and rid not in override_ids:
+            override_ids.append(rid)
+    if override_ids:
+        sections.extend([
+            "## Core Recipe Overrides",
+            "",
+            "This pack intentionally supplies stronger definitions for: " + ", ".join(f'`{rid}`' for rid in override_ids) + ".",
+            "",
+        ])
+
+    variant_rows = []
+    for recipe in pack_recipes:
+        variants = recipe_output_variant_data(recipe)
+        if len(variants) > 1:
+            variant_rows.append([
+                recipe_link(recipe, "../recipes/"),
+                ", ".join(str(variant.get("label", "Variant")) for variant in variants),
+            ])
+    if variant_rows:
+        sections.extend([
+            "## Dynamic Variants",
+            "",
+            "These recipes select their output visual from the matched ingredient or carried food property.",
+            "",
+            table(["Recipe", "Generated variants"], variant_rows),
+            "",
+        ])
+
+    sections.extend([
+        "## Removing The Pack",
+        "",
+        "Remove both JSON files together and run `/hl reload`. Heirloom will restore any weaker built-in recipe definitions that this pack overrode.",
+    ])
+    return "\n".join(sections)
+
+
+def content_pack_pages() -> None:
+    for pack in CONTENT_PACKS:
+        media: dict[str, str | None] = {"banner": None, "catalog": None}
+        for kind in media:
+            filename = f'{slug(pack["name"])}-{kind}.png'
+            source = PLUGIN_ROOT / "docs/marketplace/assets" / filename
+            if not source.is_file():
+                continue
+            media[kind] = f"images/content-packs/{filename}"
+            target = DOCS_ROOT / "docs" / str(media[kind])
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if not target.exists() or target.read_bytes() != source.read_bytes():
+                shutil.copyfile(source, target)
+        add(
+            f'content-packs/{slug(pack["name"])}.md',
+            build_content_pack_page(pack, media["banner"], media["catalog"]),
+        )
+
+
 def build_item_reference() -> str:
     sections = ["# Item ID Reference", "", "Source-derived reference for bundled Heirloom custom items. Use these IDs in commands, recipes, visual mappings, and config files.", ""]
     seen_ids: set[str] = set()
-    for source in ["Core", "World", "Festive", "Cafe"]:
+    sources = []
+    for item in ITEMS:
+        source = item.get("_source", "Unknown")
+        if source not in sources:
+            sources.append(source)
+    for source in sources:
         group = sorted([i for i in ITEMS if i["_source"] == source and i.get("id")], key=lambda i: i.get("id", ""))
         if not group:
             continue
@@ -1668,7 +2280,7 @@ def build_crop_reference() -> str:
         planting = crop.get("planting", {})
         rows.append([
             f'<span id="{crop_anchor(cid)}"></span>`{cid}`',
-            crop.get("_source", ""),
+            source_badge(crop.get("_source", ""), "../../"),
             crop.get("item_id", ""),
             crop.get("plant_type", ""),
             str(growth.get("base_duration_seconds", "")),
@@ -1686,7 +2298,7 @@ def build_recipe_reference() -> str:
         by_source[recipe["_source"]] += 1
         by_station[recipe["_station"]] += 1
     for source, count in sorted(by_source.items()):
-        rows.append([source, str(count)])
+        rows.append([source_badge(source, "../../"), str(count)])
     station_rows = [[station, str(count)] for station, count in sorted(by_station.items())]
     return page("Recipe Reference", f"""
 The full linked recipe index lives at [Default Recipe Index](../recipes/default-recipes.md).
@@ -1711,7 +2323,7 @@ The full linked recipe index lives at [Default Recipe Index](../recipes/default-
 def build_visual_reference() -> str:
     rows = []
     for item in sorted([i for i in ITEMS if i.get("visual_id")], key=lambda i: i["id"]):
-        rows.append([f"`{item['id']}`", item.get("visual_id", ""), item.get("_source", "")])
+        rows.append([f"`{item['id']}`", item.get("visual_id", ""), source_badge(item.get("_source", ""), "../../")])
     return page("Visual ID Reference", f"""
 `visual_id` is the logical name Heirloom asks visual providers to resolve. Nexo and ItemsAdder can both provide the same logical visual without changing recipes.
 
@@ -3246,7 +3858,7 @@ Recipe actions modify output after a recipe matches.
 | `SET_PROPERTY` | Set metadata such as display name or `food_property` |
 | `ADD_QUALITY` | Add quality to output |
 | `SET_QUALITY` | Set output quality |
-| `SET_TEXTURE` | Change player-head texture |
+| `SET_TEXTURE` | Change player-head texture; source-derived wiki recipe tables show distinct output variants when rules set different textures |
 | `SET_VISUAL_ITEM` | Swap output to a provider-neutral visual item |
 | `SET_RETURN_ITEM` | Return a container such as `BUCKET` |
 | `SET_CONSUME_RETURN` | Store return metadata for later consumption/use |
@@ -3321,7 +3933,7 @@ def legacy_path_pages():
 
 
 def build_nav() -> str:
-    return """site_name: Heirloom Wiki
+    nav = """site_name: Heirloom Wiki
 site_description: Wiki and server-owner manual for the Heirloom Minecraft cooking, gardening, Distillery, and Cafe plugins.
 site_url: https://kernel-person.github.io/heirloom-docs/
 repo_url: https://github.com/kernel-person/heirloom-docs
@@ -3486,10 +4098,17 @@ nav:
       - Distillery Admin Configuration: distillery/admin-configuration.md
       - Distillery Commands And Permissions: distillery/commands-permissions.md
 """
+    if CONTENT_PACKS:
+        rows = ["  - Content Packs:"]
+        for pack in CONTENT_PACKS:
+            rows.append(f'      - {pack["name"]}: content-packs/{slug(pack["name"])}.md')
+        nav = nav.replace("  - Addons:\n", "\n".join(rows) + "\n  - Addons:\n")
+    return nav
 
 
 def css() -> str:
-    old = (DOCS_ROOT / "docs/stylesheets/extra.css").read_text(encoding="utf-8")
+    css_path = DOCS_ROOT / "docs/stylesheets/extra.css"
+    old = css_path.read_text(encoding="utf-8") if css_path.exists() else ""
     marker = "/* Heirloom generated utility styles */"
     if marker in old:
         old = old.split(marker, 1)[0].rstrip()
@@ -3517,6 +4136,24 @@ def css() -> str:
 
 .md-typeset table:not([class]) {
   font-size: 0.78rem;
+}
+
+.md-typeset .hl-source-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 34px;
+  vertical-align: middle;
+}
+
+.md-typeset .hl-source-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 5px;
+  filter: drop-shadow(0 1px 1px rgba(43, 33, 24, 0.18));
 }
 
 .md-typeset .hl-item-icon {
@@ -3622,6 +4259,13 @@ def css() -> str:
   white-space: nowrap;
 }
 
+.md-typeset .hl-output-with-variants {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
 .md-typeset .hl-output-item {
   display: inline-flex;
   align-items: center;
@@ -3631,13 +4275,85 @@ def css() -> str:
   white-space: nowrap;
 }
 
-.md-typeset .hl-output-item .hl-item-icon {
+.md-typeset .hl-output-icon-frame {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-typeset .hl-output-item .hl-item-icon,
+.md-typeset .hl-output-variant-entry .hl-item-icon {
   width: 48px;
   height: 48px;
   border-color: color-mix(in srgb, var(--hl-border-strong) 78%, white);
   border-radius: 7px;
   background: color-mix(in srgb, var(--hl-inner) 94%, white);
   box-shadow: 0 1px 2px rgba(43, 33, 24, 0.16);
+}
+
+.md-typeset .hl-output-variant-caret {
+  position: absolute;
+  right: 0.08rem;
+  bottom: 0.08rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.88rem;
+  height: 0.78rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  background: rgba(24, 20, 18, 0.9);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+
+.md-typeset .hl-output-variant-caret::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 0.22rem solid transparent;
+  border-left: 0.22rem solid transparent;
+  border-top: 0.28rem solid #fff7e8;
+}
+
+.md-typeset .hl-output-variant-tray {
+  position: absolute;
+  top: calc(100% + 0.34rem);
+  left: 0;
+  z-index: 25;
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.34rem;
+  min-width: 14rem;
+  max-width: min(28rem, 88vw);
+  padding: 0.48rem;
+  border: 1px solid var(--hl-border-strong);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--md-default-bg-color) 96%, white);
+  box-shadow: 0 10px 24px rgba(43, 33, 24, 0.22);
+}
+
+.md-typeset .hl-output-with-variants:hover .hl-output-variant-tray,
+.md-typeset .hl-output-with-variants:focus-within .hl-output-variant-tray {
+  display: inline-flex;
+}
+
+.md-typeset .hl-output-variant-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+}
+
+.md-typeset .hl-output-variant-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  color: var(--hl-ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .md-typeset .hl-output-item:hover {
@@ -3764,6 +4480,7 @@ def navigation_scroll_js() -> str:
 def write_all():
     PAGES.clear()
     sync_marketing_images()
+    sync_source_logos()
     ensure_icon_assets(FETCH_ICONS, USE_VISUAL_PACK_ICONS)
     basic_pages()
     getting_started_pages()
@@ -3774,6 +4491,7 @@ def write_all():
     food_system_pages()
     server_owner_pages()
     customization_pages()
+    content_pack_pages()
     addons_pages()
     reference_pages()
     legacy_path_pages()

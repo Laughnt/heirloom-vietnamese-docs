@@ -1,6 +1,9 @@
 # Distillery Addon
 
-<figure><img src="../../../.gitbook/assets/distillery-banner (1).svg" alt="Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation."><figcaption><p>Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation.</p></figcaption></figure>
+<figure class="hl-figure">
+  <img src="../../images/distillery-banner.svg" alt="Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation.">
+  <figcaption>Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation.</figcaption>
+</figure>
 
 Distillery depends on Heirloom core. It adds grapes, mashables, stomping, wort, must, fermentation, distillation, named drink profiles, traits, and drunkenness systems.
 

@@ -4,9 +4,14 @@
 
 ## Search Examples
 
+<div class="hl-media-grid">
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-gui.webp" alt="Recipe search GUI"><figcaption>Recipe search GUI filtered to useful results.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-chat.webp" alt="Recipe search chat output"><figcaption>Chat search output for quick recipe lookup.</figcaption></figure>
+</div>
+
 Examples:
 
-```
+```text
 /hl search pizza
 /hl search rice
 /hl search oven
