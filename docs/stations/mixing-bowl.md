@@ -59,6 +59,6 @@ Nếu một công thức trông đúng nhưng không khớp, hãy kiểm tra xem
 
 ## Khắc phục sự cố
 
-Sử dụng công cụ kiểu xẻng cho các tương tác trộn. Trong chế độ sinh tồn, sử dụng cúp nếu bạn muốn phá vỡ trạm một cách sạch sẽ.
+Sử dụng các công cụ dạng xẻng cho những thao tác trộn. Trong chế độ Sinh tồn, hãy dùng cuốc nếu muốn phá trạm mà không làm ảnh hưởng đến các thành phần khác.
 
-Xem [chỉ mục công thức đầy đủ](../recipes/default-recipes.md) để biết liên kết nguyên liệu, thời gian chế biến, quy tắc công thức và hành động đầu ra.
+Xem [chỉ mục công thức đầy đủ](../recipes/default-recipes.md) để biết liên kết nguyên liệu, thời gian chế biến, quy tắc công thức và thành quả đầu ra.
