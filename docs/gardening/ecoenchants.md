@@ -1,18 +1,18 @@
-# EcoEnchants Integration
+# Tích hợp EcoEnchants
 
-Heirloom reads enchantment integration data from `enchantment_integrations.json` and resolves registered Bukkit enchantments by namespaced key.
+Heirloom đọc thông tin tích hợp phù phép từ `enchantment_integrations.json` và tìm đến các phù phép Bukkit đã được đăng ký bằng mã có dạng `namespace:key`.
 
-## Bundled EcoEnchants Hooks
+## Các phù phép EcoEnchants được hỗ trợ sẵn
 
-| Purpose | Keys | Behavior |
-| --- | --- | --- |
-| Force replant | `ecoenchants:replant`, `ecoenchants:replenish` | Crop resets after harvest even when it would normally be removed |
-| Fortune bonus | `ecoenchants:prospector` | Adds +1 effective Fortune per enchantment level |
+| Mục đích          | Mã                                             | Cách hoạt động                                                                         |
+| ----------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Tự động trồng lại | `ecoenchants:replant`, `ecoenchants:replenish` | Cây trồng sẽ tự động mọc lại sau khi thu hoạch, kể cả khi bình thường cây sẽ bị phá bỏ |
+| Tăng Fortune      | `ecoenchants:prospector`                       | Mỗi cấp phù phép sẽ cộng thêm 1 cấp Fortune khi tính số lượng vật phẩm nhận được       |
 
-## How This Affects Players
+## Ảnh hưởng khi chơi
 
-A replant enchantment makes farming smoother but still respects whether the crop is mature and harvestable. A Fortune bonus improves configured drop rolls; it does not invent drops that the crop JSON never defines.
+Các phù phép tự động trồng lại giúp việc trồng và thu hoạch cây thuận tiện hơn, nhưng vẫn tuân theo điều kiện của cây trồng, chẳng hạn như cây đã đủ lớn và có thể thu hoạch hay chưa. Phù phép tăng Fortune có thể làm tăng số lượng vật phẩm nhận được theo cấu hình của cây trồng. Nó không tự tạo thêm những vật phẩm mà cây trồng chưa được cấu hình để rơi ra.
 
-## Server Owner Notes
+## Lưu ý cho quản trị viên
 
-You can add other enchantment keys in the same `namespace:name` format. After editing, reload and harvest a mature test crop with the enchanted tool to confirm the integration is detected.
+Quản trị viên có thể thêm các phù phép khác bằng mã có cùng định dạng `namespace:name`. Sau khi chỉnh sửa, hãy tải lại cấu hình và thử thu hoạch một cây đã trưởng thành bằng công cụ có phù phép tương ứng để kiểm tra tích hợp hoạt động đúng.

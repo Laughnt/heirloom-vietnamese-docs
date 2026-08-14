@@ -1,3 +1,3 @@
-# Core Visual Integrations
+# Tích hợp hình ảnh cơ bản
 
-Visual docs moved to [Visual Integrations Overview](../customization/visuals-overview.md), [Nexo](../customization/nexo.md), and [ItemsAdder](../customization/itemsadder.md).
+Tài liệu về hình ảnh đã được chuyển sang [Tổng quan tích hợp hình ảnh](../customization/visuals-overview.md), [Nexo](../customization/nexo.md) và [ItemsAdder](../customization/itemsadder.md).

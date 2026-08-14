@@ -1,46 +1,46 @@
-# Gardening
+# Làm vườn
 
 <figure class="hl-figure">
-  <img src="../images/showcase/rice.gif" alt="Heirloom crops use custom display visuals and growth stages.">
-  <figcaption>Heirloom crops use custom display visuals and growth stages.</figcaption>
+  <img src="../images/showcase/rice.gif" alt="Cây trồng Heirloom với hình ảnh hiển thị và nhiều giai đoạn sinh trưởng khác nhau.">
+  <figcaption>Cây trồng Heirloom với hình ảnh hiển thị và nhiều giai đoạn sinh trưởng khác nhau.</figcaption>
 </figure>
 
-Core crops are Lettuce, Onion, Corn, Tomato, and Rice. Addons can register additional crops, such as Distillery grapes and Cafe coffee cherries.
+Heirloom có sẵn các loại cây trồng cơ bản gồm Xà lách, Hành tây, Ngô, Cà chua và Lúa. Các tiện ích bổ sung có thể thêm những loại cây trồng khác, chẳng hạn như Nho từ hệ thống ủ rượu và Quả cà phê từ hệ thống Cà phê.
 
-## Crop Gallery
+## Thư viện cây trồng
 
 <div class="hl-media-grid">
-  <figure class="hl-media-card"><a class="hl-media-link" href="lettuce/"><img src="../images/gardening/lettuce.webp" alt="Lettuce"></a><figcaption>Lettuce: Short ground crop.</figcaption></figure>
-  <figure class="hl-media-card"><a class="hl-media-link" href="onion/"><img src="../images/gardening/onion.webp" alt="Onion"></a><figcaption>Onion: Allium-style ground crop.</figcaption></figure>
-  <figure class="hl-media-card"><a class="hl-media-link" href="corn/"><img src="../images/gardening/corn.webp" alt="Corn"></a><figcaption>Corn: Tall crop with vertical room.</figcaption></figure>
-  <figure class="hl-media-card"><a class="hl-media-link" href="tomato/"><img src="../images/gardening/tomato.webp" alt="Tomato"></a><figcaption>Tomato: Wall vine crop.</figcaption></figure>
-  <figure class="hl-media-card"><a class="hl-media-link" href="rice/"><img src="../images/gardening/rice.webp" alt="Rice"></a><figcaption>Rice: Aquatic crop planted in water.</figcaption></figure>
+  <figure class="hl-media-card"><a class="hl-media-link" href="lettuce/"><img src="../images/gardening/lettuce.webp" alt="Xà lách"></a><figcaption>Xà lách: Cây trồng thấp, mọc sát mặt đất.</figcaption></figure>
+  <figure class="hl-media-card"><a class="hl-media-link" href="onion/"><img src="../images/gardening/onion.webp" alt="Hành tây"></a><figcaption>Hành tây: Cây trồng sát mặt đất, có kiểu dáng giống các loại cây thuộc họ Hành.</figcaption></figure>
+  <figure class="hl-media-card"><a class="hl-media-link" href="corn/"><img src="../images/gardening/corn.webp" alt="Ngô"></a><figcaption>Ngô: Cây trồng cao, cần có đủ không gian phía trên để phát triển.</figcaption></figure>
+  <figure class="hl-media-card"><a class="hl-media-link" href="tomato/"><img src="../images/gardening/tomato.webp" alt="Cà chua"></a><figcaption>Cà chua: Cây dạng dây leo, cần có bề mặt tường để bám.</figcaption></figure>
+  <figure class="hl-media-card"><a class="hl-media-link" href="rice/"><img src="../images/gardening/rice.webp" alt="Lúa"></a><figcaption>Lúa: Cây trồng dưới nước, cần được trồng trong nước.</figcaption></figure>
 </div>
 
-## What A Crop Is
+## Cây trồng là gì
 
-A crop is a real block plus a display entity and stored data. The block gives Minecraft something to protect, break, and interact with; the display gives Heirloom its custom visual stages; stored data tracks crop ID, growth state, facing, and optional quality.
+Một cây trồng được tạo thành từ ba phần: khối đặt cây, thực thể hiển thị và dữ liệu lưu trữ. Khối đặt cây cho phép Minecraft xử lý việc bảo vệ, phá hủy và tương tác với cây; thực thể hiển thị giúp Heirloom hiển thị hình ảnh khác nhau theo từng giai đoạn sinh trưởng; dữ liệu lưu trữ thông tin như ID cây trồng, giai đoạn sinh trưởng, hướng của cây và chất lượng nếu có.
 
-## The Growth Loop
+## Quá trình sinh trưởng
 
-1. Obtain a crop item or seed packet.
-2. Plant it on a valid block for its plant type.
-3. Let the growth timer advance through stages.
-4. Right-click the mature crop to harvest.
-5. If `replant_after_harvest` is enabled, the crop resets to an early stage instead of disappearing.
+1. Nhận vật phẩm cây trồng hoặc túi hạt giống.
+2. Trồng cây trên loại khối phù hợp với cây đó.
+3. Chờ thời gian sinh trưởng để cây lần lượt chuyển qua các giai đoạn.
+4. Nhấp chuột phải vào cây đã trưởng thành để thu hoạch.
+5. Nếu `replant_after_harvest` được bật, cây sẽ trở về giai đoạn đầu sau khi thu hoạch thay vì biến mất.
 
-## Crop Types At A Glance
+## Các loại cây trồng cơ bản
 
-- Lettuce is the simplest short ground crop.
-- Onion uses allium-style placement.
-- Corn is a tall crop and needs vertical room.
-- Tomato is a vine and needs a wall face.
-- Rice is aquatic and needs water above valid soil.
+- Xà lách là loại cây đơn giản nhất, mọc thấp và sát mặt đất.
+- Hành tây được trồng theo kiểu đặt cây giống các loại hoa thuộc họ Hành.
+- Ngô là cây cao và cần đủ khoảng trống phía trên để phát triển.
+- Cà chua là cây dây leo và cần có bề mặt tường để bám vào.
+- Lúa là cây trồng dưới nước và cần có nước phía trên lớp đất phù hợp.
 
-## Quality And Drops
+## Chất lượng và vật phẩm thu hoạch
 
-Harvest settings define normal drops, bonus drops, replanting, sounds, and quality chance. Fortune can improve configured bonus drops, and compatible custom enchantments can add effective Fortune or force replanting.
+Cấu hình thu hoạch quyết định số lượng vật phẩm rơi ra, số lượng vật phẩm thưởng, khả năng trồng lại, âm thanh và tỷ lệ nhận được chất lượng. Phù phép Fortune có thể tăng số lượng vật phẩm thưởng theo cấu hình. Một số phù phép tùy chỉnh được hỗ trợ cũng có thể tăng may mắn hoặc giúp cây tự động trồng lại.
 
-## Acquisition
+## Cách nhận cây trồng
 
-Survival access comes from grass drops, seed packets, chest loot, and natural patches. World generation and chest loot only affect new content, so old worlds may need starter items, seed packets, or admin seeding.
+Trong chế độ sinh tồn, người chơi có thể nhận cây trồng từ cỏ, túi hạt giống, chiến lợi phẩm trong rương và các loại cây xuất hiện tự nhiên. Những thế giới (worlds) đã được tạo từ trước có thể không có các loại cây mới được thêm vào trong quá trình tạo thế giới hoặc chiến lợi phẩm trong rương. Trong trường hợp đó, quản trị viên có thể cấp vật phẩm ban đầu hoặc túi hạt giống cho người chơi, hoặc tự trồng cây giúp mấy đứa nhỏ.

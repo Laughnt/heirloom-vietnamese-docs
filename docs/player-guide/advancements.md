@@ -1,13 +1,13 @@
-# Advancements
+# Thành tựu
 
 <figure class="hl-figure">
-  <img src="../../images/showcase/advancements.png" alt="Heirloom has native advancement progress.">
-  <figcaption>Heirloom has native advancement progress.</figcaption>
+  <img src="../../images/showcase/advancements.png" alt="Heirloom có sẵn hệ thống theo dõi tiến trình thành tựu.">
+  <figcaption>Heirloom có sẵn hệ thống theo dõi tiến trình thành tựu.</figcaption>
 </figure>
 
-Heirloom tracks food discovery, crop harvesting, recipe progress, collection goals, and quality milestones.
+Heirloom theo dõi quá trình khám phá món ăn, thu hoạch cây trồng, hoàn thành công thức, sưu tầm vật phẩm và đạt các mốc chất lượng.
 
-Commands:
+Các lệnh liên quan:
 
 ```text
 /hl advancements
@@ -15,8 +15,8 @@ Commands:
 /hl progress
 ```
 
-## How Progress Is Counted
+## Cách tính tiến độ
 
-Eating custom foods records the food ID and quality. Harvesting crops records crop progress. Collection advancements check whether you have eaten or harvested every item in a list, while counter advancements check totals.
+Khi người chơi ăn một món ăn tùy chỉnh, Heirloom sẽ ghi lại ID của món ăn và chất lượng của món đó. Tiến độ thu hoạch cây trồng cũng được ghi nhận tương tự. Với các thành tựu yêu cầu sưu tầm, Heirloom sẽ kiểm tra xem người chơi đã ăn hoặc thu hoạch đủ tất cả vật phẩm được yêu cầu hay chưa. Các thành tựu yêu cầu đạt đủ số lượng sẽ theo dõi tổng số lần thực hiện.
 
-Admins can customize bundled advancement data in `advancements.json`.
+Quản trị viên có thể chỉnh sửa các thành tựu được cung cấp sẵn trong tệp `advancements.json`.

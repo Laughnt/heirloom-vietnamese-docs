@@ -1,18 +1,18 @@
-# Wild Discovery And Loot
+# Tìm cây trong tự nhiên và chiến lợi phẩm
 
-`seed_acquisition.json` controls non-command crop discovery.
+Tệp `seed_acquisition.json` quyết định cách người chơi có thể tìm thấy các loại cây trồng mới trong chế độ sinh tồn mà không cần dùng lệnh.
 
-## Grass Drops
+## Hạt giống rơi từ cỏ
 
-Grass drops use a base chance plus biome modifiers. The bundled config makes lettuce and onion common in plains/meadows, tomato more common in forests, corn more common in plains/savanna, and rice more common in swamp/jungle-style areas.
+Khi phá cỏ ngoài tự nhiên, người chơi có thể nhận được hạt giống dựa trên tỷ lệ rơi cơ bản. Tỷ lệ này còn có thể được thay đổi tùy theo từng quần xã sinh vật. Với cấu hình mặc định, xà lách và hành tây thường xuất hiện ở đồng bằng và thảo nguyên, cà chua phổ biến ở rừng, ngô thường xuất hiện ở đồng bằng và xavan, còn lúa có tỷ lệ xuất hiện cao hơn ở đầm lầy và các khu rừng nhiệt đới.
 
-## Chest Loot
+## Hạt giống trong rương
 
-Village, farm, dungeon, mineshaft, and temple loot tables can receive Heirloom crop items or seed packets. The chance is per generated chest, not a guarantee for every structure.
+Các rương tự nhiên trong làng, trang trại, hầm ngục, mỏ và đền có thể chứa vật phẩm cây trồng hoặc túi hạt giống của Heirloom. Tỷ lệ xuất hiện được tính riêng cho từng rương khi rương được tạo ra, vì vậy không phải rương nào trong các công trình này cũng sẽ có cây trồng hoặc túi hạt giống.
 
-## World Generation
+## Cây trồng xuất hiện tự nhiên
 
-Natural patches are placed in new chunks only. Ground crops are the safest candidates. Vine crops need walls, and aquatic crops need water placement, so test those carefully before enabling broad worldgen.
+Các cụm cây trồng xuất hiện tự nhiên chỉ được tạo trong những chunk mới. Những loại cây mọc trên mặt đất thường dễ thiết lập nhất. Cây dây leo cần có tường để bám, trong khi cây thủy sinh cần có nước, vì vậy nên kiểm tra kỹ điều kiện trồng trước khi bật tính năng này cho từng loại cây.
 
 !!! warning
-    World generation and chest loot only affect newly generated or newly filled content. Use commands, seed packets, or custom events if you need to seed old worlds.
+    Cây trồng xuất hiện tự nhiên và cây trồng trong chiến lợi phẩm của rương chỉ được áp dụng cho các chunk hoặc rương được tạo sau khi cài đặt. Nếu muốn thêm cây trồng vào một thế giới đã có sẵn, quản trị viên có thể sử dụng lệnh, túi hạt giống hoặc các sự kiện tùy chỉnh để cung cấp chúng cho người chơi.

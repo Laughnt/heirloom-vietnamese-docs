@@ -1,8 +1,8 @@
-# Custom Foods
+# Thực phẩm tùy chỉnh
 
-Custom foods are defined in JSON under `custom_items` arrays. A custom food defines the item players can hold; recipes define how players make it.
+Thực phẩm tùy chỉnh được khai báo trong các mảng `custom_items` của tệp JSON. Phần thực phẩm tùy chỉnh xác định vật phẩm mà người chơi có thể cầm và sử dụng; còn công thức quy định cách chế biến ra vật phẩm đó.
 
-## Minimum Edible Food
+## Cấu trúc tối thiểu của thực phẩm có thể ăn
 
 ```json
 {
@@ -19,21 +19,21 @@ Custom foods are defined in JSON under `custom_items` arrays. A custom food defi
 }
 ```
 
-## Advanced Fields To Know
+## Các trường nâng cao cần biết
 
-- `consume_return`: gives an item back after eating.
-- `placeable_servings`: makes the food placeable and eaten in servings.
-- `feast`: enables shared-feast behavior.
-- `effects`: applies explicit potion effects when eaten.
-- `visual_id`: lets Nexo or ItemsAdder replace the visual without changing recipes.
+- `consume_return`: trả lại một vật phẩm sau khi ăn.
+- `placeable_servings`: cho phép đặt món ăn xuống và dùng thành nhiều phần.
+- `feast`: bật cơ chế yến tiệc dùng chung.
+- `effects`: áp dụng các hiệu ứng thuốc được chỉ định khi ăn.
+- `visual_id`: cho phép Nexo hoặc ItemsAdder thay đổi hình ảnh hiển thị mà không cần thay đổi công thức.
 
-## Common Mistakes
+## Những lỗi thường gặp
 
-- Defining an item but never adding a recipe for it.
-- Using a pretty `name` but forgetting the stable uppercase `id` used in recipes.
-- Expecting a property effect without adding a recipe action or stored property.
-- Using provider-specific visual IDs instead of stable Heirloom visual IDs.
+- Khai báo vật phẩm nhưng hông tạo công thức để chế biến ra vật phẩm đó.
+- Đặt `name` hiển thị đẹp mắt, nhưng quên `id` viết hoa ổn định được sử dụng trong công thức.
+- Mong muốn món ăn có hiệu ứng từ một thuộc tính ngẫu nhiên, nhưng lại chưa thêm thao tác công thức hoặc thuộc tính được lưu tương ứng.
+- Dùng ID hình ảnh dành riêng cho Nexo hoặc ItemsAdder thay vì ID hình ảnh chung được Heirloom sử dụng.
 
-## How To Test
+## Cách kiểm tra
 
-Use `/hl give <id>` to inspect the item definition, then craft it through the intended recipe to inspect inherited quality, properties, and returns.
+Dùng `/hl give <id>` để kiểm tra vật phẩm đã khai báo, sau đó chế biến vật phẩm bằng công thức tương ứng để kiểm tra chất lượng, thuộc tính và các vật phẩm được trả lại.

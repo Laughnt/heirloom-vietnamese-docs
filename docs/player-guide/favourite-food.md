@@ -1,40 +1,40 @@
-# Favourite Food
+# Món ăn yêu thích
 
-Favourite food is a personal RPG feature. You choose one custom food, then get extra effects whenever you eat that food ID.
+Tính năng món ăn yêu thích là một tính năng RPG cá nhân. Người chơi liên tục chọn ăn một món ăn tùy chỉnh, và nhận thêm hiệu ứng mỗi khi ăn món đó.
 
-## Command
+## Lệnh
 
 ```text
 /hl favourite
 ```
 
-Aliases:
+Lệnh viết tắt:
 
 ```text
 /hl favorite
 /hl fav
 ```
 
-## What You Get
+## Hiệu ứng nhận được
 
-Eating your favourite food applies:
+Khi ăn món ăn yêu thích, người chơi sẽ nhận được các hiệu ứng sau:
 
-| Effect | Duration | Strength |
+| Hiệu ứng | Thời gian | Cường độ |
 | --- | --- | --- |
-| Regeneration | 30 seconds | I |
-| Saturation | 15 seconds | II |
-| Luck | 60 seconds | I |
+| Hồi phục | 30 giây | I |
+| Bão hòa | 15 giây | II |
+| May mắn | 60 giây | I |
 
-These effects are added after normal food-property effects. If your favourite food is also a property-stacked food, both systems apply.
+Những hiệu ứng này được cộng thêm sau khi các hiệu ứng từ thuộc tính thực phẩm thông thường đã được áp dụng. Nếu món yêu thích của bạn cũng là món có nhiều thuộc tính chồng chất, cả hai hệ thống sẽ cùng hoạt động.
 
-## Why It Matters
+## Tại sao điều này quan trọng
 
-A plain favourite is useful. A favourite with inherited properties is stronger. For example, pancakes made with `GOLDEN` and `CHORUS` jam can apply those property effects, then the favourite-food package if pancakes are your selected favourite.
+Một món yêu thích đơn thuần đã hữu ích. Nhưng một món yêu thích có thừa hưởng nhiều thuộc tính sẽ mạnh hơn rất nhiều. Ví dụ: bánh kếp làm từ mứt `GOLDEN` và `CHORUS` có thể kích hoạt hiệu ứng từ các thuộc tính đó, rồi sau đó cộng thêm gói hiệu ứng dành cho món yêu thích nếu bánh kếp được chọn là món yêu thích của bạn.
 
-## Social Cooking
+## Nấu ăn xã hội
 
-Heirloom stores cooked-by data on edible outputs. If somebody else cooked your favourite food, the favourite check can reward the cook with a short regeneration effect. The `AFFINITY` food property also reads cooked-by data and becomes stronger when the food is also your favourite.
+Heirloom lưu dữ liệu "được nấu bởi" trên món ăn thành phẩm. Nếu một người chơi khác nấu món yêu thích của bạn, hệ thống sẽ thưởng cho người nấu một hiệu ứng hồi phục ngắn. Thuộc tính `AFFINITY` cũng sẽ đọc dữ liệu "được nấu bởi" và trở nên mạnh hơn nếu món ăn đó cũng là món yêu thích của bạn (x2 niềm vui).
 
-## Server Notes For Players
+## Lưu ý dành cho người chơi
 
-If `/hl favourite` is unavailable, ask staff whether `heirloom.favourite` is granted. The feature is permission-gated so servers can decide whether it is part of default progression.
+Nếu lệnh `/hl favourite` không khả dụng, hãy hỏi quản trị viên xem quyền `heirloom.favourite` đã được cấp chưa. Tính năng này yêu cầu quyền, vì vậy quản trị viên có thể quyết định xem nó có nằm trong quyền hạn mặc định cho người chơi hay không.

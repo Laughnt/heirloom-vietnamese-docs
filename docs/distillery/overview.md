@@ -1,3 +1,3 @@
-# Distillery Overview
+# Tổng quan về hệ thống ủ rượu
 
-Distillery docs moved to [Distillery Addon](../addons/distillery/index.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Tiện ích hệ thống ủ rượu](../addons/distillery/index.md).

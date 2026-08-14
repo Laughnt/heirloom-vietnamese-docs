@@ -1,3 +1,3 @@
-# Distillery Commands And Permissions
+# Lệnh và quyền của hệ thống ủ rượu
 
-Distillery docs moved to [Commands And Permissions](../addons/distillery/commands-permissions.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Lệnh và quyền](../addons/distillery/commands-permissions.md).

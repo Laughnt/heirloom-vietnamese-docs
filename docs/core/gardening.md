@@ -1,3 +1,3 @@
-# Core Gardening
+# Làm vườn cơ bản
 
-The gardening docs moved to [Gardening](../gardening/index.md).
+Tài liệu về hệ thống làm vườn đã được chuyển sang [Làm vườn](../gardening/index.md).

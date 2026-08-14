@@ -1,16 +1,16 @@
-# Nexo Integration
+# Tích hợp Nexo
 
-Nexo is a soft dependency. Heirloom should load without it.
+Heirloom vẫn có thể khởi động bình thường nếu không cài Nexo.
 
-## Recommended Mapping
+## Mapping được khuyến nghị
 
-Create Nexo items that match Heirloom visual IDs. A common naming convention is:
+Tạo các item Nexo có `visual ID` tương ứng với Heirloom. Quy ước đặt tên phổ biến thường là:
 
 ```text
-heirloom_<lowercase_visual_id>
+heirloom_<visual_id_viết_thường>
 ```
 
-Examples:
+Ví dụ:
 
 ```text
 heirloom_tomato
@@ -18,6 +18,8 @@ heirloom_ice_cream_chorus
 heirloom_espresso
 ```
 
-## Testing
+## Kiểm tra
 
-Start the server with Nexo installed, run `/hl reload`, then create the item through Heirloom rather than directly through Nexo. That proves the provider path is being used by recipes and commands.
+Khởi động máy chủ với Nexo đã được cài đặt, chạy `/hl reload`, sau đó tạo vật phẩm thông qua Heirloom thay vì tạo trực tiếp bằng Nexo.
+
+Cách này giúp xác nhận Heirloom đang sử dụng Nexo để tạo vật phẩm, đồng thời các công thức và lệnh của Heirloom cũng đang sử dụng Nexo đúng cách.

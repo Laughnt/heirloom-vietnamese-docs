@@ -1,17 +1,15 @@
-# Web Generator Workflow
+# Quy trình sử dụng Trình tạo công thức trên nền tảng trực tuyến
 
-The web generator is useful when you do not want to hand-write recipe JSON.
+Trình tạo công thức trên website rất hữu ích khi quản trị viên không muốn tự viết JSON cho công thức.
 
-Use it to draft recipes, then review the exported JSON before putting it on a production server.
+Quy trình được khuyến nghị:
 
-Recommended workflow:
+1. Tạo công thức bằng trình tạo.
+2. Xuất JSON.
+3. Dán JSON vào đúng tệp công thức.
+4. Kiểm tra định dạng JSON.
+5. Chạy `/hl reload`.
+6. Kiểm tra bằng `/hl search <recipe>`.
+7. Thực hiện chế tạo công thức một lần để xác nhận các thao tác, thuộc tính được kế thừa, vật phẩm được trả ra và phần hiển thị hoạt động chính xác.
 
-1. Build the recipe in the generator.
-2. Export JSON.
-3. Paste into the correct recipe file.
-4. Validate JSON formatting.
-5. Run `/hl reload`.
-6. Test with `/hl search <recipe>`.
-7. Craft the recipe once to confirm actions, inherited properties, return items, and visuals.
-
-Generator link: `https://kernel-person.github.io/heirloom-generator/`
+Liên kết của trình tạo công thức: `https://kernel-person.github.io/heirloom-generator/`

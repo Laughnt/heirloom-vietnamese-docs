@@ -1,3 +1,3 @@
-# Customization Notes
+# Ghi chú Tùy chỉnh
 
-Customization docs moved to [Customization](../customization/index.md).
+Tài liệu tùy chỉnh đã chuyển đến [Tùy chỉnh](../customization/index.md).

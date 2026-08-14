@@ -1,3 +1,3 @@
-# Distillery Mashables And Traits
+# Nguyên liệu ủ và đặc tính
 
-Distillery docs moved to [Mashables And Traits](../addons/distillery/mashables-traits.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Nguyên liệu ủ và đặc tính](../addons/distillery/mashables-traits.md).

@@ -1,3 +1,3 @@
-# Core Cooking Stations
+# Trạm nấu ăn cơ bản
 
-The station docs moved to [Cooking Stations](../stations/index.md).
+Tài liệu về các trạm nấu ăn đã được chuyển sang [Trạm nấu ăn](../stations/index.md).

@@ -1,3 +1,3 @@
-# Server Owner Guide
+# Hướng dẫn dành cho Chủ máy chủ
 
-This section is for setup, permissions, diagnostics, claim protection, localization, updates, and operational safety.
+Phần này hướng dẫn các công việc cần thiết để vận hành Heirloom, bao gồm thiết lập máy chủ, phân quyền, kiểm tra và xử lý sự cố, bảo vệ công trình, bản địa hóa ngôn từ, cập nhật thủ công và đảm bảo hệ thống hoạt động an toàn, ổn định.

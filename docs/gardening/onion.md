@@ -1,31 +1,31 @@
-# Onion
+# Hành tây
 
 <figure class="hl-figure">
-  <img src="../../images/gardening/onion.webp" alt="Onion crop planted as an allium-style ground crop.">
-  <figcaption>Onion crop planted as an allium-style ground crop.</figcaption>
+  <img src="../../images/gardening/onion.webp" alt="Cây hành tây được trồng theo kiểu Allium sát mặt đất.">
+  <figcaption>Cây hành tây được trồng theo kiểu Allium sát mặt đất.</figcaption>
 </figure>
 
-| Field | Value |
+| Trường dữ liệu | Giá trị |
 | --- | --- |
-| Item | [`ONION`](../reference/items.md#item-onion) |
-| Plant type | `ALLIUM` |
-| Base growth | 360 seconds |
-| Stages | 4 |
-| Permission | `heirloom.crop.onion` |
-| Replants | `yes` |
+| Vật phẩm | [`ONION`](../reference/items.md#item-onion) |
+| Loại cây trồng | `ALLIUM` |
+| Thời gian sinh trưởng cơ bản | 360 giây |
+| Số giai đoạn sinh trưởng | 4 |
+| Quyền cần có | `heirloom.crop.onion` |
+| Trồng lại được | `Có` |
 
-## Planting
+## Cách trồng
 
-Valid blocks: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`
+Hành tây có thể được trồng trên các khối đất sau: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`.
 
-Use the crop item on the correct block or face. If the crop has a permission, the player must have that node before planting.
+Để trồng, bạn chỉ cần cầm vật phẩm cây giống và nhấp chuột phải vào khối đất phù hợp. Nếu cây trồng yêu cầu một quyền cụ thể, người chơi phải có quyền đó trước khi có thể trồng.
 
-## Harvest
+## Thu hoạch
 
-Main drops: `ONION` 1-3.
+Khi thu hoạch hành tây, bạn sẽ nhận được từ 1 đến 3 củ hành (`ONION`).
 
-If the crop keeps `replant_after_harvest` enabled, right-click harvest resets it to an early stage. Breaking the plant is treated as destruction, not a full harvest.
+Nếu tính năng `replant_after_harvest` được bật, chỉ cần nhấp chuột phải vào cây đã trưởng thành để thu hoạch, cây sẽ tự động quay về giai đoạn phát triển ban đầu. Lưu ý rằng việc đập bỏ cây sẽ bị coi là phá hủy hoàn toàn chứ không phải một vụ thu hoạch hợp lệ.
 
-## Notes For Admins
+## Lưu ý cho quản trị viên
 
-Edit this crop in `crops.json` or the relevant addon crop file. Growth scale, stage count, valid blocks, sounds, drop chances, quality chance, and permission nodes are all data-driven.
+Quản trị viên có thể chỉnh sửa cây trồng này trong `crops.json` hoặc tệp cấu hình cây trồng của tiện ích liên quan. Các thông số như tốc độ tăng trưởng, số giai đoạn, khối đất hợp lệ, âm thanh, tỷ lệ rơi vật phẩm, tỷ lệ ra chất lượng và quyền cần thiết đều hoàn toàn có thể cấu hình được qua dữ liệu.

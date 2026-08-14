@@ -1,6 +1,6 @@
-# Cafe Configuration
+# Cấu hình hệ thống Cà phê
 
-Cafe writes editable resources to `plugins/HeirloomCafe/`:
+Hệ thống Cà phê ghi các tài nguyên có thể chỉnh sửa vào thư mục `plugins/HeirloomCafe/`:
 
 - `custom_items-cafe.json`
 - `crops-cafe.json`
@@ -8,8 +8,8 @@ Cafe writes editable resources to `plugins/HeirloomCafe/`:
 - `config.yml`
 - `lang/en.yml`
 
-Cafe unregisters and re-registers its addon-owned items, crops, and recipes on reload callbacks so the recipe browser can refresh.
+Hệ thống Cà phê sẽ hủy đăng ký và đăng ký lại các vật phẩm, cây trồng và công thức thuộc sở hữu của tiện ích khi gọi lệnh tải lại, giúp trình duyệt công thức có thể làm mới.
 
-## Test After Changes
+## Kiểm tra sau khi thay đổi
 
-After recipe edits, run `/hl reload`, search for `cafe`, then test one coffee chain and one tea chain. That catches both core-station prep and Barista Machine assembly.
+Sau khi chỉnh sửa công thức, hãy chạy `/hl reload`, tìm kiếm từ khoá `cafe`, sau đó kiểm tra một chuỗi công thức cà phê và một chuỗi công thức trà, giúp kiểm tra cả khâu sơ chế tại các trạm nấu ăn cơ bản lẫn bước pha chế tại Máy pha chế.

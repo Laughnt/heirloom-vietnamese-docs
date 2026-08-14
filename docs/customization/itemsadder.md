@@ -1,11 +1,11 @@
-# ItemsAdder Integration
+## Tích hợp ItemsAdder
 
-ItemsAdder is a soft dependency. Heirloom uses the same logical `visual_id` path for ItemsAdder as it does for Nexo.
+ItemsAdder là **soft dependency**. Heirloom sử dụng cùng đường dẫn logic `visual_id` cho ItemsAdder giống như với Nexo.
 
-## Recommended Mapping
+## Ánh xạ được khuyến nghị
 
-Create ItemsAdder custom stacks for the visual IDs your server wants to replace. Keep IDs stable so recipe actions such as `SET_VISUAL_ITEM` do not need to change.
+Tạo các custom stack trong ItemsAdder tương ứng với những `visual_id` mà máy chủ của bạn muốn thay thế. Nên giữ ID ổn định để các recipe action như `SET_VISUAL_ITEM` không cần phải thay đổi.
 
-## Fallback Rule
+## Quy tắc dự phòng
 
-If ItemsAdder is missing or an item is not mapped, the normal Heirloom item is still created. Test this fallback before launch so players are not blocked by a visual-pack mistake.
+Nếu ItemsAdder không được cài đặt hoặc một item chưa được ánh xạ, item Heirloom thông thường vẫn được tạo. Hãy kiểm tra cơ chế dự phòng này trước khi đưa lên máy chủ chính để tránh việc người chơi bị chặn do lỗi cấu hình visual pack.

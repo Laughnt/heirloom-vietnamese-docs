@@ -1,26 +1,26 @@
-# Command Reference
+# Tham chiếu lệnh
 
-## Core
+## Lệnh cơ bản
 
-| Command | Purpose | Permission |
+| Lệnh | Mục đích | Quyền |
 | --- | --- | --- |
-| `/hl` | Open main menu | `heirloom.use` |
-| `/hl help` | Help | `heirloom.use` |
-| `/hl cookbook` | Give recipe book | `heirloom.cookbook` |
-| `/hl recipes` | Recipe browser | `heirloom.recipes` |
-| `/hl search <query>` | Recipe search | `heirloom.recipes` |
-| `/hl advancements` | Advancement progress | `heirloom.advancements` |
-| `/hl favourite` | Favourite food GUI | `heirloom.favourite` |
-| `/hl mastery` | Cooking mastery | `heirloom.mastery` |
-| `/hl list <items|recipes|dietary>` | List content | `heirloom.use` |
-| `/hl give <item> [amount]` | Give item | `heirloom.give` |
-| `/hl cheat` | Admin item GUI | `heirloom.cheat` |
-| `/hl reload` | Reload supported data | `heirloom.reload` |
-| `/hl lang list` | Locale list | `heirloom.reload` |
-| `/hl lang missing <locale>` | Missing locale keys | `heirloom.reload` |
-| `/hl debug test` | Diagnostics | `heirloom.debug` |
-| `/hl cleanup [radius]` | Remove orphan entities | `heirloom.admin` |
+| `/hl` | Mở menu chính | `heirloom.use` |
+| `/hl help` | Trợ giúp | `heirloom.use` |
+| `/hl cookbook` | Đưa sách công thức | `heirloom.cookbook` |
+| `/hl recipes` | Trình duyệt công thức | `heirloom.recipes` |
+| `/hl search <truy vấn>` | Tìm kiếm công thức | `heirloom.recipes` |
+| `/hl advancements` | Tiến trình thành tựu | `heirloom.advancements` |
+| `/hl favourite` | Giao diện món ăn yêu thích | `heirloom.favourite` |
+| `/hl mastery` | Thành thạo nấu ăn | `heirloom.mastery` |
+| `/hl list <vật phẩm|công thức|chế độ ăn>` | Liệt kê nội dung | `heirloom.use` |
+| `/hl give <vật phẩm> [số lượng]` | Đưa vật phẩm tới người chơi | `heirloom.give` |
+| `/hl cheat` | Giao diện vật phẩm quản trị | `heirloom.cheat` |
+| `/hl reload` | Tải lại dữ liệu được hỗ trợ | `heirloom.reload` |
+| `/hl lang list` | Danh sách ngôn ngữ | `heirloom.reload` |
+| `/hl lang missing <ngôn ngữ>` | Khóa ngôn ngữ bị thiếu | `heirloom.reload` |
+| `/hl debug test` | Chẩn đoán lỗi | `heirloom.debug` |
+| `/hl cleanup [bán kính]` | Xóa thực thể đơn lẻ | `heirloom.admin` |
 
-## Addons
+## Tiện ích bổ sung
 
-See [Distillery Commands](../addons/distillery/commands-permissions.md) and [Cafe Commands](../addons/cafe/commands-permissions.md).
+Xem [Lệnh Distillery](../addons/distillery/commands-permissions.md) và [Lệnh Cafe](../addons/cafe/commands-permissions.md).

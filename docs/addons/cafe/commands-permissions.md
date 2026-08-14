@@ -1,14 +1,14 @@
-# Cafe Commands And Permissions
+# Lệnh và Quyền của hệ thống Cà phê
 
-Use `/hlc` for Cafe-specific addon commands. Cafe recipes also appear in the normal Heirloom `/hl` recipe browser.
+Sử dụng `/hlc` cho các lệnh dành riêng của tiện ích Cà phê. Các công thức của Cà phê cũng xuất hiện trong trình duyệt công thức `/hl` của Heirloom.
 
-| Command | Purpose | Permission |
+| Lệnh | Mục đích | Quyền |
 | --- | --- | --- |
-| `/hlc help` | Help | `heirloom.cafe.use` |
-| `/hlc list` | List Cafe items | `heirloom.cafe.use` |
-| `/hlc give <item> [amount]` | Give Cafe items | `heirloom.cafe.admin` |
-| `/hlc reload` | Reload Cafe resources | `heirloom.cafe.admin` |
+| `/hlc help` | Trợ giúp | `heirloom.cafe.use` |
+| `/hlc list` | Liệt kê các vật phẩm của Cà phê | `heirloom.cafe.use` |
+| `/hlc give <vật phẩm> [số lượng]` | Cấp vật phẩm của Cà phê | `heirloom.cafe.admin` |
+| `/hlc reload` | Tải lại tài nguyên Cà phê | `heirloom.cafe.admin` |
 
-## Practical Notes
+## Lưu ý thực tế
 
-Players usually only need the normal Heirloom menu and recipe search. Admins use `/hlc list` and `/hlc give` while testing Cafe item IDs, then `/hl reload` or the addon reload path after resource edits.
+Người chơi thông thường chỉ cần sử dụng trình duyệt công thức và tìm kiếm món ăn của Heirloom. Quản trị viên sử dụng `/hlc list` và `/hlc give` khi kiểm tra ID vật phẩm của Cà phê, sau đó dùng `/hl reload` hoặc đường dẫn tải lại tiện ích sau khi chỉnh sửa thiết đặt.

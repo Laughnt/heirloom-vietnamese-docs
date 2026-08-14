@@ -1,27 +1,27 @@
-# Food Quality
+# Chất lượng món ăn
 
-Food quality is stored on custom foods and ingredients. It is not just flavor text: quality is part of progression, advancement tracking, and recipe identity.
+Chất lượng được lưu trên các món ăn và nguyên liệu tùy chỉnh. Chất lượng không chỉ để mô tả món ăn mà còn ảnh hưởng đến quá trình tiến triển, thành tựu và kết quả của công thức.
 
-## What Changes Quality
+## Những yếu tố ảnh hưởng đến chất lượng
 
-- Recipe actions can set a base quality or add to it.
-- Ingredient quality can carry into later foods; the crafting code keeps the best input quality when no explicit quality is supplied.
-- Crops can store quality and keep it when replanted after harvest.
-- Cooking Mastery adds a recipe-specific quality bonus as you repeat the same recipe.
+- Công thức có thể đặt chất lượng ban đầu hoặc cộng thêm chất lượng.
+- Chất lượng của nguyên liệu có thể được truyền sang món ăn tiếp theo. Nếu công thức không quy định chất lượng cụ thể, Heirloom sẽ lấy mức chất lượng cao nhất trong các nguyên liệu được sử dụng.
+- Cây trồng có thể lưu lại chất lượng và giữ nguyên chất lượng đó khi được trồng lại sau khi thu hoạch.
+- Hệ thống Tinh thông nấu ăn sẽ cộng thêm một mức thưởng chất lượng riêng cho từng công thức khi người chơi chế biến công thức đó nhiều lần.
 
-## Reading Quality In Play
+## Xem chất lượng trong hệ thống cây trồng
 
-Quality appears in item names and lore. If two players make the same recipe but one uses better ingredients or has more mastery, their outputs can differ.
+Chất lượng được hiển thị trong tên và phần mô tả của vật phẩm. Vì vậy, hai người chơi cùng làm một công thức vẫn có thể nhận được món ăn có chất lượng khác nhau nếu sử dụng nguyên liệu khác nhau hoặc có mức Tinh thông nấu ăn khác nhau.
 
-## Quality Tooltip Example
+## Ví dụ về hiển thị chất lượng
 
 <figure class="hl-figure">
-  <img src="../../images/showcase/food-quality-tooltip.webp" alt="Food quality tooltip">
-  <figcaption>Quality and dietary data are visible directly in item lore.</figcaption>
+  <img src="../../images/showcase/food-quality-tooltip.webp" alt="Thông tin chất lượng món ăn">
+  <figcaption>Thông tin về chất lượng và thuộc tính dinh dưỡng được hiển thị ngay trong phần mô tả của vật phẩm.</figcaption>
 </figure>
 
-## Why It Matters
+## Vì sao chất lượng quan trọng
 
-Quality supports long-term goals: better crops, better repeated cooking, and quality-based advancements. If a recipe feels unrewarding, check whether it is setting quality too low or never inheriting quality from its ingredients.
+Chất lượng tạo thêm mục tiêu lâu dài cho người chơi, từ việc trồng cây có chất lượng cao hơn, chế biến món ăn ngày càng tốt hơn cho đến việc hoàn thành các thành tựu dựa trên chất lượng. Nếu một công thức không mang lại cảm giác xứng đáng, hãy kiểm tra xem công thức có đặt chất lượng quá thấp hoặc không kế thừa chất lượng từ nguyên liệu hay không.
 
-Server owners can inspect the data side in [Custom Recipes](../customization/custom-recipes.md).
+Quản trị viên có thể xem phần cấu hình tương ứng tại [Công thức tùy chỉnh](../customization/custom-recipes.md).

@@ -1,3 +1,3 @@
-# Distillery Inebriation
+# Trạng thái say rượu
 
-Distillery docs moved to [Inebriation](../addons/distillery/inebriation.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Trạng thái say rượu](../addons/distillery/inebriation.md).

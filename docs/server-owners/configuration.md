@@ -1,17 +1,17 @@
-# Configuration
+# Cấu hình
 
-Core files live in `plugins/Heirloom/` after first startup.
+Các tệp lõi nằm trong `plugins/Heirloom/` sau lần khởi động đầu tiên.
 
-| File | Purpose |
+| Tệp | Mục đích |
 | --- | --- |
-| `config.yml` | License key and locale |
-| `custom_items.json` | Core item definitions |
-| `recipes.json` | Core recipes |
-| `crops.json` | Core crops |
-| `dietary_properties.json` | Diet labels and hierarchy |
-| `seed_acquisition.json` | Seed packets, grass drops, loot, world patches |
-| `advancements.json` | Advancement definitions |
-| `enchantment_integrations.json` | EcoEnchants and compatible enchantment keys |
-| `lang/<locale>.yml` | Locale files |
+| `config.yml` | Giấy phép và ngôn ngữ |
+| `custom_items.json` | Định nghĩa vật phẩm lõi |
+| `recipes.json` | Công thức lõi |
+| `crops.json` | Cây trồng lõi |
+| `dietary_properties.json` | Nhãn chế độ ăn và phân cấp |
+| `seed_acquisition.json` | Gói hạt giống, rơi từ cỏ, loot, vá thế giới |
+| `advancements.json` | Định nghĩa tiến trình thành tựu |
+| `enchantment_integrations.json` | Tương thích EcoEnchants và các khóa phù phép tương thích |
+| `lang/<locale>.yml` | Tệp ngôn ngữ |
 
-Run `/hl reload` after supported JSON and language changes. Restart after jar, dependency, or large visual-pack changes.
+Chạy `/hl reload` sau khi thay đổi JSON và ngôn ngữ được hỗ trợ. Khởi động lại sau khi thay đổi jar, dependency, hoặc gói hình ảnh lớn.

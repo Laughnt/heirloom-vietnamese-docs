@@ -1,3 +1,3 @@
-# Configuration Files
+# Tệp Cấu hình
 
-This reference moved to [Config Files](config-files.md).
+Tài liệu tham khảo này đã được chuyển sang [Tệp Cấu hình](config-files.md).

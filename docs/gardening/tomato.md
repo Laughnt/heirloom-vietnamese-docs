@@ -1,31 +1,31 @@
-# Tomato
+# Cà chua
 
 <figure class="hl-figure">
-  <img src="../../images/gardening/tomato.webp" alt="Tomato crop growing as a vine.">
-  <figcaption>Tomato crop growing as a vine.</figcaption>
+  <img src="../../images/gardening/tomato.webp" alt="Cây cà chua phát triển theo dạng dây leo.">
+  <figcaption>Cây cà chua phát triển theo dạng dây leo.</figcaption>
 </figure>
 
-| Field | Value |
+| Trường dữ liệu | Giá trị |
 | --- | --- |
-| Item | [`TOMATO`](../reference/items.md#item-tomato) |
-| Plant type | `VINE` |
-| Base growth | 420 seconds |
-| Stages | 4 |
-| Permission | `heirloom.crop.tomato` |
-| Replants | `yes` |
+| Vật phẩm | [`TOMATO`](../reference/items.md#item-tomato) |
+| Loại cây trồng | `VINE` |
+| Thời gian sinh trưởng cơ bản | 420 giây |
+| Số giai đoạn sinh trưởng | 4 |
+| Quyền cần có | `heirloom.crop.tomato` |
+| Trồng lại được | `Có` |
 
-## Planting
+## Cách trồng
 
-Valid blocks: see crop JSON
+Cà chua có thể được trồng trên các khối được định nghĩa trong tệp cấu hình cây trồng (xem `crops.json`).
 
-Use the crop item on the correct block or face. If the crop has a permission, the player must have that node before planting.
+Để trồng, cầm vật phẩm cây giống và nhấp chuột phải vào khối đất phù hợp. Nếu cây trồng yêu cầu quyền cụ thể, người chơi phải có quyền trồng loại cây đó, trước khi tiến hành gieo trồng.
 
-## Harvest
+## Thu hoạch
 
-Main drops: `TOMATO` 1-2.
+Khi thu hoạch cà chua, người chơi sẽ nhận được từ 1 đến 2 quả cà chua (`TOMATO`).
 
-If the crop keeps `replant_after_harvest` enabled, right-click harvest resets it to an early stage. Breaking the plant is treated as destruction, not a full harvest.
+Nếu bật `replant_after_harvest`, chỉ cần nhấp chuột phải vào cây đã trưởng thành để thu hoạch, cây sẽ tự động quay về giai đoạn đầu. Lưu ý rằng hành động phá bỏ cây được xem là phá hủy hoàn toàn, không phải một vụ thu hoạch hợp lệ.
 
-## Notes For Admins
+## Lưu ý cho quản trị viên
 
-Edit this crop in `crops.json` or the relevant addon crop file. Growth scale, stage count, valid blocks, sounds, drop chances, quality chance, and permission nodes are all data-driven.
+Quản trị viên có thể chỉnh sửa cây trồng này trong `crops.json` hoặc tệp cấu hình của tiện ích liên quan. Tốc độ sinh trưởng, số giai đoạn, các khối cho phép trồng, âm thanh, tỷ lệ rơi, tỷ lệ ra chất lượng và quyền yêu cầu đều được thiết lập hoàn toàn qua dữ liệu cấu hình.

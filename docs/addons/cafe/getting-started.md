@@ -1,13 +1,13 @@
-# Cafe Getting Started
+# Bắt đầu với hệ thống Cà phê
 
-1. Install Heirloom core.
-2. Install HeirloomCafe.
-3. Restart the server.
-4. Confirm `/hlc help` works.
-5. Build a Barista Machine: iron trapdoor above quartz stairs.
+1. Cài đặt Heirloom phần lõi.
+2. Cài đặt HeirloomCafe.
+3. Khởi động lại máy chủ.
+4. Kiểm tra lệnh `/hlc help` hoạt động.
+5. Chế tạo Máy pha chế: cửa sập sắt (iron trapdoor) đặt phía trên bậc thang thạch anh (quartz stairs).
 
-Core station recipes handle roasting and grinding. Barista Machine recipes handle drink assembly.
+Các công thức tại trạm nấu ăn cơ bản xử lý công đoạn rang và nghiền. Các công thức tại Máy pha chế xử lý công đoạn pha chế đồ uống.
 
-## First Successful Flow
+## Luồng chế biến thành công đầu tiên
 
-Roast coffee cherries into beans, pull espresso, then make an americano. That proves the Oven chain, the Barista Machine, and drink assembly before you add milk variants.
+Hãy bắt đầu bằng việc rang quả cà phê thành hạt, pha espresso rồi dùng espresso để pha americano. Đây là chuỗi kiểm tra cơ bản giúp xác nhận Lò nướng, Máy pha chế và toàn bộ quy trình pha đồ uống hoạt động đúng trước khi bạn thêm các loại sữa khác nhau.

@@ -1,15 +1,15 @@
-# Recipe Search
+# Tìm kiếm công thức
 
-`/hl search <query>` searches recipes by name, station, addon, ingredient, or output. It is the fastest way to follow a chain backward.
+`/hl search <từ khóa>` cho phép tìm công thức dựa trên tên món ăn, trạm nấu, tiện ích, nguyên liệu hoặc vật phẩm tạo ra. Đây là cách nhanh nhất để tìm lại các bước trong một chuỗi chế biến.
 
-## Search Examples
+## Ví dụ tìm kiếm
 
 <div class="hl-media-grid">
-  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-gui.webp" alt="Recipe search GUI"><figcaption>Recipe search GUI filtered to useful results.</figcaption></figure>
-  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-chat.webp" alt="Recipe search chat output"><figcaption>Chat search output for quick recipe lookup.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-gui.webp" alt="Giao diện tìm kiếm công thức"><figcaption>Giao diện tìm kiếm công thức với các kết quả phù hợp.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-chat.webp" alt="Kết quả tìm kiếm công thức trong khung trò chuyện"><figcaption>Kết quả tìm kiếm được hiển thị trong khung trò chuyện để tra cứu nhanh.</figcaption></figure>
 </div>
 
-Examples:
+Ví dụ:
 
 ```text
 /hl search pizza
@@ -19,10 +19,10 @@ Examples:
 /hl search jam
 ```
 
-## How To Use Search Well
+## Cách tìm kiếm hiệu quả
 
-Search the ingredient you are holding, not only the food you want. If you have `RICE`, search rice to find cooked rice and later meal paths. If you have `JAM`, search jam to find pancakes, doughnuts, or any server-added recipes that use it.
+Nên tìm nguyên liệu đang có thay vì chỉ tìm món ăn muốn làm. Ví dụ, nếu đang có `RICE`, hãy tìm "rice" để xem cách nấu cơm và những món có thể làm tiếp từ cơm. Nếu đang có `JAM`, hãy tìm "jam" để xem các công thức làm bánh kếp, bánh rán hoặc những món khác của máy chủ có sử dụng mứt.
 
-## Recipe Detail Preview
+## Xem trước công thức
 
-The in-game recipe detail view simulates the selected inputs. When a selected ingredient has food properties or dietary data, the preview can show the resulting lore before you cook it.
+Giao diện công thức sẽ cho biết món ăn có thể tạo ra từ những nguyên liệu đã chọn. Nếu nguyên liệu có thuộc tính thực phẩm hoặc thông tin dinh dưỡng, các thông tin này cũng sẽ được hiển thị trước khi chế biến.

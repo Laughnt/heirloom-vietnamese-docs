@@ -1,29 +1,30 @@
-# Custom Crops
+# Cây trồng tùy chỉnh
 
-Crop JSON defines plant type, growth behavior, planting rules, textures, and harvest drops.
+Tệp JSON của cây trồng quy định loại cây, cách cây phát triển, điều kiện gieo trồng, hình ảnh hiển thị và vật phẩm nhận được khi thu hoạch.
 
-## Minimum Crop Shape
+## Cấu trúc tối thiểu
 
-A crop needs an item ID, plant type, growth settings, planting rules, textures, and harvest rules. Use an existing crop close to your desired behavior as the starting point: lettuce for ground crops, tomato for vines, rice for aquatic crops, corn for tall crops.
+Một cây trồng bình thường cần có ID vật phẩm, loại cây, thiết lập sinh trưởng, quy tắc gieo trồng, hình ảnh sẽ hiển thị và quy tắc thu hoạch loại cây trồng đó. Khi quản trị viên chuẩn bị tạo cây trồng mới, nên lấy một cây có cơ chế gần với mong muốn làm mẫu: xà lách cho cây trồng trên mặt đất, cà chua cho cây dây leo, lúa cho cây trồng dưới nước và ngô cho cây thân cao.
 
-## Important Sections
+## Các phần quan trọng
 
-- `growth`: duration, variance, stages, and scale.
-- `planting`: valid blocks, item consumption, and permission.
-- `textures`: growing and ripe display textures.
-- `harvest`: drops, bonus drops, replanting, sounds, and quality chance.
+- `growth`: thời gian sinh trưởng, khả năng xuất hiện biến thể, các giai đoạn phát triển và kích thước sẽ hiển thị.
+- `planting`: các khối có thể gieo trồng, vật phẩm trồng cây tiêu hao và quyền cần thiết cho việc trồng.
+- `textures`: hình ảnh hiển thị trong quá trình sinh trưởng và khi cây đã trưởng thành.
+- `harvest`: vật phẩm rơi ra, vật phẩm thưởng thêm, khả năng trồng lại, âm thanh phát ra và tỉ lệ nhận được nông sản chất lượng cao.
 
-## Design Choices
+## Lựa chọn cách thiết kế
 
-Choose a plant type based on physical behavior. A tomato-like crop should be a vine because it needs a wall. A rice-like crop should be aquatic because the water requirement is part of gameplay. Do not use a display offset to fake a crop type that has different block rules.
+Hãy chọn loại cây dựa trên cách cây hoạt động và phát triển trong thế giới. Cây giống cà chua nên được thiết lập là dây leo vì cần có tường để phát triển. Cây giống lúa nên được thiết lập là cây trồng dưới nước vì yêu cầu về nước là một phần của cơ chế trồng trọt. Không nên dùng độ lệch hiển thị để “giả” một loại cây khác khi điều kiện đặt cây của nó không giống nhau.
 
-## Common Mistakes
+## Những lỗi thường gặp
 
-- Enabling world generation for a vine crop without natural wall positions.
-- Giving aquatic crops to players before they know the water placement rule.
-- Adding bonus drops that require Fortune, then testing with an unenchanted tool.
-- Forgetting crop permissions when planting works for admins but not players.
+- Bật sinh cây tự nhiên cho cây dây leo, nhưng không có vị trí tường phù hợp để sinh trưởng.
+- Cho người chơi cây trồng dưới nước, trong khi phải trên nước mới sống.
+- Thêm vật phẩm thưởng có tính đến phù phép May mắn nhưng lại dùng công cụ chưa có phù phép để kiểm tra, nên không thể xác nhận chính xác số lượng vật phẩm nhận được.
+- Quên cấp quyền trồng cây, khiến quản trị viên trồng được nhưng người chơi lại không thể.
 
-## How To Test
 
-Plant it, wait or speed up growth, harvest it, confirm drops, confirm replanting, then test in a protected region with a normal player.
+## Cách kiểm tra
+
+Gieo cây, chờ cây lớn hoặc tăng tốc quá trình sinh trưởng, rồi thu hoạch để kiểm tra vật phẩm nhận được. Sau đó, hãy thử trồng lại cây và kiểm tra trong khu vực được bảo vệ bằng một người chơi bình thường để chắc chắn mọi thứ đều hoạt động đúng.

@@ -1,8 +1,8 @@
-# Vanilla Ingredient Reference
+# Tham chiếu Nguyên liệu Vanilla
 
-Source-derived list of vanilla Minecraft items used by bundled Heirloom recipes or as custom item base materials.
+Danh sách các vật phẩm Minecraft vanilla được xác định từ mã nguồn, được sử dụng trong các công thức Heirloom có sẵn hoặc làm vật liệu cơ sở cho vật phẩm tùy chỉnh.
 
-| Icon | ID | Name | Icon status |
+| Biểu tượng | ID | Tên | Trạng thái biểu tượng |
 | --- | --- | --- | --- |
 | <img class="hl-item-icon" src="../../images/items/minecraft/acacia-leaves.png" alt="ACACIA_LEAVES" title="ACACIA_LEAVES"> | <span id="vanilla-item-acacia-leaves"></span>`ACACIA_LEAVES` | Acacia Leaves | ok |
 | <img class="hl-item-icon" src="../../images/items/minecraft/allium.png" alt="ALLIUM" title="ALLIUM"> | <span id="vanilla-item-allium"></span>`ALLIUM` | Allium | ok |

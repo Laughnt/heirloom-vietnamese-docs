@@ -1,3 +1,3 @@
-# Reference
+# Tham khảo
 
-Reference pages are for exact IDs, commands, permissions, and JSON fields. Use guide pages first when learning a system.
+Các trang tham khảo dành cho các ID chính xác, lệnh, quyền và trường JSON. Hãy sử dụng các trang hướng dẫn trước khi tìm hiểu một hệ thống.

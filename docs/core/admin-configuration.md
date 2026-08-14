@@ -1,3 +1,3 @@
-# Core Admin Configuration
+# Cấu hình quản trị cơ bản
 
-Server owner docs moved to [Configuration](../server-owners/configuration.md).
+Tài liệu dành cho quản trị viên máy chủ đã được chuyển sang [Cấu hình](../server-owners/configuration.md).

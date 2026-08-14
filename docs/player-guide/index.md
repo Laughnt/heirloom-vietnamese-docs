@@ -1,5 +1,5 @@
-# Player Guide
+# Hướng dẫn dành cho người chơi
 
-This section explains Heirloom as a game system rather than a config file. Read it when you want to know what a player is expected to do, what the item lore means, and why a recipe result changed.
+Phần này giải thích Heirloom dưới góc nhìn của người chơi, thay vì tập trung vào các tệp cấu hình. Hãy đọc phần này để hiểu người chơi cần làm gì, các dòng mô tả trên vật phẩm có ý nghĩa gì và vì sao kết quả của một công thức có thể thay đổi.
 
-Start with [Cooking Basics](cooking.md), then use [Recipe Search](recipe-search.md), [Favourite Food](favourite-food.md), [Food Quality](quality.md), and [Farming And Seed Discovery](seed-discovery.md).
+Hãy bắt đầu với [Kiến thức cơ bản về nấu ăn](cooking.md), sau đó xem [Tìm kiếm công thức](recipe-search.md), [Món ăn yêu thích](favourite-food.md), [Chất lượng món ăn](quality.md) và [Trồng cây và tìm hạt giống](seed-discovery.md).

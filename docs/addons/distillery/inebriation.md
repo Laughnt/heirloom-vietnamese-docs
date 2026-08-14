@@ -1,18 +1,18 @@
-# Inebriation
+# Trạng thái say
 
-Distillery tracks drunkenness separately from ordinary food. Drinks can raise a player's level, affect chat through slurring rules, and trigger blackout or wakeup behavior depending on configuration.
+Hệ thống ủ rượu theo dõi trạng thái say riêng biệt hoàn toàn so với thức ăn thông thường. Đồ uống có thể làm tăng mức độ say của người chơi, ảnh hưởng đến khung chat qua các quy tắc nói lắp, và kích hoạt hành vi ngất xỉu hoặc tỉnh dậy tùy theo cấu hình.
 
-Useful commands:
+Các lệnh hữu ích:
 
 ```text
 /hld drunk
-/hld setdrunk <player> <level>
-/hld adddrunk <player> <amount>
+/hld setdrunk <người chơi> <mức độ>
+/hld adddrunk <người chơi> <số lượng>
 /hld wakeup list
 ```
 
-## Sobering Food
+## Thực phẩm giải rượu
 
-The Heirloom `SOBERING` food property connects back into Distillery. When Distillery is loaded and inebriation is enabled, eating a food with `SOBERING` drains drunkenness by the configured amount, default 15.
+Thuộc tính thực phẩm `SOBERING` (giải rượu) của Heirloom được kết nối với hệ thống ủ rượu. Khi tiện ích được tải và hệ thống say được bật, ăn thực phẩm có `SOBERING` sẽ giảm mức độ say theo % được cấu hình sẵn, mặc định là 15.
 
-Use this for server foods such as strong coffee, greasy meals, or custom hangover cures.
+Quản trị viên có thể sử dụng tính năng này cho các món ăn trên máy chủ như cà phê đậm, đồ ăn nhiều dầu mỡ, hoặc các loại thuốc giải rượu tùy chỉnh.

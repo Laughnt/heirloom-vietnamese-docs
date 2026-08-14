@@ -1,36 +1,36 @@
-# Permission Reference
+# Tham chiếu Quyền
 
-## Core
+## Hệ thống
 
-| Permission | Default | Purpose |
-| --- | --- | --- |
-| `heirloom.use` | true | Basic access |
-| `heirloom.cookbook` | true | Recipe book command |
-| `heirloom.recipes` | true | Recipe browser and search |
-| `heirloom.advancements` | true | Advancement GUI |
-| `heirloom.favourite` | true | Favourite food GUI |
-| `heirloom.mastery` | true | Mastery GUI |
-| `heirloom.give` | op | Give custom items |
-| `heirloom.cheat` | op | Cheat item GUI |
-| `heirloom.reload` | op | Reload data and language diagnostics |
-| `heirloom.debug` | op | Debug tools |
-| `heirloom.admin` | op | Parent admin node |
+| Quyền                   | Mặc định | Chức năng                                    |
+| ----------------------- | -------- | -------------------------------------------- |
+| `heirloom.use`          | true     | Quyền sử dụng các chức năng cơ bản           |
+| `heirloom.cookbook`     | true     | Quyền sử dụng lệnh mở sách công thức         |
+| `heirloom.recipes`      | true     | Quyền mở giao diện xem và tìm kiếm công thức |
+| `heirloom.advancements` | true     | Quyền mở giao diện thành tựu                 |
+| `heirloom.favourite`    | true     | Quyền mở giao diện món ăn yêu thích          |
+| `heirloom.mastery`      | true     | Quyền mở giao diện thông thạo                |
+| `heirloom.give`         | op       | Quyền cấp vật phẩm tùy chỉnh                 |
+| `heirloom.cheat`        | op       | Quyền mở giao diện vật phẩm gian lận         |
+| `heirloom.reload`       | op       | Quyền tải lại dữ liệu và kiểm tra ngôn ngữ   |
+| `heirloom.debug`        | op       | Quyền sử dụng các công cụ gỡ lỗi             |
+| `heirloom.admin`        | op       | Quyền quản trị cấp cao                       |
 
-## Crop Planting
+## Trồng cây
 
-| Permission | Crop |
-| --- | --- |
-| `heirloom.crop.corn` | CORN |
-| `heirloom.crop.lettuce` | LETTUCE |
-| `heirloom.crop.onion` | ONION |
-| `heirloom.crop.rice` | RICE |
-| `heirloom.crop.tomato` | TOMATO |
+| Quyền                   | Cây trồng |
+| ----------------------- | --------- |
+| `heirloom.crop.corn`    | CORN      |
+| `heirloom.crop.lettuce` | LETTUCE   |
+| `heirloom.crop.onion`   | ONION     |
+| `heirloom.crop.rice`    | RICE      |
+| `heirloom.crop.tomato`  | TOMATO    |
 
-## Addons
+## Tiện ích bổ sung
 
-| Permission | Default | Purpose |
-| --- | --- | --- |
-| `heirloom.distillery.use` | true | Distillery commands and menus |
-| `heirloom.distillery.admin` | op | Distillery admin tools |
-| `heirloom.cafe.use` | true | Cafe commands |
-| `heirloom.cafe.admin` | op | Cafe item give |
+| Quyền                       | Mặc định | Chức năng                                          |
+| --------------------------- | -------- | -------------------------------------------------- |
+| `heirloom.distillery.use`   | true     | Quyền sử dụng các lệnh và giao diện của Ủ rượu      |
+| `heirloom.distillery.admin` | op       | Quyền sử dụng các công cụ quản trị của Ủ rượu      |
+| `heirloom.cafe.use`         | true     | Quyền sử dụng các lệnh của Cà phê                   |
+| `heirloom.cafe.admin`       | op       | Quyền cấp vật phẩm của Cà phê                       |

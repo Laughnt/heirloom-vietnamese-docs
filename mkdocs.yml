@@ -1,12 +1,12 @@
 site_name: Heirloom Wiki
-site_description: Wiki and server-owner manual for the Heirloom Minecraft cooking, gardening, Distillery, and Cafe plugins.
+site_description: Wiki và tài liệu hướng dẫn dành cho quản trị viên máy chủ về các hệ thống Nấu ăn, Làm vườn, Ủ rượu và Cà phê của Heirloom.
 site_url: https://kernel-person.github.io/heirloom-docs/
 repo_url: https://github.com/kernel-person/heirloom-docs
 repo_name: kernel-person/heirloom-docs
 
 theme:
   name: material
-  language: en
+  language: vi
   logo: images/heirloom-logo.png
   favicon: images/heirloom-logo.png
   palette:
@@ -43,124 +43,124 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-  - Home: index.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - First Meal: getting-started/first-meal.md
-      - First Farm: getting-started/first-farm.md
-      - Recipe Browser: getting-started/recipe-browser.md
-  - Player Guide:
-      - Overview: player-guide/index.md
-      - Cooking Basics: player-guide/cooking.md
-      - Recipe Search: player-guide/recipe-search.md
-      - Favourite Food: player-guide/favourite-food.md
-      - Food Quality: player-guide/quality.md
-      - Advancements: player-guide/advancements.md
-      - Cooking Mastery: player-guide/mastery.md
-      - Placeable Foods And Feasts: player-guide/placeable-foods.md
-      - Seed Discovery: player-guide/seed-discovery.md
-  - Cooking Stations:
-      - Overview: stations/index.md
-      - Oven: stations/oven.md
-      - Boiling Pot: stations/boiling-pot.md
-      - Mixing Bowl: stations/mixing-bowl.md
-      - Cutting Board: stations/cutting-board.md
-      - Frying Pan: stations/frying-pan.md
-      - Barista Machine: stations/barista-machine.md
-  - Recipes:
-      - Overview: recipes/index.md
-      - Default Recipe Index: recipes/default-recipes.md
-      - Oven Recipes: recipes/station-oven.md
-      - Boiling Pot Recipes: recipes/station-boiling-pot.md
-      - Mixing Bowl Recipes: recipes/station-mixing-bowl.md
-      - Cutting Board Recipes: recipes/station-cutting-board.md
-      - Frying Pan Recipes: recipes/station-frying-pan.md
-      - Barista Recipes: recipes/station-barista-machine.md
-      - Recipe Chains: recipes/recipe-chains.md
-  - Gardening:
-      - Overview: gardening/index.md
-      - Lettuce: gardening/lettuce.md
-      - Onion: gardening/onion.md
-      - Corn: gardening/corn.md
-      - Tomato: gardening/tomato.md
-      - Rice: gardening/rice.md
-      - Plant Types: gardening/plant-types.md
-      - Seed Packets: gardening/seed-packets.md
-      - Wild Discovery And Loot: gardening/wild-discovery.md
-      - EcoEnchants: gardening/ecoenchants.md
-  - Food Systems:
-      - Overview: food-systems/index.md
-      - Dietary Properties: food-systems/dietary-properties.md
-      - Food Properties: food-systems/food-properties.md
-      - Quality And Effects: food-systems/quality-and-effects.md
-      - Favourite And Social Bonuses: food-systems/favourite-social.md
-  - Server Owners:
-      - Overview: server-owners/index.md
-      - Configuration: server-owners/configuration.md
-      - Permissions: server-owners/permissions.md
-      - Commands: server-owners/commands.md
-      - Language Files: server-owners/language-files.md
-      - Region Protection: server-owners/region-protection.md
-      - Diagnostics: server-owners/diagnostics.md
-      - Updating: server-owners/updating.md
-  - Customization:
-      - Overview: customization/index.md
-      - Custom Foods: customization/custom-foods.md
-      - Custom Recipes: customization/custom-recipes.md
-      - Custom Crops: customization/custom-crops.md
-      - Seed Acquisition: customization/seed-acquisition.md
-      - Advancements: customization/advancements.md
-      - Visual Integrations: customization/visuals-overview.md
+  - Trang chủ: index.md
+  - Bắt đầu:
+      - Thiết đặt: getting-started/installation.md
+      - Bữa ăn đầu tiên: getting-started/first-meal.md
+      - Trang trại đầu tiên: getting-started/first-farm.md
+      - Trình duyệt công thức: getting-started/recipe-browser.md
+  - Hướng dẫn người chơi:
+      - Tổng quan: player-guide/index.md
+      - Kiến thức cơ bản về nấu ăn: player-guide/cooking.md
+      - Tìm kiếm công thức: player-guide/recipe-search.md
+      - Món ăn yêu thích: player-guide/favourite-food.md
+      - Chất lượng thực phẩm: player-guide/quality.md
+      - Thành tựu: player-guide/advancements.md
+      - Tinh thông nấu ăn: player-guide/mastery.md
+      - Thức ăn có thể đặt & Yến tiệc: player-guide/placeable-foods.md
+      - Khám phá hạt giống: player-guide/seed-discovery.md
+  - Trạm nấu ăn:
+      - Tổng quan: stations/index.md
+      - Lò nướng: stations/oven.md
+      - Nồi đun: stations/boiling-pot.md
+      - Bát trộn: stations/mixing-bowl.md
+      - Thớt: stations/cutting-board.md
+      - Chảo chiên: stations/frying-pan.md
+      - Máy pha chế: stations/barista-machine.md
+  - Công thức:
+      - Tổng quan: recipes/index.md
+      - Danh mục công thức mặc định: recipes/default-recipes.md
+      - Công thức lò nướng: recipes/station-oven.md
+      - Công thức nồi đun: recipes/station-boiling-pot.md
+      - Công thức bát trộn: recipes/station-mixing-bowl.md
+      - Công thức thớt: recipes/station-cutting-board.md
+      - Công thức chảo chiên: recipes/station-frying-pan.md
+      - Công thức máy pha chế: recipes/station-barista-machine.md
+      - Chuỗi công thức: recipes/recipe-chains.md
+  - Làm vườn:
+      - Tổng quan: gardening/index.md
+      - Xà lách: gardening/lettuce.md
+      - Hành tây: gardening/onion.md
+      - Ngô: gardening/corn.md
+      - Cà chua: gardening/tomato.md
+      - Lúa: gardening/rice.md
+      - Các loại cây trồng: gardening/plant-types.md
+      - Túi hạt giống: gardening/seed-packets.md
+      - Khám phá hoang dã & chiến lợi phẩm: gardening/wild-discovery.md
+      - Tích hợp EcoEnchants: gardening/ecoenchants.md
+  - Hệ thống thực phẩm:
+      - Tổng quan: food-systems/index.md
+      - Chế độ ăn: food-systems/dietary-properties.md
+      - Đặc điểm món ăn: food-systems/food-properties.md
+      - Chất lượng & hiệu ứng: food-systems/quality-and-effects.md
+      - Món yêu thích & tương tác xã hội: food-systems/favourite-social.md
+  - Dành cho quản trị viên:
+      - Tổng quan: server-owners/index.md
+      - Cấu hình: server-owners/configuration.md
+      - Quyền: server-owners/permissions.md
+      - Lệnh: server-owners/commands.md
+      - Tệp ngôn ngữ: server-owners/language-files.md
+      - Vùng bảo vệ: server-owners/region-protection.md
+      - Chẩn đoán: server-owners/diagnostics.md
+      - Cập nhật: server-owners/updating.md
+  - Tùy chỉnh:
+      - Tổng quan: customization/index.md
+      - Thực phẩm tùy chỉnh: customization/custom-foods.md
+      - Công thức tùy chỉnh: customization/custom-recipes.md
+      - Cây trồng tùy chỉnh: customization/custom-crops.md
+      - Cách thu thập hạt giống: customization/seed-acquisition.md
+      - Thành tựu: customization/advancements.md
+      - Tích hợp hình ảnh: customization/visuals-overview.md
       - Nexo: customization/nexo.md
       - ItemsAdder: customization/itemsadder.md
-      - Web Generator: customization/web-generator.md
-  - Content Packs:
+      - Trình tạo web: customization/web-generator.md
+  - Gói nội dung:
       - Heirloom Asian Food Pack: content-packs/heirloom-asian-food-pack.md
-  - Addons:
-      - Distillery:
-          - Overview: addons/distillery/index.md
-          - Getting Started: addons/distillery/getting-started.md
-          - Brewing Flow: addons/distillery/brewing-flow.md
-          - Mashables And Traits: addons/distillery/mashables-traits.md
-          - Inebriation: addons/distillery/inebriation.md
-          - Configuration: addons/distillery/configuration.md
-          - Commands And Permissions: addons/distillery/commands-permissions.md
-      - Cafe:
-          - Overview: addons/cafe/index.md
-          - Getting Started: addons/cafe/getting-started.md
-          - Barista Machine: addons/cafe/barista-machine.md
-          - Coffee And Tea Flow: addons/cafe/coffee-tea.md
-          - Configuration: addons/cafe/configuration.md
-          - Commands And Permissions: addons/cafe/commands-permissions.md
-      - Future Addons: roadmap.md
-  - Reference:
-      - Overview: reference/index.md
-      - Commands: reference/commands.md
-      - Permissions: reference/permissions.md
-      - Config Files: reference/config-files.md
-      - Item IDs: reference/items.md
-      - Vanilla Ingredients: reference/vanilla-items.md
-      - Crop IDs: reference/crops.md
-      - Recipe Summary: reference/recipes.md
-      - Recipe Actions And Rules: reference/recipe-actions-rules.md
-      - JSON Fields: reference/json-fields.md
-      - Visual IDs: reference/visual-ids.md
-      - Legacy Configuration Path: reference/configuration-files.md
-      - Legacy Customization Path: reference/customization.md
-  - Gallery: gallery.md
-  - Media Needed: media-needed.md
-  - Legacy Paths:
-      - Core Cooking Stations: core/cooking-stations.md
-      - Core Recipes: core/recipes.md
-      - Core Custom Foods: core/custom-foods.md
-      - Core Gardening: core/gardening.md
-      - Core Dietary Properties: core/dietary-properties.md
-      - Core Visual Integrations: core/visual-integrations.md
-      - Core Admin Configuration: core/admin-configuration.md
-      - Distillery Overview: distillery/overview.md
-      - Distillery Getting Started: distillery/getting-started.md
-      - Distillery Brewing Flow: distillery/brewing-flow.md
-      - Distillery Mashables And Traits: distillery/mashables-traits.md
-      - Distillery Inebriation: distillery/inebriation.md
-      - Distillery Admin Configuration: distillery/admin-configuration.md
-      - Distillery Commands And Permissions: distillery/commands-permissions.md
+  - Tiện ích bổ sung:
+      - Hệ thống ủ rượu:
+          - Tổng quan: addons/distillery/index.md
+          - Bắt đầu: addons/distillery/getting-started.md
+          - Quy trình ủ: addons/distillery/brewing-flow.md
+          - Nguyên liệu nghiền và đặc tính: addons/distillery/mashables-traits.md
+          - Trạng thái say: addons/distillery/inebriation.md
+          - Cấu hình: addons/distillery/configuration.md
+          - Lệnh và Quyền: addons/distillery/commands-permissions.md
+      - Cà phê:
+          - Tổng quan: addons/cafe/index.md
+          - Bắt đầu: addons/cafe/getting-started.md
+          - Máy pha chế: addons/cafe/barista-machine.md
+          - Quy trình pha cà phê và trà: addons/cafe/coffee-tea.md
+          - Cấu hình: addons/cafe/configuration.md
+          - Lệnh và Quyền: addons/cafe/commands-permissions.md
+      - Tiện ích tương lai: roadmap.md
+  - Tham khảo:
+      - Tổng quan: reference/index.md
+      - Lệnh: reference/commands.md
+      - Quyền: reference/permissions.md
+      - Tệp cấu hình: reference/config-files.md
+      - ID vật phẩm: reference/items.md
+      - Nguyên liệu Vanilla: reference/vanilla-items.md
+      - ID cây trồng: reference/crops.md
+      - Tóm tắt công thức: reference/recipes.md
+      - Thao tác & quy tắc chế biến: reference/recipe-actions-rules.md
+      - Tham chiếu các trường JSON: reference/json-fields.md
+      - ID hình ảnh: reference/visual-ids.md
+      - Đường dẫn cấu hình cũ: reference/configuration-files.md
+      - Đường dẫn tùy chỉnh cũ: reference/customization.md
+  - Thư viện ảnh: gallery.md
+  - Hình ảnh & Gif cần bổ sung: media-needed.md
+  - Đường dẫn cũ:
+      - Trạm nấu ăn cơ bản: core/cooking-stations.md
+      - Công thức cơ bản: core/recipes.md
+      - Thực phẩm tùy chỉnh cơ bản: core/custom-foods.md
+      - Hệ thống Làm vườn cơ bản: core/gardening.md
+      - Thuộc tính chế độ ăn cơ bản: core/dietary-properties.md
+      - Tích hợp hình ảnh cơ bản: core/visual-integrations.md
+      - Cấu hình dành cho quản trị cơ bản: core/admin-configuration.md
+      - Tổng quan hệ thống ủ rượu: distillery/overview.md
+      - Bắt đầu ủ: distillery/getting-started.md
+      - Quy trình ủ: distillery/brewing-flow.md
+      - Nguyên liệu nghiền & đặc tính: distillery/mashables-traits.md
+      - Trạng thái say: distillery/inebriation.md
+      - Cấu hình quản trị hệ thống ủ rượu: distillery/admin-configuration.md
+      - Lệnh và Quyền: distillery/commands-permissions.md

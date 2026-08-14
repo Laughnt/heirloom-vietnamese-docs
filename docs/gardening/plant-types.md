@@ -1,15 +1,15 @@
-# Plant Types
+# Các loại cây trồng
 
-Plant types define the physical block behavior behind a crop. Pick the type that matches how the crop should exist in the world, not only how the final display should look.
+Loại cây trồng quyết định cách cây được đặt, phát triển và chiếm không gian trong thế giới Minecraft. Khi chọn loại cây, bạn nên căn cứ vào cách cây mọc trong thực tế chứ không chỉ đơn thuần là hình dáng bên ngoài của nó.
 
-| Type | Used By | Placement | Practical Notes |
+| Loại cây | Dùng cho | Cách trồng | Lưu ý |
 | --- | --- | --- | --- |
-| `SHORT_PLANT` | Lettuce | Ground plant on valid soil | Best default for simple crops |
-| `ALLIUM` | Onion | Flower-style ground plant | Useful for small vegetable visuals |
-| `TALL_PLANT` | Corn | Tall visual crop with vertical room | Needs space above the base block |
-| `VINE` | Tomato, grapes | Wall-attached vine | Needs a face to attach to; poor fit for random flat patches |
-| `AQUATIC` | Rice | Soil under water | Needs water setup and should be tested in claims |
-| `BUSH` | Addon/extended crops | Bush-style blocks | Good for berry-like crops |
-| `HANGING` | Addon/extended crops | Ceiling-attached blocks | Best for decorative or cave crops |
+| `SHORT_PLANT` | Xà lách | Trồng sát mặt đất, trên đất phù hợp | Lựa chọn mặc định tốt nhất cho các loại cây thấp và đơn giản |
+| `ALLIUM` | Hành tây | Trồng sát mặt đất theo kiểu hoa Allium | Thích hợp cho các loại rau củ nhỏ, mọc thấp |
+| `TALL_PLANT` | Ngô | Cây thân cao, cần không gian phía trên | Cần có đủ khoảng trống phía trên gốc để cây phát triển |
+| `VINE` | Cà chua, nho | Dây leo bám vào tường | Cần có tường hoặc bề mặt thẳng đứng để bám, không phù hợp với khu vực trồng phẳng |
+| `AQUATIC` | Lúa | Trồng trên đất dưới nước | Cần có lớp nước phủ bên trên, nên kiểm tra cẩn thận trong khu vực được bảo vệ |
+| `BUSH` | Cây từ tiện ích hoặc nội dung mở rộng | Mọc thành bụi | Phù hợp với các loại cây cho quả mọng |
+| `HANGING` | Cây từ tiện ích hoặc nội dung mở rộng | Treo từ phía trên xuống | Thích hợp cho cây trang trí hoặc cây trong hang động |
 
-Plant types are data-driven, but every type still depends on Minecraft block rules. If a crop uses a real plant block, protection plugins and physics can affect it.
+Tất cả các loại cây trồng đều có thể được tùy chỉnh thông qua dữ liệu cấu hình. Tuy nhiên, chúng vẫn phải tuân theo các quy tắc về khối của Minecraft. Nếu một loại cây sử dụng khối thực vật có sẵn trong trò chơi, các plugin bảo vệ và cơ chế xử lý của Minecraft vẫn có thể tác động lên cây như thông thường.

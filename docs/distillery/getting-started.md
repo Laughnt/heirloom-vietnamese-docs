@@ -1,3 +1,3 @@
-# Distillery Getting Started
+# Bắt đầu với hệ thống ủ rượu
 
-Distillery docs moved to [Distillery Getting Started](../addons/distillery/getting-started.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Bắt đầu với hệ thống ủ rượu](../addons/distillery/getting-started.md).

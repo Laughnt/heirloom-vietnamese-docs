@@ -1,10 +1,10 @@
-# Permissions
+# Phân quyền
 
-Use a permission plugin such as LuckPerms on production servers.
+Trên máy chủ thực tế, nên sử dụng plugin quản lý quyền như **LuckPerms** để kiểm soát quyền truy cập của người chơi.
 
-See [Permission Reference](../reference/permissions.md) for the full list.
+Xem [Tham chiếu Quyền](../reference/permissions.md) để biết đầy đủ danh sách quyền.
 
-Recommended default grants:
+Các quyền cơ bản nên cấp cho nhóm người chơi mặc định:
 
 ```text
 /lp group default permission set heirloom.use true
@@ -15,4 +15,4 @@ Recommended default grants:
 /lp group default permission set heirloom.mastery true
 ```
 
-Grant crop permissions if you keep the bundled crop permission nodes enabled.
+Nếu quản trị viên vẫn bật các quyền trồng cây đi kèm Heirloom, hãy cấp thêm quyền tương ứng cho từng loại cây trồng.

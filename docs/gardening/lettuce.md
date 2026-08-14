@@ -1,31 +1,31 @@
-# Lettuce
+# Xà lách
 
 <figure class="hl-figure">
-  <img src="../../images/gardening/lettuce.webp" alt="Lettuce crop planted as a short ground crop.">
-  <figcaption>Lettuce crop planted as a short ground crop.</figcaption>
+  <img src="../../images/gardening/lettuce.webp" alt="Cây xà lách được trồng sát mặt đất.">
+  <figcaption>Cây xà lách được trồng sát mặt đất.</figcaption>
 </figure>
 
-| Field | Value |
+| Trường dữ liệu | Giá trị |
 | --- | --- |
-| Item | [`LETTUCE`](../reference/items.md#item-lettuce) |
-| Plant type | `SHORT_PLANT` |
-| Base growth | 300 seconds |
-| Stages | 4 |
-| Permission | `heirloom.crop.lettuce` |
-| Replants | `yes` |
+| Vật phẩm | [`LETTUCE`](../reference/items.md#item-lettuce) |
+| Loại cây trồng | `SHORT_PLANT` |
+| Thời gian sinh trưởng cơ bản | 300 giây |
+| Số giai đoạn sinh trưởng | 4 |
+| Quyền cần có | `heirloom.crop.lettuce` |
+| Trồng lại được | `Có` |
 
-## Planting
+## Cách trồng
 
-Valid blocks: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`
+Xà lách có thể được trồng trên các khối đất sau: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`.
 
-Use the crop item on the correct block or face. If the crop has a permission, the player must have that node before planting.
+Cách trồng rất đơn giản: chỉ cần cầm vật phẩm cây giống và nhấp chuột phải vào một khối đất phù hợp. Nếu cây trồng yêu cầu một quyền cụ thể, người chơi phải có quyền đó trước khi có thể gieo trồng.
 
-## Harvest
+## Thu hoạch
 
-Main drops: `LETTUCE` 1-3.
+Khi thu hoạch xà lách, bạn sẽ nhận được từ 1 đến 3 củ xà lách (`LETTUCE`).
 
-If the crop keeps `replant_after_harvest` enabled, right-click harvest resets it to an early stage. Breaking the plant is treated as destruction, not a full harvest.
+Nếu tính năng `replant_after_harvest` được bật, bạn chỉ cần nhấp chuột phải vào cây đã trưởng thành để thu hoạch, và cây sẽ tự động quay trở về giai đoạn phát triển ban đầu. Lưu ý rằng việc đập bỏ cây sẽ bị coi là phá hủy hoàn toàn, không phải là một vụ thu hoạch hợp lệ.
 
-## Notes For Admins
+## Lưu ý cho quản trị viên
 
-Edit this crop in `crops.json` or the relevant addon crop file. Growth scale, stage count, valid blocks, sounds, drop chances, quality chance, and permission nodes are all data-driven.
+Để điều chỉnh các thông số cho cây xà lách, quản trị viên có thể sửa trực tiếp trong tệp `crops.json` hoặc tệp cấu hình của tiện ích liên quan. Mọi thông số như tốc độ tăng trưởng, số giai đoạn, khối đất hợp lệ, âm thanh, tỷ lệ rơi vật phẩm, tỷ lệ ra chất lượng và quyền cần thiết đều hoàn toàn có thể cấu hình được qua dữ liệu.

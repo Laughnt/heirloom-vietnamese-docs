@@ -1,12 +1,12 @@
-# Distillery Addon
+# Hệ thống ủ rượu
 
 <figure class="hl-figure">
-  <img src="../../images/distillery-banner.svg" alt="Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation.">
-  <figcaption>Distillery adds multi-stage brewing, fermentation, distillation, traits, and inebriation.</figcaption>
+  <img src="../../images/distillery-banner.svg" alt="Hệ thống ủ rượu bổ sung quy trình ủ nhiều giai đoạn, lên men, chưng cất, đặc tính và trạng thái say.">
+  <figcaption>Hệ thống ủ rượu bổ sung quy trình ủ nhiều giai đoạn, lên men, chưng cất, đặc tính và trạng thái say.</figcaption>
 </figure>
 
-Distillery depends on Heirloom core. It adds grapes, mashables, stomping, wort, must, fermentation, distillation, named drink profiles, traits, and drunkenness systems.
+Hệ thống ủ rượu yêu cầu phải cài đặt thêm plugin Heirloom. Tiện ích này bổ sung nho, các nguyên liệu nghiền được, bồn giẫm, dịch ép, dịch ngũ cốc, lên men, chưng cất, các công thức đồ uống có tên, đặc tính và hệ thống say rượu.
 
-Distillery is not just a recipe pack. It has its own processing stations and metadata, then connects back into Heirloom through registered items, crops, commands, and the `SOBERING` food property.
+Hệ thống ủ rượu không chỉ đơn thuần là một gói công thức. Nó có các trạm xử lý và siêu dữ liệu riêng, sau đó kết nối ngược trở lại với Heirloom thông qua các vật phẩm, cây trồng, lệnh và thuộc tính thực phẩm `SOBERING` (giải rượu).
 
-Start with [Getting Started](getting-started.md), then read [Brewing Flow](brewing-flow.md).
+Hãy bắt đầu với [Bắt đầu](getting-started.md), sau đó đọc tiếp [Quy trình ủ](brewing-flow.md).

@@ -1,31 +1,27 @@
-# Corn
+# Ngô
 
 <figure class="hl-figure">
-  <img src="../../images/gardening/corn.webp" alt="Corn field showing tall crop visuals.">
-  <figcaption>Corn field showing tall crop visuals.</figcaption>
+  <img src="../../images/gardening/corn.webp" alt="Cánh đồng ngô với những cây ngô cao lớn.">
+  <figcaption>Cánh đồng ngô với những cây ngô cao lớn.</figcaption>
 </figure>
 
-| Field | Value |
+| Trường dữ liệu | Giá trị |
 | --- | --- |
-| Item | [`CORN`](../reference/items.md#item-corn) |
-| Plant type | `TALL_PLANT` |
-| Base growth | 480 seconds |
-| Stages | 5 |
-| Permission | `heirloom.crop.corn` |
-| Replants | `yes` |
+| Vật phẩm | [`CORN`](../reference/items.md#item-corn) |
+| Loại cây trồng | `TALL_PLANT` |
+| Thời gian sinh trưởng cơ bản | 480 giây |
+| Số giai đoạn sinh trưởng | 5 |
+| Quyền | `heirloom.crop.corn` |
+| Có thể trồng lại | `yes` |
 
-## Planting
+## Cách trồng
 
-Valid blocks: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`
+Có thể trồng trên các khối: `GRASS_BLOCK`, `DIRT`, `COARSE_DIRT`, `PODZOL`, `ROOTED_DIRT`. Sử dụng vật phẩm hạt giống của cây trồng lên đúng khối hoặc bề mặt để bắt đầu trồng. Nếu cây trồng yêu cầu quyền, người chơi phải có quyền tương ứng mới có thể trồng.
 
-Use the crop item on the correct block or face. If the crop has a permission, the player must have that node before planting.
+## Thu hoạch
 
-## Harvest
+Vật phẩm nhận được khi thu hoạch: `CORN` 1-2. Nếu cây trồng có thuộc tính `replant_after_harvest`, người chơi có thể nhấp chuột phải để thu hoạch và cây sẽ trở lại giai đoạn phát triển đầu tiên. Ngược lại, phá cây được xem là phá bỏ cây trồng chứ không phải thu hoạch.
 
-Main drops: `CORN` 1-2.
+## Lưu ý cho quản trị viên
 
-If the crop keeps `replant_after_harvest` enabled, right-click harvest resets it to an early stage. Breaking the plant is treated as destruction, not a full harvest.
-
-## Notes For Admins
-
-Edit this crop in `crops.json` or the relevant addon crop file. Growth scale, stage count, valid blocks, sounds, drop chances, quality chance, and permission nodes are all data-driven.
+Quản trị viên có thể chỉnh sửa cây trồng này trong `crops.json` hoặc tệp cấu hình cây trồng của tiện ích tương ứng. Thời gian sinh trưởng, số giai đoạn, các khối có thể trồng, âm thanh, tỷ lệ rơi vật phẩm, tỷ lệ chất lượng và quyền cần thiết đều có thể được điều chỉnh thông qua cấu hình.

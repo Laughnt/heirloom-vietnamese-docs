@@ -1,3 +1,3 @@
-# Distillery Admin Configuration
+# Cấu hình hệ thống ủ rượu dành cho quản trị viên
 
-Distillery docs moved to [Configuration](../addons/distillery/configuration.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Cấu hình](../addons/distillery/configuration.md).

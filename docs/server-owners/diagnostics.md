@@ -1,6 +1,6 @@
-# Diagnostics
+# Chẩn đoán
 
-Use diagnostics after install, after updates, and after large config edits.
+Sử dụng công cụ chẩn đoán sau khi cài đặt, sau khi cập nhật và sau khi chỉnh sửa cấu hình lớn.
 
 ```text
 /hl debug test
@@ -8,9 +8,9 @@ Use diagnostics after install, after updates, and after large config edits.
 /hl debug testall
 ```
 
-The diagnostic suite checks item registry counts, cooked-rice recipe matching, crop registration, WorldGuard hook state, EcoEnchants detection, event bypass safety, and runtime GUI loading.
+Bộ công cụ chẩn đoán kiểm tra số lượng đăng ký vật phẩm, khớp công thức cơm chín, đăng ký cây trồng, trạng thái hook plugin WorldGuard, phát hiện EcoEnchants, an toàn bỏ qua sự kiện và tải GUI thời gian chạy.
 
-Other debug tools:
+Các công cụ gỡ lỗi khác:
 
 ```text
 /hl debug hunger

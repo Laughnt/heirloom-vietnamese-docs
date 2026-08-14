@@ -1,13 +1,13 @@
-# Mashables And Traits
+# Nguyên liệu ủ và đặc tính
 
-Mashables have brewing stats such as sugar, tannin, and acidity. Distillery uses those stats to shape output quality and drink identity.
+Nguyên liệu ủ có các chỉ số như độ ngọt, độ chát và độ axit. Hệ thống ủ rượu sử dụng những chỉ số này để quyết định chất lượng và đặc trưng của đồ uống.
 
-## What Traits Do
+## Đặc tính hoạt động như thế nào
 
-Traits are discoverable properties that make drinks feel different beyond a simple item ID. Some traits come from ingredient counts, purity, fruit choices, or special combinations.
+Đặc tính là những thuộc tính có thể khám phá, giúp đồ uống có sự khác biệt riêng thay vì chỉ được xác định bằng mã vật phẩm. Một số đặc tính phụ thuộc vào số lượng nguyên liệu, độ tinh khiết, loại trái cây hoặc những sự kết hợp đặc biệt.
 
-## How To Explore
+## Cách khám phá
 
-Use `/hld stats <item>` before brewing. It shows whether an ingredient leans sweet, tannic, acidic, grain-like, or special. Then compare the finished drink lore after fermentation or distillation.
+Hãy sử dụng `/hld stats <item>` trước khi bắt đầu ủ. Lệnh này cho biết nguyên liệu có xu hướng ngọt, chát, chua, mang đặc trưng ngũ cốc hoặc sở hữu đặc tính đặc biệt. Sau khi hoàn tất quá trình ủ hoặc chưng cất, hãy so sánh phần mô tả của đồ uống thành phẩm.
 
-Admins tune mashables in Distillery config/resource files.
+Quản trị viên có thể điều chỉnh các nguyên liệu ủ trong tệp cấu hình hoặc tệp tài nguyên của hệ thống ủ rượu.

@@ -1,10 +1,10 @@
-# Commands
+# Lệnh
 
-Core uses `/hl` or `/heirloom`. Distillery uses `/hld`. Cafe uses `/hlc`.
+Heirloom Core sử dụng `/hl` hoặc `/heirloom`. Distillery sử dụng `/hld`. Cafe sử dụng `/hlc`.
 
-The full command list is in [Command Reference](../reference/commands.md).
+Danh sách đầy đủ các lệnh được trình bày trong [Tham chiếu Lệnh](../reference/commands.md).
 
-## Admin Commands To Know
+## Các lệnh quản trị cần biết
 
 ```text
 /hl reload

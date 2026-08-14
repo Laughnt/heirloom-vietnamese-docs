@@ -1,7 +1,7 @@
-# Cafe Addon
+# Tiện ích Cà phê
 
-Cafe is a stable Heirloom addon in the default build profile. It adds coffee cherries, coffee roasting, tea processing, oat milk, espresso drinks, cocoa, boba, iced coffee, and the Barista Machine.
+Cafe là một tiện ích bổ sung của Heirloom, thêm vô hệ thống quả cà phê, rang hạt, chế biến trà, sữa yến mạch, đồ uống espresso, ca cao, trà sữa trân châu, cà phê đá và Máy pha chế.
 
-Cafe content registers into the normal Heirloom recipe browser, but the final drink assembly uses the Cafe Barista Machine.
+Toàn bộ nội dung của Cafe sẽ được đăng ký vào trình duyệt công thức Heirloom thông thường, nhưng công đoạn pha chế cuối cùng sẽ sử dụng Máy pha chế của Cafe.
 
-Use `/hlc help` for addon commands.
+Sử dụng `/hlc help` để xem các lệnh của tiện ích này.

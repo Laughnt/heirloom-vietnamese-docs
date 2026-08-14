@@ -1,32 +1,32 @@
-# Recipe Reference
+# Tham chiếu Công thức
 
-The full linked recipe index lives at [Default Recipe Index](../recipes/default-recipes.md).
+Mục công thức đầy đủ có liên kết nằm tại [Chỉ mục Công thức Mặc định](../recipes/default-recipes.md).
 
-## Recipes By Source
+## Công thức theo Nguồn
 
-| Source | Recipes |
+| Nguồn | Công thức |
 | --- | --- |
-| <span class="hl-source-badge" title="Cafe"><img class="hl-source-logo" src="../../images/sources/cafe.png" alt="Cafe"></span> | 22 |
-| <span class="hl-source-badge" title="Core"><img class="hl-source-logo" src="../../images/sources/core.png" alt="Core"></span> | 51 |
-| <span class="hl-source-badge" title="Festive"><img class="hl-source-logo" src="../../images/sources/core.png" alt="Festive"></span> | 9 |
-| <span class="hl-source-badge" title="Heirloom Asian Food Pack"><img class="hl-source-logo" src="../../images/sources/heirloom-asian-food-pack.png" alt="Heirloom Asian Food Pack"></span> | 29 |
-| <span class="hl-source-badge" title="World"><img class="hl-source-logo" src="../../images/sources/core.png" alt="World"></span> | 5 |
+| <span class="hl-source-badge" title="Cà phê"><img class="hl-source-logo" src="../../images/sources/cafe.png" alt="Cà phê"></span> | 22 |
+| <span class="hl-source-badge" title="Lõi"><img class="hl-source-logo" src="../../images/sources/core.png" alt="Lõi"></span> | 51 |
+| <span class="hl-source-badge" title="Lễ hội"><img class="hl-source-logo" src="../../images/sources/core.png" alt="Lễ hội"></span> | 9 |
+| <span class="hl-source-badge" title="Gói ẩm thực châu Á Heirloom"><img class="hl-source-logo" src="../../images/sources/heirloom-asian-food-pack.png" alt="Gói ẩm thực Châu Á Heirloom"></span> | 29 |
+| <span class="hl-source-badge" title="Thế giới"><img class="hl-source-logo" src="../../images/sources/core.png" alt="Thế giới"></span> | 5 |
 
-## Recipes By Station
+## Công thức theo Trạm
 
-| Station | Recipes |
+| Trạm | Công thức |
 | --- | --- |
-| Barista Machine | 12 |
-| Boiling Pot | 27 |
-| Crafting Table | 1 |
-| Cutting Board | 15 |
-| Frying Pan | 19 |
-| Mixing Bowl | 21 |
-| Oven | 21 |
+| Máy pha chế | 12 |
+| Nồi đun | 27 |
+| Bàn chế tạo | 1 |
+| Thớt | 15 |
+| Chảo chiên | 19 |
+| Bát trộn | 21 |
+| Lò nướng | 21 |
 
-## Data Files
+## Tệp dữ liệu
 
-- `recipes.json`: main core recipes.
-- `recipes-world.json`: optional world-food recipes.
-- `recipes-festive.json`: seasonal recipes and feast recipes.
-- `recipes-cafe.json`: Cafe addon recipes.
+- `recipes.json`: công thức cơ bản chính.
+- `recipes-world.json`: công thức thức ăn thế giới tùy chọn.
+- `recipes-festive.json`: công thức theo mùa và công thức yến tiệc.
+- `recipes-cafe.json`: công thức tiện ích bổ sung Cà phê.

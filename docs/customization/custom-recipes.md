@@ -1,8 +1,8 @@
-# Custom Recipes
+# Công thức tùy chỉnh
 
-Recipes define a station, output, processing time, ingredients, actions, and optional rules. The output can be changed by base actions, rule actions, inherited input metadata, and quality logic.
+Công thức xác định hệ thống chế biến, thành phẩm, thời gian chế biến, nguyên liệu, thao tác và các quy tắc tùy chọn. Thành phẩm có thể được thay đổi thông qua các thao tác cơ bản, thao tác theo quy tắc, thông tin kế thừa từ nguyên liệu và cơ chế chất lượng.
 
-## Minimum Recipe
+## Công thức tối thiểu
 
 ```json
 {
@@ -22,26 +22,26 @@ Recipes define a station, output, processing time, ingredients, actions, and opt
 }
 ```
 
-## Advanced Pattern: Property Chain
+## Nâng cao: Kế thừa thuộc tính qua nhiều bước
 
-Put properties on intermediate ingredients when you want players to build stronger food through multiple steps. For example, jam can get `CHORUS` from chorus fruit, then pancakes inherit that property when the jam is used as a topping.
+Đặt thuộc tính cho nguyên liệu trung gian nếu muốn người chơi tạo ra món ăn có nhiều thuộc tính thông qua nhiều công đoạn chế biến. Ví dụ, mứt có thể nhận thuộc tính `CHORUS` từ quả chorus. Khi dùng loại mứt này làm lớp phủ cho bánh, bánh sẽ kế thừa thuộc tính đó.
 
-## Common Rule Actions
+## Các thao tác theo quy tắc thường dùng
 
-- `SET_PROPERTY` with key `NAME`: changes display name.
-- `ADD_METADATA` with key `food_property`: adds a food property that can be inherited and applied when eaten.
-- `SET_RETURN_ITEM`: returns a container when crafting completes.
-- `SET_CONSUME_RETURN`: returns a container after eating.
-- `SET_VISUAL_ITEM`: swaps to a provider-neutral visual variant.
-- `ADD_QUALITY` and `SET_QUALITY`: tune output quality.
+- `SET_PROPERTY` với khóa `NAME`: thay đổi tên hiển thị của vật phẩm.
+- `ADD_METADATA` với khóa `food_property`: thêm thuộc tính thực phẩm để có thể được kế thừa và áp dụng khi ăn.
+- `SET_RETURN_ITEM`: trả lại vật chứa sau khi chế biến xong.
+- `SET_CONSUME_RETURN`: trả lại vật chứa sau khi ăn.
+- `SET_VISUAL_ITEM`: chuyển sang một biến thể hình ảnh không phụ thuộc vào nền tảng cung cấp hình ảnh.
+- `ADD_QUALITY` và `SET_QUALITY`: điều chỉnh chất lượng thành phẩm.
 
-## Common Mistakes
+## Những lỗi thường gặp
 
-- Using `SET_PROPERTY` for `food_property`; bundled property recipes use `ADD_METADATA` for inherited food properties.
-- Putting a custom item in `item` instead of `custom_item`.
-- Forgetting that optional slots default to `0-max`, so rules must handle the missing-input case.
-- Editing JSON and testing only `/hl give`; recipe actions and inheritance only appear when the recipe is crafted.
+- Dùng `SET_PROPERTY` cho `food_property`; các công thức có sẵn dùng `ADD_METADATA` để thêm thuộc tính thực phẩm có thể được kế thừa.
+- Đặt vật phẩm tùy chỉnh vào `item` thay vì `custom_item`.
+- Quên rằng ô nguyên liệu tùy chọn mặc định có thể nhận từ `0` đến `max`, vì vậy quy tắc cần xử lý cả trường hợp không có nguyên liệu.
+- Chỉnh sửa JSON nhưng chỉ kiểm tra bằng `/hl give`; các thao tác của công thức và cơ chế kế thừa chỉ xuất hiện khi thực sự chế biến theo công thức.
 
-## How To Test
+## Cách kiểm tra
 
-Run `/hl reload`, search the recipe, craft every branch you changed, and inspect lore. For inheritance tests, craft the intermediate ingredient first, then use that exact item in the next recipe.
+Chạy `/hl reload`, tìm công thức cần kiểm tra, chế biến tất cả các trường hợp đã thay đổi và kiểm tra phần mô tả vật phẩm. Khi kiểm tra cơ chế kế thừa, hãy chế biến nguyên liệu trung gian trước, sau đó dùng chính vật phẩm đó trong công thức tiếp theo.

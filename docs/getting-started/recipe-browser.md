@@ -1,11 +1,11 @@
-# Recipe Browser
+# Trình duyệt công thức
 
 <figure class="hl-figure">
-  <img src="../../images/showcase/recipe-browser.jpg" alt="The recipe browser is the main in-game guide for players.">
-  <figcaption>The recipe browser is the main in-game guide for players.</figcaption>
+  <img src="../../images/showcase/recipe-browser.jpg" alt="Trình duyệt công thức là công cụ hướng dẫn chính trong trò chơi dành cho người chơi.">
+  <figcaption>Trình duyệt công thức là công cụ hướng dẫn chính trong trò chơi dành cho người chơi.</figcaption>
 </figure>
 
-## Open It
+## Cách mở
 
 ```text
 /hl
@@ -13,25 +13,25 @@
 /hl search pizza
 ```
 
-`/hl` opens the main menu for players. `/hl search <query>` opens filtered results by recipe, station, addon, output, or ingredient.
+`/hl` mở menu chính cho người chơi. `/hl search <từ khóa>` sẽ hiển thị kết quả đã lọc theo công thức, trạm, tiện ích, sản phẩm hoặc nguyên liệu.
 
-## Search Examples
+## Ví dụ tìm kiếm
 
 <div class="hl-media-grid">
-  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-gui.webp" alt="Recipe search GUI"><figcaption>Recipe search GUI filtered to useful results.</figcaption></figure>
-  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-chat.webp" alt="Recipe search chat output"><figcaption>Chat search output for quick recipe lookup.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-gui.webp" alt="Giao diện tìm kiếm công thức"><figcaption>Giao diện tìm kiếm công thức đã được lọc theo kết quả hữu ích.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/recipe-search-chat.webp" alt="Kết quả tìm kiếm công thức trong thanh chat"><figcaption>Kết quả tìm kiếm công thức trong thanh chat giúp tra cứu công thức nhanh chóng.</figcaption></figure>
 </div>
 
-## How To Read It
+## Cách sử dụng
 
-- Click a recipe to inspect inputs and output.
-- Click ingredients to follow recipe chains backward.
-- Use item-use pages to answer "what can I cook with this?"
-- Addon recipes appear only when their addon is installed and registered.
+- Nhấp vào một công thức để xem nguyên liệu đầu vào và sản phẩm đầu ra.
+- Nhấp vào nguyên liệu để truy ngược lại chuỗi công thức.
+- Sử dụng trang "Cách dùng vật phẩm" để trả lời câu hỏi "Món này có thể nấu gì?"
+- Các công thức từ tiện ích sẽ chỉ hiển thị khi tiện ích đó đã được cài đặt và đăng ký.
 
-## If Something Is Missing
+## Nếu thiếu công thức
 
-- Make sure the addon is installed.
-- Run `/hl reload` after JSON changes.
-- Check startup logs for recipe validation warnings.
-- Use `/hl debug test` for registration diagnostics.
+- Đảm bảo tiện ích đã được cài đặt.
+- Chạy `/hl reload` sau khi thay đổi tệp JSON.
+- Kiểm tra nhật ký khởi động để xem cảnh báo xác thực công thức.
+- Sử dụng `/hl debug test` để kiểm tra trạng thái đăng ký.

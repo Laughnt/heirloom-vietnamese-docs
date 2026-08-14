@@ -1,3 +1,3 @@
-# Core Recipes
+# Công thức cơ bản
 
-The recipe docs moved to [Recipes](../recipes/index.md) and the [Default Recipe Index](../recipes/default-recipes.md).
+Tài liệu về công thức đã được chuyển sang [Công thức](../recipes/index.md) và [Danh mục công thức mặc định](../recipes/default-recipes.md).

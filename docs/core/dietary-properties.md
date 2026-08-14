@@ -1,3 +1,3 @@
-# Core Dietary Properties
+# Thuộc tính chế độ ăn cơ bản
 
-The dietary docs moved to [Dietary Properties](../food-systems/dietary-properties.md).
+Tài liệu về thuộc tính chế độ ăn đã được chuyển sang [Thuộc tính chế độ ăn](../food-systems/dietary-properties.md).

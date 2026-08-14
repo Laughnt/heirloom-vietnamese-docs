@@ -1,15 +1,15 @@
-# Distillery Configuration
+# Cấu hình hệ thống Ủ rượu
 
-Important files:
+Các tệp quan trọng cần biết:
 
 - `plugins/HeirloomDistillery/config.yml`
 - `plugins/HeirloomDistillery/ingredients.yml`
 - `plugins/HeirloomDistillery/words.yml`
 - `plugins/HeirloomDistillery/lang/en.yml`
 
-`/hld reload` reloads supported runtime settings. Restart for jar changes and major data changes.
+Lệnh `/hld reload` sẽ tải lại các thiết lập được hỗ trợ. Cần khởi động lại máy chủ khi quản trị viên thay đổi thay đổi các dữ liệu lớn.
 
-Development mode can shorten processing loops:
+Chế độ phát triển (devmode) có thể rút ngắn thời gian xử lý từng công đoạn:
 
 ```text
 /hld devmode status
@@ -17,6 +17,6 @@ Development mode can shorten processing loops:
 /hld devmode off
 ```
 
-## Test After Changes
+## Kiểm tra sau khi thay đổi
 
-Run one fruit path and one grain path after config edits. That catches the two most important branches: direct fermentation and Boiling Pot -> fermentation.
+Sau khi chỉnh sửa cấu hình, hãy chạy thử quá trình làm trái cây và quy trình ngũ cốc để kiểm tra hai nhánh quan trọng nhất: lên men trực tiếp và quy trình thông qua Nồi đun rồi mới lên men.

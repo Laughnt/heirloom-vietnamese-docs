@@ -1,8 +1,10 @@
-# Visual ID Reference
+# Tham chiếu ID Hiển thị
 
-`visual_id` is the logical name Heirloom asks visual providers to resolve. Nexo and ItemsAdder can both provide the same logical visual without changing recipes.
+`visual_id` là ID dùng để xác định hình ảnh hiển thị của một vật phẩm trong Heirloom. Thay vì gắn trực tiếp vật phẩm với một plugin cung cấp hình ảnh cụ thể, Heirloom chỉ lưu `visual_id` và yêu cầu nhà cung cấp tương ứng tìm hình ảnh theo ID đó.
 
-| Item | Visual ID | Source |
+Nhờ cơ chế này, Nexo và ItemsAdder có thể cùng cung cấp một hình ảnh cho cùng `visual_id`. Bạn có thể thay đổi plugin cung cấp hình ảnh mà không cần chỉnh sửa lại các công thức hoặc dữ liệu vật phẩm của Heirloom.
+
+| Vật phẩm | ID Hiển thị | Nguồn |
 | --- | --- | --- |
 | `AMERICANO` | AMERICANO | <span class="hl-source-badge" title="Cafe"><img class="hl-source-logo" src="../../images/sources/cafe.png" alt="Cafe"></span> |
 | `ASIAN_BOBA_TEA` | ASIAN_BOBA_TEA | <span class="hl-source-badge" title="Heirloom Asian Food Pack"><img class="hl-source-logo" src="../../images/sources/heirloom-asian-food-pack.png" alt="Heirloom Asian Food Pack"></span> |

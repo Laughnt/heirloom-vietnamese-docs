@@ -1,3 +1,3 @@
-# Distillery Brewing Flow
+# Quy trình ủ rượu
 
-Distillery docs moved to [Brewing Flow](../addons/distillery/brewing-flow.md).
+Tài liệu về hệ thống ủ rượu đã được chuyển sang [Quy trình ủ rượu](../addons/distillery/brewing-flow.md).

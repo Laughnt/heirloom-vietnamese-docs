@@ -1,54 +1,34 @@
-# Installation
+# Cài đặt
 
-Heirloom is a Paper plugin for modern Minecraft 1.21 servers. Install the core plugin first, then add optional addons such as Distillery and Cafe.
+Heirloom là plugin dành cho các máy chủ Minecraft 1.21+. Trước tiên,cài đặt plugin, sau đó mới cài thêm các tiện ích tùy chọn như Hệ thống Ủ rượu và Hệ thống Cà phê.
 
-## Install Layout
+## Bố cục cài đặt
 
 <div class="hl-media-grid">
-  <figure class="hl-media-card"><img src="../../images/showcase/install-plugin-overview.webp" alt="Heirloom plugin and addon folder overview"><figcaption>Core and addon jars beside their generated plugin folders.</figcaption></figure>
-  <figure class="hl-media-card"><img src="../../images/showcase/install-generated-files.webp" alt="Generated Heirloom files"><figcaption>Generated Heirloom resource files after the first startup.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/install-plugin-overview.webp" alt="Tổng quan plugin Heirloom và các thư mục tiện ích"><figcaption>Các tệp jar của Heirloom lõi và các tiện ích cùng những thư mục plugin đã được tạo.</figcaption></figure>
+  <figure class="hl-media-card"><img src="../../images/showcase/install-generated-files.webp" alt="Các tệp Heirloom được tạo tự động"><figcaption>Các tệp tài nguyên của Heirloom được tạo tự động sau lần khởi động đầu tiên.</figcaption></figure>
 </div>
 
-## Requirements
+## Yêu cầu hệ thống
 
-- Paper-compatible server for Minecraft 1.21.
-- Java version matching the server build you run.
-- Heirloom core jar.
-- Optional: HeirloomDistillery and HeirloomCafe addon jars.
-- Optional visual plugins: Nexo or ItemsAdder.
-- Optional protection plugins: WorldGuard, Towny, GriefPrevention, Lands, or similar claim plugins.
+- Máy chủ tương thích với Paper và Minecraft 1.21.
+- Phiên bản Java phù hợp với phiên bản máy chủ đang sử dụng.
+- Tệp `.jar` của Heirloom lõi.
+- Tùy chọn: tệp `.jar` của tiện ích mở rộng HeirloomDistillery và HeirloomCafe.
+- Tùy chọn plugin hiển thị gói tài nguyên: Nexo, CraftEngine hoặc ItemsAdder.
+- Tùy chọn plugin bảo vệ: WorldGuard, Towny, GriefPrevention, Lands hoặc các Plugin phụ trách bảo vệ công trình tương tự.
 
-## Install Core
+## Cài đặt Heirloom
 
-1. Stop the server.
-2. Put the Heirloom jar in `plugins/`.
-3. Start the server once.
-4. Confirm `plugins/Heirloom/` was created.
-5. Join and run `/hl help`.
+1. Dừng máy chủ.
+2. Đặt tệp `.jar` của Heirloom vào thư mục `plugins/`.
+3. Khởi động máy chủ.
+4. Kiểm tra xem thư mục `plugins/Heirloom/` đã được tạo hay chưa.
+5. Vào máy chủ và chạy lệnh `/hl help`.
 
-## Install Addons
+## Cài đặt tiện ích mở rộng
 
-Distillery and Cafe depend on Heirloom. Put addon jars in `plugins/` after core is installed, then restart.
+Hệ thống Ủ rượu và Hệ thống Cà phê cần có Heirloom để hoạt động. Sau khi cài Heirloom , đặt tệp `.jar` của tiện ích vào thư mục `plugins/`, sau đó khởi động lại máy chủ. Sau khi cài đặt xong, hãy chạy các lệnh kiểm tra: `/hld help`
 
-Use:
-
-```text
-/hld help
-/hlc help
-```
-
-## First Files To Review
-
-- `plugins/Heirloom/config.yml`
-- `plugins/Heirloom/custom_items.json`
-- `plugins/Heirloom/recipes.json`
-- `plugins/Heirloom/crops.json`
-- `plugins/Heirloom/dietary_properties.json`
-- `plugins/Heirloom/seed_acquisition.json`
-
-## Verify The Install
-
-Run `/hl debug test` from an admin account. It checks item registration, recipe matching, crop registration, protection hooks, EcoEnchants detection, and runtime GUI loading.
-
-!!! tip
-    If you use a claim plugin, test planting, harvesting, and station use in both allowed and denied regions before opening the server to players.
+!!! Lưu ý
+Nếu quản trị viên sử dụng plugin bảo vệ công trình, thì nhớ kiểm tra khả năng trồng cây, thu hoạch và sử dụng hệ thống nấu ăn ở cả khu vực cho phép và bị cấm trước - khi mở máy chủ cho người chơi tham gia.

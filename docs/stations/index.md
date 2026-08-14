@@ -1,18 +1,18 @@
-# Cooking Stations
+# Trạm nấu ăn
 
-Stations are built from normal blocks. Players interact with the station block, while Heirloom validates the supporting structure below or nearby.
+Các trạm được xây dựng từ các khối thông thường. Người chơi tương tác với khối trạm, trong khi Heirloom xác thực cấu trúc hỗ trợ bên dưới hoặc gần đó.
 
-| Station | Build | Main Role |
+| Trạm | Cách xây | Vai trò chính |
 | --- | --- | --- |
-| Oven | Stone pressure plate on a smoker | Baking, roasting, drying, long heat chains |
-| Boiling Pot | Cauldron or water cauldron over a campfire or soul campfire | Soups, rice, pasta, cheese, jam, wet recipes |
-| Mixing Bowl | Flower pot on any stripped block | Dough, creams, mixed prep, grinding-style steps |
-| Cutting Board | Wooden pressure plate on any stripped block | Chopping, slicing, mincing, flour and prep items |
-| Frying Pan | Heavy weighted pressure plate on a furnace | Eggs, pancakes, fried meals, fast heat |
-| Barista Machine | Iron trapdoor above quartz stairs, with Cafe installed | Cafe drink assembly |
+| Lò nướng | Tấm áp lực đá trên lò hun khói | Nướng, rang, sấy, chuỗi nhiệt dài |
+| Nồi đun | Vạc hoặc vạc nước trên lửa trại hoặc lửa trại linh hồn | Súp, cơm, mì, phô mai, mứt, công thức dạng lỏng |
+| Bát trộn | Chậu hoa trên bất kỳ khối gỗ đã bóc vỏ | Bột nhào, kem, trộn chuẩn bị, các bước kiểu nghiền |
+| Thớt | Tấm áp lực gỗ trên bất kỳ khối gỗ đã bóc vỏ | Chặt, thái, băm, bột mì và vật phẩm chuẩn bị |
+| Chảo chiên | Tấm áp lực nặng trên lò nung | Trứng, bánh kếp, món chiên, nhiệt nhanh |
+| Máy pha chế | Cửa sập sắt trên cầu thang thạch anh, cần cài đặt Cà phê | Lắp ráp đồ uống Cà phê |
 
-## How To Think About Stations
+## Cách Hiểu Về Các Trạm
 
-Stations are not skins for one crafting menu. Each station teaches a different kind of recipe: prep stations make intermediate ingredients, heat stations transform them, and addon stations finish specialized chains. If a recipe does not match, search the ingredient and check the station before assuming the item is broken.
+Các trạm không phải chỉ là những giao diện khác nhau cho cùng một công thức chế tạo. Mỗi trạm đảm nhiệm một nhóm chức năng riêng: trạm sơ chế dùng để tạo nguyên liệu trung gian, trạm gia nhiệt dùng để chế biến và biến đổi nguyên liệu, còn trạm bổ trợ được sử dụng để hoàn thiện những công thức thuộc các chuỗi đặc biệt. Khi một công thức không hoạt động như dự kiến, hãy tìm nguyên liệu cần dùng và kiểm tra đúng trạm trước khi kết luận rằng vật phẩm có vấn đề.
 
-Each station page lists practical first recipes, common chains, and its generated recipe table.
+Trang của mỗi trạm đều cung cấp những công thức nên thử trước, các chuỗi công thức thường gặp và bảng công thức được tạo ra cho trạm đó.

@@ -1,31 +1,31 @@
-# Rice
+# Lúa
 
 <figure class="hl-figure">
-  <img src="../../images/gardening/rice.webp" alt="Rice crop planted in water above soil.">
-  <figcaption>Rice crop planted in water above soil.</figcaption>
+  <img src="../../images/gardening/rice.webp" alt="Cây lúa được trồng dưới nước, trên lớp đất bên dưới.">
+  <figcaption>Cây lúa được trồng dưới nước, trên lớp đất bên dưới.</figcaption>
 </figure>
 
-| Field | Value |
+| Trường dữ liệu | Giá trị |
 | --- | --- |
-| Item | [`RICE`](../reference/items.md#item-rice) |
-| Plant type | `AQUATIC` |
-| Base growth | 360 seconds |
-| Stages | 4 |
-| Permission | `heirloom.crop.rice` |
-| Replants | `yes` |
+| Vật phẩm | [`RICE`](../reference/items.md#item-rice) |
+| Loại cây trồng | `AQUATIC` |
+| Thời gian sinh trưởng cơ bản | 360 giây |
+| Số giai đoạn sinh trưởng | 4 |
+| Quyền cần có | `heirloom.crop.rice` |
+| Trồng lại được | `Có` |
 
-## Planting
+## Cách trồng
 
-Valid blocks: `DIRT`, `CLAY`, `MUD`, `GRAVEL`, `SAND`
+Lúa có thể được trồng trên các khối nền sau: `DIRT`, `CLAY`, `MUD`, `GRAVEL`, `SAND`.
 
-Use the crop item on the correct block or face. If the crop has a permission, the player must have that node before planting.
+Cách trồng: cầm vật phẩm cây giống và nhấp chuột phải vào một khối đất phù hợp. Nếu cây trồng yêu cầu một quyền cụ thể, người chơi phải có quyền đó trước khi có thể gieo trồng.
 
-## Harvest
+## Thu hoạch
 
-Main drops: `RICE` 2-4.
+Khi thu hoạch lúa, bạn sẽ nhận được từ 2 đến 4 hạt lúa (`RICE`).
 
-If the crop keeps `replant_after_harvest` enabled, right-click harvest resets it to an early stage. Breaking the plant is treated as destruction, not a full harvest.
+Nếu bật `replant_after_harvest`, chỉ cần nhấp chuột phải vào cây đã trưởng thành là cây sẽ tự động quay về giai đoạn đầu, sẵn sàng cho vụ tiếp theo. Lưu ý rằng đập bỏ cây sẽ được coi là phá hủy hoàn toàn, không phải là thu hoạch hợp lệ.
 
-## Notes For Admins
+## Lưu ý cho quản trị viên
 
-Edit this crop in `crops.json` or the relevant addon crop file. Growth scale, stage count, valid blocks, sounds, drop chances, quality chance, and permission nodes are all data-driven.
+Quản trị viên có thể chỉnh sửa cây trồng này trong `crops.json` hoặc tệp cấu hình của tiện ích liên quan. Mọi thông số như tốc độ tăng trưởng, số giai đoạn, khối đất hợp lệ, âm thanh, tỷ lệ rơi, tỷ lệ ra chất lượng và quyền cần thiết đều hoàn toàn có thể cấu hình được qua dữ liệu.

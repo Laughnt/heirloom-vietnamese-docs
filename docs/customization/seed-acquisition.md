@@ -1,16 +1,18 @@
-# Seed Acquisition
+# Cách nhận hạt giống
 
-`seed_acquisition.json` controls how crops enter survival gameplay.
+`seed_acquisition.json` kiểm soát cách các loại cây trồng xuất hiện và được thu thập trong chế độ sinh tồn.
 
-Use it to configure:
+Sử dụng tệp này để cấu hình:
 
-- Seed packets.
-- Grass drops.
-- Chest loot injection.
-- Natural world patches.
+- Túi hạt giống.
+- Hạt giống rơi từ cỏ dại ven đường.
+- Thêm hạt giống vào chiến lợi phẩm trong rương ngẫu nhiên trong công trình.
+- Các cụm cây tuỳ chỉnh xuất hiện tự nhiên trong thế giới.
 
-## Balancing Advice
+## Khuyến nghị
 
-Use grass drops for common crops, seed packets for curated rewards, chest loot for exploration, and world patches for discovery. Avoid enabling all methods at high rates or rare crops stop feeling rare.
+Sử dụng hạt giống rơi từ cỏ cho các loại cây phổ biến, túi hạt giống cho các phần thưởng được thiết kế riêng, chiến lợi phẩm trong rương để khuyến khích khám phá và các cụm cây tự nhiên để tạo cảm giác khám phá cho người chơi.
 
-Keep world-generation changes conservative on live servers. They only affect new chunks and can make rare crops too common if patch chances are high.
+Không nên đặt tỷ lệ xuất hiện cao cho tất cả các cách nhận hạt giống cùng lúc, vì những loại cây khó tìm sẽ trở nên quá phổ biến.
+
+Đối với máy chủ đang hoạt động, nên hạn chế thay đổi cách tạo thế giới. Những thay đổi này chỉ áp dụng cho các chunk mới được tạo và có thể khiến cây hiếm xuất hiện quá nhiều, nếu tỷ lệ tạo cụm ngẫu nhiên được đặt quá cao.
