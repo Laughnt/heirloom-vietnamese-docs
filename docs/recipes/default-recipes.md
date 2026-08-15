@@ -4,7 +4,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 
 ## Máy pha chế
 
-### Americano - BREW_AMERICANO { #recipe-brew-americano }
+### Cà phê Americano - BREW_AMERICANO { #recipe-brew-americano }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-brew-americano"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/americano.png" alt="AMERICANO" title="Americano mặc định"></span><span class="hl-output-name">AMERICANO</span></a> |
@@ -138,7 +138,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 
 ## Nồi đun
 
-### Dango - ASIAN_DANGO { #recipe-asian-dango }
+### Bánh trôi Nhật Bản Dango - ASIAN_DANGO { #recipe-asian-dango }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-dango"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-dango.png" alt="ASIAN_DANGO" title="Dango Á mặc định"></span><span class="hl-output-name">ASIAN_DANGO</span></a> |
@@ -148,7 +148,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`ASIAN_RICE_FLOUR`](../reference/items.md#item-asian-rice-flour)<br>bắt buộc: 1 x [`SUGAR`](../reference/vanilla-items.md#vanilla-item-sugar) |
 | Quy tắc và hành động | - |
 
-### Dim Sum - ASIAN_DIM_SUM { #recipe-asian-dim-sum }
+### Điểm tâm Dim Sum - ASIAN_DIM_SUM { #recipe-asian-dim-sum }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-dim-sum"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-dim-sum.png" alt="ASIAN_DIM_SUM" title="Dim Sum Á mặc định"></span><span class="hl-output-name">ASIAN_DIM_SUM</span></a> |
@@ -168,7 +168,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`DOUGH`](../reference/items.md#item-dough)<br>bắt buộc: 1 x [`MINCED_MEAT`](../reference/items.md#item-minced-meat) hoặc [`PLANT_PROTEIN`](../reference/items.md#item-plant-protein) hoặc [`COD`](../reference/vanilla-items.md#vanilla-item-cod) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Meat Dumplings`<br>`SET_VISUAL_ITEM` = `ASIAN_DUMPLING_MEAT`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/1af15ce3085aff7fcac262c42261b3a58413fb881daf4f50a0b2ea15f0c4b36b`<br>`SET_PROPERTY` `NAME` = `Vegetable Dumplings`<br>`SET_VISUAL_ITEM` = `ASIAN_DUMPLING_VEGETABLE`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/819b1f24e86d5372de0a565432a6b3390be60975c2750851628279aabeaf0d9`<br>`SET_PROPERTY` `NAME` = `Seafood Dumplings`<br>`SET_VISUAL_ITEM` = `ASIAN_DUMPLING_SEAFOOD`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/b8f7f5db69cbce60bf7dbf44c14f9d32b67fb9e4764e15f23e1d92bd7960b665` |
 
-### Lẩu châu Á - ASIAN_HOT_POT { #recipe-asian-hot-pot }
+### Lẩu Châu Á - ASIAN_HOT_POT { #recipe-asian-hot-pot }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-hot-pot"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-hot-pot.png" alt="ASIAN_HOT_POT" title="Lẩu Á mặc định"></span><span class="hl-output-name">ASIAN_HOT_POT</span></a> |
@@ -178,7 +178,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`BOWL`](../reference/vanilla-items.md#vanilla-item-bowl)<br>bắt buộc: 1 x [`BEEF`](../reference/vanilla-items.md#vanilla-item-beef) hoặc [`PORKCHOP`](../reference/vanilla-items.md#vanilla-item-porkchop)<br>bắt buộc: 1 x [`COD`](../reference/vanilla-items.md#vanilla-item-cod) hoặc [`SALMON`](../reference/vanilla-items.md#vanilla-item-salmon)<br>bắt buộc: 1 x [`CARROT`](../reference/vanilla-items.md#vanilla-item-carrot) hoặc [`BROWN_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-brown-mushroom) |
 | Quy tắc và hành động | - |
 
-### Súp miso - ASIAN_MISO_SOUP { #recipe-asian-miso-soup }
+### Súp Miso - ASIAN_MISO_SOUP { #recipe-asian-miso-soup }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-miso-soup"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-miso-soup.png" alt="ASIAN_MISO_SOUP" title="Súp miso Á mặc định"></span><span class="hl-output-name">ASIAN_MISO_SOUP</span></a> |
@@ -218,7 +218,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1-2 x [`RICE`](../reference/items.md#item-rice)<br>bắt buộc: 1 x [`WATER_BOTTLE`](../reference/vanilla-items.md#vanilla-item-water-bottle)<br>tuỳ chọn: 0-1 x [`VINEGAR`](../reference/items.md#item-vinegar) |
 | Quy tắc và hành động | `SET_RETURN_ITEM` = `GLASS_BOTTLE`<br>`SET_VISUAL_ITEM` = `ASIAN_SUSHI_RICE`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/69c2ddf2bd74a4655e8f0153a7453e67db2a21dbfac6756789481adbec483a`<br>`SET_RETURN_ITEM` = `GLASS_BOTTLE`<br>`ADD_CONTAINS` = `VINEGAR`<br>`ADD_QUALITY` = `0.15` |
 
-### Ramen tonkotsu - ASIAN_TONKOTSU_RAMEN { #recipe-asian-tonkotsu-ramen }
+### Mì Ramen Tonkotsu - ASIAN_TONKOTSU_RAMEN { #recipe-asian-tonkotsu-ramen }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-tonkotsu-ramen"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-tonkotsu-ramen.png" alt="ASIAN_TONKOTSU_RAMEN" title="Ramen tonkotsu Á mặc định"></span><span class="hl-output-name">ASIAN_TONKOTSU_RAMEN</span></a> |
@@ -228,7 +228,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`BOWL`](../reference/vanilla-items.md#vanilla-item-bowl)<br>bắt buộc: 1 x [`ASIAN_RICE_NOODLES`](../reference/items.md#item-asian-rice-noodles) hoặc [`DRY_PASTA`](../reference/items.md#item-dry-pasta)<br>bắt buộc: 1 x [`COOKED_PORKCHOP`](../reference/vanilla-items.md#vanilla-item-cooked-porkchop)<br>tuỳ chọn: 0-1 x [`FRIED_EGG`](../reference/items.md#item-fried-egg) |
 | Quy tắc và hành động | `ADD_QUALITY` = `0.1` |
 
-### Udon - ASIAN_UDON { #recipe-asian-udon }
+### Mỳ Udon - ASIAN_UDON { #recipe-asian-udon }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-udon"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-udon.png" alt="ASIAN_UDON" title="Udon Á mặc định"></span><span class="hl-output-name">ASIAN_UDON</span></a> |
@@ -238,7 +238,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`BOWL`](../reference/vanilla-items.md#vanilla-item-bowl)<br>bắt buộc: 1 x [`ASIAN_RICE_NOODLES`](../reference/items.md#item-asian-rice-noodles) hoặc [`DRY_PASTA`](../reference/items.md#item-dry-pasta)<br>tuỳ chọn: 0-1 x [`BROWN_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-brown-mushroom) |
 | Quy tắc và hành động | `ADD_QUALITY` = `0.1` |
 
-### Táo kẹo - CANDY_APPLE { #recipe-candy-apple }
+### Kẹo táo - CANDY_APPLE { #recipe-candy-apple }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-candy-apple"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/recipe-variants/921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07.png" alt="Táo kẹo mặc định" title="Táo kẹo mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">CANDY_APPLE</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/921127d22675c5c769a0c08b572018d299c83046f8e1f943ed9d51be03b07.png" alt="Táo kẹo" title="Táo kẹo"><span class="hl-output-variant-label">Táo kẹo</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/421cab4095e71bd925cf464990e18e43adb725db7cc175fd9d1dec820914b3de.png" alt="Táo kẹo vàng" title="Táo kẹo vàng"><span class="hl-output-variant-label">Táo kẹo vàng</span></span></span></span> |
@@ -388,7 +388,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 2 x [`POTATO`](../reference/vanilla-items.md#vanilla-item-potato)<br>bắt buộc: 1 x [`BUTTER`](../reference/items.md#item-butter)<br>bắt buộc: 1 x [`HEAVY_CREAM`](../reference/items.md#item-heavy-cream)<br>tuỳ chọn: 0-1 x [`SALT`](../reference/items.md#item-salt) |
 | Quy tắc và hành động | `SET_QUALITY` = `0.5`<br>`ADD_QUALITY` = `0.1` |
 
-### Pasta Bolognese - PASTA_BOLOGNESE { #recipe-pasta-bolognese }
+### Mì Ý sốt bò bằm - Pasta Bolognese - PASTA_BOLOGNESE { #recipe-pasta-bolognese }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-pasta-bolognese"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/pasta-bolognese.png" alt="PASTA_BOLOGNESE" title="Pasta bolognese mặc định"></span><span class="hl-output-name">PASTA_BOLOGNESE</span></a> |
@@ -410,7 +410,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 
 ## Bàn chế tạo
 
-### Falafel Wrap - FALAFEL_WRAP { #recipe-falafel-wrap }
+### Bánh cuộn Falafel - FALAFEL_WRAP { #recipe-falafel-wrap }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-falafel-wrap"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-icon-missing hl-output-icon" src="../../images/items/system/missing.png" alt="FALAFEL_WRAP" title="Falafel wrap mặc định"></span><span class="hl-output-name">FALAFEL_WRAP</span></a> |
@@ -422,7 +422,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 
 ## Thớt
 
-### Hộp cơm bento tiệc Á - ASIAN_FEAST_BENTO { #recipe-asian-feast-bento }
+### Hộp cơm bento tiệc Châu Á - ASIAN_FEAST_BENTO { #recipe-asian-feast-bento }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-feast-bento"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-feast-bento.png" alt="ASIAN_FEAST_BENTO" title="Hộp cơm bento tiệc Á mặc định"></span><span class="hl-output-name">ASIAN_FEAST_BENTO</span></a> |
@@ -432,7 +432,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 2 x [`ASIAN_SUSHI_RICE`](../reference/items.md#item-asian-sushi-rice)<br>bắt buộc: 1 x [`SUSHI`](../reference/items.md#item-sushi)<br>bắt buộc: 1 x [`COOKED_CHICKEN`](../reference/vanilla-items.md#vanilla-item-cooked-chicken)<br>tuỳ chọn: 0-1 x [`CARROT`](../reference/vanilla-items.md#vanilla-item-carrot) |
 | Quy tắc và hành động | `ADD_QUALITY` = `0.1` |
 
-### Maki - ASIAN_MAKI { #recipe-asian-maki }
+### Cơm cuộn Nhật Bản - ASIAN_MAKI { #recipe-asian-maki }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-asian-maki"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-maki-salmon.png" alt="ASIAN_MAKI_SALMON" title="Maki cá hồi mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">ASIAN_MAKI_SALMON</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-maki-salmon.png" alt="ASIAN_MAKI_SALMON" title="Maki cá hồi"><span class="hl-output-variant-label">Maki cá hồi</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-maki-vegetable.png" alt="ASIAN_MAKI_VEGETABLE" title="Maki rau củ"><span class="hl-output-variant-label">Maki rau củ</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-maki-rainbow.png" alt="ASIAN_MAKI_RAINBOW" title="Maki nhiệt đới"><span class="hl-output-variant-label">Maki nhiệt đới</span></span></span></span> |
@@ -462,7 +462,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`SALMON`](../reference/vanilla-items.md#vanilla-item-salmon) hoặc [`COD`](../reference/vanilla-items.md#vanilla-item-cod) hoặc [`TROPICAL_FISH`](../reference/vanilla-items.md#vanilla-item-tropical-fish) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Salmon Sashimi`<br>`SET_VISUAL_ITEM` = `ASIAN_SASHIMI_SALMON`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/b17eda1f65bdc8ed41aaa4ccaa4e2bed694714e32867ee16af31f4c42ef1f28`<br>`SET_PROPERTY` `NAME` = `Cod Sashimi`<br>`SET_VISUAL_ITEM` = `ASIAN_SASHIMI_COD`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/23bf8fca2af3592c5574b13e3bcf61e2fae829788535f0ddeaa7a2e45b6ba4`<br>`SET_PROPERTY` `NAME` = `Tropical Fish Sashimi`<br>`SET_VISUAL_ITEM` = `ASIAN_SASHIMI_TROPICAL`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/21e56100a7a62941428a67f545fdeeace6ab48183bdc1998344e219fe16209f1` |
 
-### Bánh sandwich BLT - BLT { #recipe-blt }
+### Bánh Sandwich thịt xông khói, là lách, cà chua - BLT (Bacon, Lettuce, Tomato) { #recipe-blt }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-blt"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/blt.png" alt="BLT" title="Bánh sandwich BLT mặc định"></span><span class="hl-output-name">BLT</span></a> |
@@ -492,7 +492,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`DOUGH`](../reference/items.md#item-dough) |
 | Quy tắc và hành động | `SET_QUALITY` = `0.25`<br>`ADD_QUALITY` = `0.35`<br>`ADD_CONTAINS` = `EGG`<br>`SET_PROPERTY` `NAME` = `Fresh Egg Pasta` |
 
-### Mì khô - DRY_PASTA { #recipe-dry-pasta-2 }
+### Mì khô 2 - DRY_PASTA 2 { #recipe-dry-pasta-2 }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-dry-pasta-2"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/dry-pasta.png" alt="DRY_PASTA" title="Pasta khô mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">DRY_PASTA</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/heirloom/dry-pasta.png" alt="DRY_PASTA" title="Pasta khô"><span class="hl-output-variant-label">Pasta khô</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-rice-noodles.png" alt="ASIAN_RICE_NOODLES" title="Bún gạo"><span class="hl-output-variant-label">Bún gạo</span></span></span></span> |
@@ -574,7 +574,8 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 
 ## Chảo chiên
 
-### Gyoza - ASIAN_GYOZA { #recipe-asian-gyoza }
+
+### Há cảo Nhật Bản - ASIAN_GYOZA { #recipe-asian-gyoza }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-gyoza"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-gyoza.png" alt="ASIAN_GYOZA" title="Gyoza Á mặc định"></span><span class="hl-output-name">ASIAN_GYOZA</span></a> |
@@ -584,9 +585,7 @@ Trang này được tạo từ các tệp JSON công thức được đóng gói
 | Nguyên liệu | bắt buộc: 1 x [`ASIAN_DUMPLING_MEAT`](../reference/items.md#item-asian-dumpling-meat) hoặc [`ASIAN_DUMPLING_VEGETABLE`](../reference/items.md#item-asian-dumpling-vegetable) hoặc [`ASIAN_DUMPLING_SEAFOOD`](../reference/items.md#item-asian-dumpling-seafood) |
 | Quy tắc và hành động | - |
 
-___
-
-### Chả giò Á - ASIAN_SPRING_ROLL { #recipe-asian-spring-roll }
+### Chả giò Châu Á - ASIAN_SPRING_ROLL { #recipe-asian-spring-roll }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-spring-roll"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-spring-roll.png" alt="ASIAN_SPRING_ROLL" title="Chả giò Á mặc định"></span><span class="hl-output-name">Chả giò Á</span></a> |
@@ -596,7 +595,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`DOUGH`](../reference/items.md#item-dough)<br>bắt buộc: 1 x [`CARROT`](../reference/vanilla-items.md#vanilla-item-carrot) hoặc [`PLANT_PROTEIN`](../reference/items.md#item-plant-protein) |
 | Quy tắc và hành động | - |
 
-### Takoyaki Á - ASIAN_TAKOYAKI { #recipe-asian-takoyaki }
+### Bánh bạch tuộc Takoyaki - ASIAN_TAKOYAKI { #recipe-asian-takoyaki }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-takoyaki"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-takoyaki.png" alt="ASIAN_TAKOYAKI" title="Takoyaki Á mặc định"></span><span class="hl-output-name">Takoyaki Á</span></a> |
@@ -606,7 +605,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`COD`](../reference/vanilla-items.md#vanilla-item-cod)<br>bắt buộc: 1 x [`DOUGH`](../reference/items.md#item-dough) |
 | Quy tắc và hành động | - |
 
-### Cơm teriyaki Á - ASIAN_TERIYAKI_BOWL { #recipe-asian-teriyaki-bowl }
+### Cơm tô Teriyaki - ASIAN_TERIYAKI_BOWL { #recipe-asian-teriyaki-bowl}
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-teriyaki-bowl"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-teriyaki-bowl.png" alt="ASIAN_TERIYAKI_BOWL" title="Cơm teriyaki Á mặc định"></span><span class="hl-output-name">Cơm teriyaki Á</span></a> |
@@ -636,7 +635,7 @@ ___
 | Nguyên liệu | bắt buộc: 1-2 x [`EGG`](../reference/vanilla-items.md#vanilla-item-egg) hoặc [`BLUE_EGG`](../reference/vanilla-items.md#vanilla-item-blue-egg) hoặc [`BROWN_EGG`](../reference/vanilla-items.md#vanilla-item-brown-egg)<br>bắt buộc: 1 x [`BACON`](../reference/items.md#item-bacon) |
 | Quy tắc và hành động | `SET_QUALITY` = `0.5` |
 
-### Falafel - FALAFEL { #recipe-falafel }
+### Chả đậu gà - FALAFEL { #recipe-falafel } ([dienmayxanh.com][1])
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-falafel"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/falafel.png" alt="FALAFEL" title="Falafel mặc định"></span><span class="hl-output-name">Falafel</span></a> |
@@ -766,9 +765,9 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`FLATBREAD`](../reference/items.md#item-flatbread)<br>bắt buộc: 1 x [`MINCED_MEAT`](../reference/items.md#item-minced-meat) hoặc [`PLANT_PROTEIN`](../reference/items.md#item-plant-protein) hoặc [`COOKED_BEEF`](../reference/vanilla-items.md#vanilla-item-cooked-beef)<br>bắt buộc: 1 x [`TOMATO`](../reference/items.md#item-tomato)<br>tuỳ chọn: 0-1 x [`CHEESE`](../reference/items.md#item-cheese)<br>tuỳ chọn: 0-1 x [`LETTUCE`](../reference/items.md#item-lettuce)<br>tuỳ chọn: 0-1 x [`CORN`](../reference/items.md#item-corn) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Taco`<br>`SET_QUALITY` = `0.5`<br>`SET_PROPERTY` `NAME` = `Veggie Taco`<br>`PREPEND_NAME` = `Cheesy `<br>`ADD_QUALITY` = `0.1`<br>`PREPEND_NAME` = `Fresh `<br>`ADD_QUALITY` = `0.05`<br>`PREPEND_NAME` = `Corn `<br>`ADD_QUALITY` = `0.05`<br>`SET_PROPERTY` `NAME` = `Loaded Taco`<br>`ADD_QUALITY` = `0.2` |
 
-## Bát trộn
+## Máy trộn
 
-### Trà sữa trân châu Á - ASIAN_BOBA_TEA { #recipe-asian-boba-tea }
+### Trà sữa trân châu Châu Á - ASIAN_BOBA_TEA { #recipe-asian-boba-tea }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-boba-tea"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-boba-tea.png" alt="ASIAN_BOBA_TEA" title="Trà sữa trân châu Á mặc định"></span><span class="hl-output-name">Trà sữa trân châu Á</span></a> |
@@ -778,7 +777,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`MILK_BUCKET`](../reference/vanilla-items.md#vanilla-item-milk-bucket)<br>bắt buộc: 1 x [`HONEY_BOTTLE`](../reference/vanilla-items.md#vanilla-item-honey-bottle)<br>bắt buộc: 1 x [`ASIAN_RICE_FLOUR`](../reference/items.md#item-asian-rice-flour) |
 | Quy tắc và hành động | `SET_RETURN_ITEM` = `BUCKET` |
 
-### Kem matcha Á - ASIAN_MATCHA_ICE_CREAM { #recipe-asian-matcha-ice-cream }
+### Kem matcha Châu Á - ASIAN_MATCHA_ICE_CREAM { #recipe-asian-matcha-ice-cream }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-matcha-ice-cream"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-matcha-ice-cream.png" alt="ASIAN_MATCHA_ICE_CREAM" title="Kem matcha Á mặc định"></span><span class="hl-output-name">Kem matcha Á</span></a> |
@@ -788,7 +787,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`ICE_CREAM`](../reference/items.md#item-ice-cream)<br>bắt buộc: 1 x [`GREEN_DYE`](../reference/vanilla-items.md#vanilla-item-green-dye) |
 | Quy tắc và hành động | - |
 
-### Mochi Á - ASIAN_MOCHI { #recipe-asian-mochi }
+### Cơm trộn kiểu Hawaii - ASIAN_POKE_BOWL { #recipe-asian-poke-bowl }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-mochi"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-mochi.png" alt="ASIAN_MOCHI" title="Mochi Á mặc định"></span><span class="hl-output-name">Mochi Á</span></a> |
@@ -798,7 +797,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`ASIAN_RICE_FLOUR`](../reference/items.md#item-asian-rice-flour)<br>bắt buộc: 1 x [`SUGAR`](../reference/vanilla-items.md#vanilla-item-sugar)<br>bắt buộc: 1 x [`WATER_BOTTLE`](../reference/vanilla-items.md#vanilla-item-water-bottle)<br>tuỳ chọn: 0-1 x [`SWEET_BERRIES`](../reference/vanilla-items.md#vanilla-item-sweet-berries) hoặc [`GREEN_DYE`](../reference/vanilla-items.md#vanilla-item-green-dye) |
 | Quy tắc và hành động | `SET_RETURN_ITEM` = `GLASS_BOTTLE`<br>`SET_VISUAL_ITEM` = `ASIAN_MOCHI`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/2f7918f5f4829af9dda67a8f4e5aa1f68eda57fede664b6797b989727c5378c9`<br>`SET_PROPERTY` `NAME` = `Sweet Berry Mochi`<br>`SET_VISUAL_ITEM` = `ASIAN_MOCHI_BERRY`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/2f7918f5f4829af9dda67a8f4e5aa1f68eda57fede664b6797b989727c5378c9`<br>`SET_PROPERTY` `NAME` = `Matcha Mochi`<br>`SET_VISUAL_ITEM` = `ASIAN_MOCHI_MATCHA`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/2f7918f5f4829af9dda67a8f4e5aa1f68eda57fede664b6797b989727c5378c9` |
 
-### Poke bowl Á - ASIAN_POKE_BOWL { #recipe-asian-poke-bowl }
+### Cơm trộn lát cắt kiểu Hawaii - ASIAN_POKE_BOWL { #recipe-asian-poke-bowl }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-asian-poke-bowl"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-poke-bowl-salmon.png" alt="ASIAN_POKE_BOWL_SALMON" title="Poke bowl cá hồi mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">Poke bowl cá hồi</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-poke-bowl-salmon.png" alt="ASIAN_POKE_BOWL_SALMON" title="Poke bowl cá hồi"><span class="hl-output-variant-label">Poke bowl cá hồi</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/visual-pack/asian-poke-bowl-cod.png" alt="ASIAN_POKE_BOWL_COD" title="Poke bowl cá tuyết"><span class="hl-output-variant-label">Poke bowl cá tuyết</span></span></span></span> |
@@ -808,7 +807,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`BOWL`](../reference/vanilla-items.md#vanilla-item-bowl)<br>bắt buộc: 1 x [`ASIAN_SUSHI_RICE`](../reference/items.md#item-asian-sushi-rice) hoặc [`COOKED_RICE`](../reference/items.md#item-cooked-rice)<br>bắt buộc: 1 x [`SALMON`](../reference/vanilla-items.md#vanilla-item-salmon) hoặc [`COD`](../reference/vanilla-items.md#vanilla-item-cod) hoặc [`TROPICAL_FISH`](../reference/vanilla-items.md#vanilla-item-tropical-fish)<br>tuỳ chọn: 0-1 x [`CARROT`](../reference/vanilla-items.md#vanilla-item-carrot)<br>tuỳ chọn: 0-1 x [`DRIED_KELP`](../reference/vanilla-items.md#vanilla-item-dried-kelp) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Salmon Poke Bowl`<br>`SET_VISUAL_ITEM` = `ASIAN_POKE_BOWL_SALMON`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/25a5f2d51ad32e493e7970fd48fcfe07fa5e29d932ae4b20e06c8e4b8cb204a3`<br>`SET_PROPERTY` `NAME` = `Cod Poke Bowl`<br>`SET_VISUAL_ITEM` = `ASIAN_POKE_BOWL_COD`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/84c1fab03af73b05aa90edd6e71a8d635ec2789678436701caf1f3c801133bdc`<br>`SET_PROPERTY` `NAME` = `Tropical Fish Poke Bowl`<br>`SET_VISUAL_ITEM` = `ASIAN_POKE_BOWL_TROPICAL`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/84c1fab03af73b05aa90edd6e71a8d635ec2789678436701caf1f3c801133bdc`<br>`ADD_QUALITY` = `0.1`<br>`ADD_QUALITY` = `0.1` |
 
-### Hộp cơm bento di động Á - ASIAN_PORTABLE_BENTO { #recipe-asian-portable-bento }
+### Hộp cơm Bento mang đi - ASIAN_PORTABLE_BENTO { #recipe-asian-portable-bento }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-portable-bento"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-portable-bento.png" alt="ASIAN_PORTABLE_BENTO" title="Hộp cơm bento di động Á mặc định"></span><span class="hl-output-name">Hộp cơm bento di động Á</span></a> |
@@ -818,7 +817,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`ASIAN_SUSHI_RICE`](../reference/items.md#item-asian-sushi-rice)<br>bắt buộc: 1 x [`SUSHI`](../reference/items.md#item-sushi)<br>bắt buộc: 1 x [`COOKED_CHICKEN`](../reference/vanilla-items.md#vanilla-item-cooked-chicken)<br>bắt buộc: 1 x [`CARROT`](../reference/vanilla-items.md#vanilla-item-carrot) |
 | Quy tắc và hành động | - |
 
-### Bột gạo Á - ASIAN_RICE_FLOUR { #recipe-asian-rice-flour }
+### Bột gạo - ASIAN_RICE_FLOUR { #recipe-asian-rice-flour }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-rice-flour"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-rice-flour.png" alt="ASIAN_RICE_FLOUR" title="Bột gạo Á mặc định"></span><span class="hl-output-name">Bột gạo Á</span></a> |
@@ -868,7 +867,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`BAG_OF_FLOUR`](../reference/items.md#item-bag-of-flour) hoặc [`CORNMEAL`](../reference/items.md#item-cornmeal)<br>bắt buộc: 1 x [`WATER_BOTTLE`](../reference/vanilla-items.md#vanilla-item-water-bottle)<br>tuỳ chọn: 0-1 x [`EGG`](../reference/vanilla-items.md#vanilla-item-egg) hoặc [`BLUE_EGG`](../reference/vanilla-items.md#vanilla-item-blue-egg) hoặc [`BROWN_EGG`](../reference/vanilla-items.md#vanilla-item-brown-egg)<br>tuỳ chọn: 0-1 x [`BAKING_POWDER`](../reference/items.md#item-baking-powder)<br>tuỳ chọn: 0-1 x [`SUGAR`](../reference/vanilla-items.md#vanilla-item-sugar)<br>tuỳ chọn: 0-1 x [`BROWN_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-brown-mushroom)<br>tuỳ chọn: 0-1 x [`BUTTER`](../reference/items.md#item-butter) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Dough`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e`<br>`SET_RETURN_ITEM` = `GLASS_BOTTLE`<br>`SET_QUALITY` = `0.3`<br>`ADD_CONTAINS` = `EGG`<br>`ADD_QUALITY` = `0.1`<br>`ADD_CONTAINS` = `BAKING_POWDER`<br>`ADD_QUALITY` = `0.15`<br>`ADD_CONTAINS` = `SUGAR`<br>`ADD_QUALITY` = `0.1`<br>`ADD_CONTAINS` = `YEAST`<br>`ADD_QUALITY` = `0.1`<br>`SET_PROPERTY` `NAME` = `Yeasted Dough`<br>`ADD_CONTAINS` = `BUTTER`<br>`ADD_QUALITY` = `0.1`<br>`SET_PROPERTY` `NAME` = `Rich Dough`<br>`ADD_QUALITY` = `0.1` |
 
-### Bột nhào - DOUGH { #recipe-dough-2 }
+### Bột nhào 2 - DOUGH 2 { #recipe-dough-2 }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-dough-2"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/recipe-variants/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e.png" alt="Bột nhào mặc định" title="Bột nhào mặc định"></span><span class="hl-output-name">Bột nhào</span></a> |
@@ -878,7 +877,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`BAG_OF_FLOUR`](../reference/items.md#item-bag-of-flour) hoặc [`CORNMEAL`](../reference/items.md#item-cornmeal) hoặc [`ASIAN_RICE_FLOUR`](../reference/items.md#item-asian-rice-flour)<br>bắt buộc: 1 x [`WATER_BOTTLE`](../reference/vanilla-items.md#vanilla-item-water-bottle)<br>tuỳ chọn: 0-1 x [`EGG`](../reference/vanilla-items.md#vanilla-item-egg) hoặc [`BLUE_EGG`](../reference/vanilla-items.md#vanilla-item-blue-egg) hoặc [`BROWN_EGG`](../reference/vanilla-items.md#vanilla-item-brown-egg)<br>tuỳ chọn: 0-1 x [`BAKING_POWDER`](../reference/items.md#item-baking-powder)<br>tuỳ chọn: 0-1 x [`SUGAR`](../reference/vanilla-items.md#vanilla-item-sugar)<br>tuỳ chọn: 0-1 x [`BROWN_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-brown-mushroom)<br>tuỳ chọn: 0-1 x [`BUTTER`](../reference/items.md#item-butter) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Dough`<br>`SET_VISUAL_ITEM` = `DOUGH`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/8166d79de64abb4457ab87fa8f6706d55ce682e10db849ea6dd124095b12276e`<br>`SET_RETURN_ITEM` = `GLASS_BOTTLE`<br>`SET_QUALITY` = `0.3`<br>`SET_PROPERTY` `NAME` = `Rice Dough`<br>`ADD_CONTAINS` = `RICE_FLOUR`<br>`ADD_QUALITY` = `0.1`<br>`ADD_CONTAINS` = `EGG`<br>`ADD_QUALITY` = `0.1`<br>`ADD_CONTAINS` = `BAKING_POWDER`<br>`ADD_QUALITY` = `0.15`<br>`ADD_CONTAINS` = `SUGAR`<br>`ADD_QUALITY` = `0.1`<br>`ADD_CONTAINS` = `YEAST`<br>`ADD_QUALITY` = `0.1`<br>`SET_PROPERTY` `NAME` = `Yeasted Dough`<br>`ADD_CONTAINS` = `BUTTER`<br>`ADD_QUALITY` = `0.1`<br>`SET_PROPERTY` `NAME` = `Rich Dough`<br>`ADD_QUALITY` = `0.1` |
 
-### Eggnog - EGGNOG { #recipe-eggnog }
+### Cocktail trứng sữa - EGGNOG { #recipe-eggnog } ([vnexpress.net][1])
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-eggnog"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/recipe-variants/aa05e4d9c78486646995cf94e61013c71746696cebdc97ac45aec377f05a3e77.png" alt="Eggnog" title="Eggnog mặc định"></span><span class="hl-output-name">Eggnog</span></a> |
@@ -962,7 +961,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`BEETROOT`](../reference/vanilla-items.md#vanilla-item-beetroot)<br>bắt buộc: 1 x [`BROWN_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-brown-mushroom) hoặc [`RED_MUSHROOM`](../reference/vanilla-items.md#vanilla-item-red-mushroom)<br>bắt buộc: 1 x [`DRIED_KELP`](../reference/vanilla-items.md#vanilla-item-dried-kelp) hoặc [`BAG_OF_FLOUR`](../reference/items.md#item-bag-of-flour) hoặc [`CORNMEAL`](../reference/items.md#item-cornmeal) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Plant Protein`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/bb8e5237076dcd41f48aaead0553e2b555f469ac989d229e1c58b8bc95efbb0` |
 
-### Salad vườn - SALAD { #recipe-salad }
+### Sa lát rau vườn - SALAD { #recipe-salad }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-salad"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/recipe-variants/9979fe7b32fb7fc9746e157471f975f31afcb58fd8b5acb8bf53ec350f4d5c2.png" alt="Salad vườn" title="Salad vườn mặc định"></span><span class="hl-output-name">Salad vườn</span></a> |
@@ -984,7 +983,7 @@ ___
 
 ## Lò nướng
 
-### Vịt quay Bắc Kinh Á - ASIAN_PEKING_DUCK { #recipe-asian-peking-duck }
+### Vịt quay Bắc Kinh - ASIAN_PEKING_DUCK { #recipe-asian-peking-duck }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-asian-peking-duck"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/visual-pack/asian-peking-duck.png" alt="ASIAN_PEKING_DUCK" title="Vịt quay Bắc Kinh Á mặc định"></span><span class="hl-output-name">Vịt quay Bắc Kinh Á</span></a> |
@@ -1055,7 +1054,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`BAG_OF_FLOUR`](../reference/items.md#item-bag-of-flour)<br>bắt buộc: 1 x [`HONEY_BOTTLE`](../reference/vanilla-items.md#vanilla-item-honey-bottle)<br>bắt buộc: 1 x [`BUTTER`](../reference/items.md#item-butter)<br>bắt buộc: 1 x [`EGG`](../reference/vanilla-items.md#vanilla-item-egg) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Gingerbread`<br>`SET_TEXTURE` = `http://textures.minecraft.net/texture/dbd7748afec6f1c69d96cd7e4200d235aabe460c23ba2086859199e00e8372e5`<br>`SET_QUALITY` = `0.6`<br>`ADD_LORE` = `Món ngọt ngày lễ!`<br>`ADD_LORE` = `✦ Đặc biệt Giáng sinh` |
 
-### Kebab - KEBAB { #recipe-kebab }
+### Thịt nướng Kebab - KEBAB { #recipe-kebab }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-kebab"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/kebab.png" alt="KEBAB" title="Kebab mặc định"></span><span class="hl-output-name">Kebab</span></a> |
@@ -1065,7 +1064,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`FLATBREAD`](../reference/items.md#item-flatbread)<br>bắt buộc: 1 x [`COOKED_MUTTON`](../reference/vanilla-items.md#vanilla-item-cooked-mutton)<br>bắt buộc: 1 x [`TOMATO`](../reference/items.md#item-tomato)<br>tuỳ chọn: 0-2 x [`LETTUCE`](../reference/items.md#item-lettuce) hoặc [`ONION`](../reference/items.md#item-onion) hoặc [`GARLIC`](../reference/items.md#item-garlic) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Kebab`<br>`SET_QUALITY` = `0.35`<br>`ADD_QUALITY` = `0.1`<br>`ADD_QUALITY` = `0.1`<br>`PREPEND_NAME` = `Spicy ` |
 
-### Lasagna - LASAGNA { #recipe-lasagna }
+### Mì nướng Lasagna - LASAGNA { #recipe-lasagna }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-lasagna"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/lasagna.png" alt="LASAGNA" title="Lasagna mặc định"></span><span class="hl-output-name">Lasagna</span></a> |
@@ -1075,7 +1074,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`DRY_PASTA`](../reference/items.md#item-dry-pasta)<br>bắt buộc: 1 x [`MINCED_MEAT`](../reference/items.md#item-minced-meat) hoặc [`PLANT_PROTEIN`](../reference/items.md#item-plant-protein)<br>bắt buộc: 1 x [`CHEESE`](../reference/items.md#item-cheese)<br>bắt buộc: 1 x [`CANNED_TOMATOES`](../reference/items.md#item-canned-tomatoes)<br>tuỳ chọn: 0-1 x [`HEAVY_CREAM`](../reference/items.md#item-heavy-cream)<br>tuỳ chọn: 0-1 x [`BUTTER`](../reference/items.md#item-butter) |
 | Quy tắc và hành động | `SET_PROPERTY` `NAME` = `Lasagna`<br>`SET_QUALITY` = `0.5`<br>`SET_PROPERTY` `NAME` = `Veggie Lasagna`<br>`SET_PROPERTY` `NAME` = `Béchamel Lasagna`<br>`ADD_QUALITY` = `0.15`<br>`SET_PROPERTY` `NAME` = `Nonna's Lasagna`<br>`ADD_QUALITY` = `0.2` |
 
-### Xác lá - MAKE_LEAF_LITTER { #recipe-make-leaf-litter }
+### Lớp lá rụng - MAKE_LEAF_LITTER { #recipe-make-leaf-litter }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <a class="hl-output-item" href="#recipe-make-leaf-litter"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/minecraft/leaf-litter.png" alt="LEAF_LITTER" title="Xác lá mặc định"></span><span class="hl-output-name">Xác lá</span></a> |
@@ -1086,7 +1085,7 @@ ___
 | Nguyên liệu | bắt buộc: 1-3 x [`OAK_LEAVES`](../reference/vanilla-items.md#vanilla-item-oak-leaves) hoặc [`SPRUCE_LEAVES`](../reference/vanilla-items.md#vanilla-item-spruce-leaves) hoặc [`BIRCH_LEAVES`](../reference/vanilla-items.md#vanilla-item-birch-leaves) hoặc [`JUNGLE_LEAVES`](../reference/vanilla-items.md#vanilla-item-jungle-leaves) hoặc [`ACACIA_LEAVES`](../reference/vanilla-items.md#vanilla-item-acacia-leaves) hoặc [`DARK_OAK_LEAVES`](../reference/vanilla-items.md#vanilla-item-dark-oak-leaves) hoặc [`MANGROVE_LEAVES`](../reference/vanilla-items.md#vanilla-item-mangrove-leaves) hoặc [`CHERRY_LEAVES`](../reference/vanilla-items.md#vanilla-item-cherry-leaves) hoặc [`AZALEA_LEAVES`](../reference/vanilla-items.md#vanilla-item-azalea-leaves) hoặc [`FLOWERING_AZALEA_LEAVES`](../reference/vanilla-items.md#vanilla-item-flowering-azalea-leaves) |
 | Quy tắc và hành động | - |
 
-### Bánh - PIE { #recipe-pie }
+### Bánh nướng - PIE { #recipe-pie }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-pie"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/recipe-variants/38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a.png" alt="Bánh bí ngô" title="Bánh bí ngô mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">Bánh bí ngô</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/38a971df51e9ca9a5b92e45d3fa547dd3191877929a437d50153892e585a.png" alt="Bánh bí ngô" title="Bánh bí ngô"><span class="hl-output-variant-label">Bánh bí ngô</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/f30ee237290dba133da01af5f88b87cce3b94bc40c5089e988852d478fa154a2.png" alt="Bánh táo" title="Bánh táo"><span class="hl-output-variant-label">Bánh táo</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/d53c1e87e537f1ab2774ddafb83439b336f4a777b47ad82bcb30d5fcbdf9bc.png" alt="Bánh dâu" title="Bánh dâu"><span class="hl-output-variant-label">Bánh dâu</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/ad3b76df3aa76893a161895d981f2248fcde96dbc4042129045f95de10e18485.png" alt="Bánh dâu phát sáng" title="Bánh dâu phát sáng"><span class="hl-output-variant-label">Bánh dâu phát sáng</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/90477134d2ac52569f062707b04e4a37a70a9fed6110c7d2f145f76be1cd826e.png" alt="Bánh Chorus" title="Bánh Chorus"><span class="hl-output-variant-label">Bánh Chorus</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/f4821725a23a06b92ba7936351ccfab422905d781897c26f0b612a6df2a20.png" alt="Bánh việt quất" title="Bánh việt quất"><span class="hl-output-variant-label">Bánh việt quất</span></span></span></span> |
@@ -1150,7 +1149,7 @@ ___
 | Nguyên liệu | bắt buộc: 1-3 x [`COFFEE_BEANS_MEDIUM`](../reference/items.md#item-coffee-beans-medium) |
 | Quy tắc và hành động | - |
 
-### Gà tây quay - ROAST_TURKEY { #recipe-roast-turkey }
+### Gà Tây quay - ROAST_TURKEY { #recipe-roast-turkey }
 | Trường | Giá trị |
 | --- | --- |
 | Đầu ra | <span class="hl-output-with-variants"><a class="hl-output-item" href="#recipe-roast-turkey"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/roast-turkey.png" alt="ROAST_TURKEY" title="Gà tây quay mặc định"><span class="hl-output-variant-caret" aria-hidden="true"></span></span><span class="hl-output-name">Gà tây quay</span></a><span class="hl-output-variant-tray" role="list"><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/heirloom/roast-turkey.png" alt="ROAST_TURKEY" title="Gà tây quay"><span class="hl-output-variant-label">Gà tây quay</span></span><span class="hl-output-variant-entry"><img class="hl-item-icon hl-output-variant-icon" src="../../images/items/recipe-variants/3bb079d54acf9fd56e0706379841040a31d99802cda54a4f60d4f294c3be20a6.png" alt="Đậu phụ quay" title="Đậu phụ quay"><span class="hl-output-variant-label">Đậu phụ quay</span></span></span></span> |
@@ -1170,7 +1169,7 @@ ___
 | Nguyên liệu | bắt buộc: 1 x [`WATER_BOTTLE`](../reference/vanilla-items.md#vanilla-item-water-bottle) |
 | Quy tắc và hành động | `SET_RETURN_ITEM` = `GLASS_BOTTLE` |
 
-### Bánh Shepherd - SHEPHERDS_PIE { #recipe-shepherds-pie }
+### Bánh nướng nhân thịt cừu - SHEPHERDS_PIE { #recipe-shepherds-pie } ([redapron.vn][1])
 | Trường | Giá trị |
 | --- | --- |
 | Kết quả | <a class="hl-output-item" href="#recipe-shepherds-pie"><span class="hl-output-icon-frame"><img class="hl-item-icon hl-output-icon" src="../../images/items/heirloom/shepherds-pie.png" alt="Bánh Shepherd" title="Bánh Shepherd mặc định"></span><span class="hl-output-name">Bánh Shepherd</span></a> |
