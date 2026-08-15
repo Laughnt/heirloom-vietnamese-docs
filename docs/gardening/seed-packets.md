@@ -1,6 +1,6 @@
 # Túi hạt giống
 
-Túi hạt giống là vật phẩm tùy chỉnh cho phép người chơi mở ra để nhận các loại hạt giống theo tỷ lệ đã được định sẵn. Đây là giải pháp hữu ích khi bạn muốn người chơi có thể khám phá cây trồng trong chế độ sinh tồn mà không bắt buộc mọi loại hạt đều phải rơi ra từ cỏ.
+Túi hạt giống là vật phẩm tùy chỉnh, khi mở ra sẽ cho người chơi một loại hạt giống ngẫu nhiên theo tỷ lệ đã thiết lập. Đây là cách giúp người chơi tìm được các loại hạt giống mới trong chế độ sinh tồn mà không cần để tất cả chúng rơi từ cỏ.
 
 | Túi hạt | Mô tả | Số lượng rơi | Thành phần có trọng số |
 | --- | --- | --- | --- |

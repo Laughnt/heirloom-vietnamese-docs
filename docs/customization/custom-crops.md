@@ -21,9 +21,8 @@ Hãy chọn loại cây dựa trên cách cây hoạt động và phát triển 
 
 - Bật sinh cây tự nhiên cho cây dây leo, nhưng không có vị trí tường phù hợp để sinh trưởng.
 - Cho người chơi cây trồng dưới nước, trong khi phải trên nước mới sống.
-- Thêm vật phẩm thưởng có tính đến phù phép May mắn nhưng lại dùng công cụ chưa có phù phép để kiểm tra, nên không thể xác nhận chính xác số lượng vật phẩm nhận được.
+- Thêm vật phẩm thưởng với số lượng chịu ảnh hưởng bởi phù phép May mắn, nhưng sử dụng công cụ không có phù phép để kiểm tra nên chưa thể xác định chính xác số lượng vật phẩm được nhận.
 - Quên cấp quyền trồng cây, khiến quản trị viên trồng được nhưng người chơi lại không thể.
-
 
 ## Cách kiểm tra
 

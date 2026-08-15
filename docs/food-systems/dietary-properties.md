@@ -66,7 +66,6 @@ Heirloom chỉ thực hiện đúng những quy tắc mà quản trị viên đ�
 
 `hierarchy_rules` giúp Heirloom tự động ẩn những nhãn không cần thiết khi món ăn đã có một nhãn phù hợp hơn. Ví dụ, món ăn `VEGAN` cũng đồng thời đáp ứng điều kiện của `VEGETARIAN`, nên Heirloom chỉ cần hiển thị nhãn “Thuần chay” thay vì hiển thị cả “Thuần chay” và “Ăn chay”.
 
-
 ## Dòng "Có chứa"
 
 Khối `contains_settings` dùng để thiết lập dòng “Có chứa:” trong phần mô tả của vật phẩm. Nên sử dụng mục này để hiển thị những thông tin người chơi cần biết, chẳng hạn như chất gây dị ứng, quy định riêng của máy chủ hoặc các hạn chế trong hệ thống nhập vai. Không nên chỉ sử dụng mục này để trang trí hoặc quảng bá món ăn.

@@ -4,7 +4,7 @@ Tệp `seed_acquisition.json` quyết định cách người chơi có thể tì
 
 ## Hạt giống rơi từ cỏ
 
-Khi phá cỏ ngoài tự nhiên, người chơi có thể nhận được hạt giống dựa trên tỷ lệ rơi cơ bản. Tỷ lệ này còn có thể được thay đổi tùy theo từng quần xã sinh vật. Với cấu hình mặc định, xà lách và hành tây thường xuất hiện ở đồng bằng và thảo nguyên, cà chua phổ biến ở rừng, ngô thường xuất hiện ở đồng bằng và xavan, còn lúa có tỷ lệ xuất hiện cao hơn ở đầm lầy và các khu rừng nhiệt đới.
+Khi phá cỏ tự nhiên, người chơi có thể nhận được hạt giống theo tỷ lệ rơi cơ bản. Tỷ lệ này có thể được điều chỉnh riêng cho từng quần xã sinh vật. Theo cấu hình mặc định, xà lách và hành tây thường xuất hiện ở đồng bằng và thảo nguyên, cà chua phổ biến ở rừng, ngô thường xuất hiện ở đồng bằng và xavan, còn lúa có tỷ lệ xuất hiện cao hơn ở đầm lầy và các khu rừng nhiệt đới.
 
 ## Hạt giống trong rương
 

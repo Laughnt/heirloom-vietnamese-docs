@@ -11,7 +11,7 @@ Chất lượng được lưu trên các món ăn và nguyên liệu tùy chỉn
 
 ## Xem chất lượng trong hệ thống cây trồng
 
-Chất lượng được hiển thị trong tên và phần mô tả của vật phẩm. Vì vậy, hai người chơi cùng làm một công thức vẫn có thể nhận được món ăn có chất lượng khác nhau nếu sử dụng nguyên liệu khác nhau hoặc có mức Tinh thông nấu ăn khác nhau.
+Chất lượng món ăn được hiển thị trong tên và phần mô tả của vật phẩm. Hai người chơi cùng nấu một công thức vẫn có thể nhận được món ăn có chất lượng khác nhau, tùy vào nguyên liệu sử dụng và mức Tinh thông nấu ăn của từng người.
 
 ## Ví dụ về hiển thị chất lượng
 

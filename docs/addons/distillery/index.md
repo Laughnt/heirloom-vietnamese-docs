@@ -7,6 +7,6 @@
 
 Hệ thống ủ rượu yêu cầu phải cài đặt thêm plugin Heirloom. Tiện ích này bổ sung nho, các nguyên liệu nghiền được, bồn giẫm, dịch ép, dịch ngũ cốc, lên men, chưng cất, các công thức đồ uống có tên, đặc tính và hệ thống say rượu.
 
-Hệ thống ủ rượu không chỉ đơn thuần là một gói công thức. Nó có các trạm xử lý và siêu dữ liệu riêng, sau đó kết nối ngược trở lại với Heirloom thông qua các vật phẩm, cây trồng, lệnh và thuộc tính thực phẩm `SOBERING` (giải rượu).
+Hệ thống ủ rượu không chỉ gồm các công thức chế tạo. Hệ thống này có các trạm xử lý và dữ liệu riêng, đồng thời được tích hợp với Heirloom thông qua vật phẩm, cây trồng, lệnh và thuộc tính thực phẩm `SOBERING` (giải rượu).
 
-Hãy bắt đầu với [Bắt đầu](getting-started.md), sau đó đọc tiếp [Quy trình ủ](brewing-flow.md).
+Bắt đầu với [Bắt đầu](getting-started.md), sau đó đọc tiếp [Quy trình ủ](brewing-flow.md).

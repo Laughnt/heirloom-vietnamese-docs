@@ -11,7 +11,7 @@ Heirloom đọc thông tin tích hợp phù phép từ `enchantment_integrations
 
 ## Ảnh hưởng khi chơi
 
-Các phù phép tự động trồng lại giúp việc trồng và thu hoạch cây thuận tiện hơn, nhưng vẫn tuân theo điều kiện của cây trồng, chẳng hạn như cây đã đủ lớn và có thể thu hoạch hay chưa. Phù phép tăng Fortune có thể làm tăng số lượng vật phẩm nhận được theo cấu hình của cây trồng. Nó không tự tạo thêm những vật phẩm mà cây trồng chưa được cấu hình để rơi ra.
+Các phù phép tự động trồng lại giúp quá trình trồng và thu hoạch cây trở nên thuận tiện hơn, nhưng vẫn tuân theo các điều kiện của cây trồng, chẳng hạn như cây đã trưởng thành và đủ điều kiện để thu hoạch. Phù phép tăng Fortune có thể làm tăng số lượng vật phẩm nhận được theo cấu hình của cây trồng. Phù phép này không tạo thêm những loại vật phẩm mà cây trồng không được cấu hình để rơi ra.
 
 ## Lưu ý cho quản trị viên
 

@@ -12,7 +12,7 @@ Người chơi có thể chọn món ăn yêu thích bằng lệnh `/hl favourit
 | Bão hòa  | 15 giây   | II     |
 | May mắn  | 60 giây   | I      |
 
-Heirloom sẽ kiểm tra món ăn yêu thích sau khi áp dụng các hiệu ứng từ thuộc tính của món ăn. Vì vậy, nếu món ăn vừa là món yêu thích vừa có các thuộc tính tạo hiệu ứng, người chơi sẽ nhận được cả hai loại hiệu ứng.
+Heirloom sẽ kiểm tra món ăn yêu thích sau khi áp dụng các hiệu ứng từ thuộc tính của món ăn. Vì vậy, nếu một món ăn vừa là món yêu thích vừa có các thuộc tính tạo hiệu ứng, người chơi sẽ nhận được cả hai hiệu ứng.
 
 ## Người chế biến
 

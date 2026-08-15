@@ -1,6 +1,6 @@
 # Trạng thái say
 
-Hệ thống ủ rượu theo dõi trạng thái say riêng biệt hoàn toàn so với thức ăn thông thường. Đồ uống có thể làm tăng mức độ say của người chơi, ảnh hưởng đến khung chat qua các quy tắc nói lắp, và kích hoạt hành vi ngất xỉu hoặc tỉnh dậy tùy theo cấu hình.
+Hệ thống ủ rượu theo dõi trạng thái say riêng biệt hoàn toàn so với thức ăn thông thường. Đồ uống có thể làm tăng mức độ say của người chơi, ảnh hưởng đến khung chat nhắn tin thông qua các quy tắc nói lắp, và kích hoạt hành vi ngất xỉu hoặc tỉnh dậy tùy theo cấu hình.
 
 Các lệnh hữu ích:
 

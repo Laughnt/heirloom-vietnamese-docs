@@ -1,6 +1,6 @@
 # Bắt đầu với hệ thống Cà phê
 
-1. Cài đặt Heirloom phần lõi.
+1. Cài đặt Heirloom.
 2. Cài đặt HeirloomCafe.
 3. Khởi động lại máy chủ.
 4. Kiểm tra lệnh `/hlc help` hoạt động.
@@ -10,4 +10,4 @@ Các công thức tại trạm nấu ăn cơ bản xử lý công đoạn rang v
 
 ## Luồng chế biến thành công đầu tiên
 
-Hãy bắt đầu bằng việc rang quả cà phê thành hạt, pha espresso rồi dùng espresso để pha americano. Đây là chuỗi kiểm tra cơ bản giúp xác nhận Lò nướng, Máy pha chế và toàn bộ quy trình pha đồ uống hoạt động đúng trước khi bạn thêm các loại sữa khác nhau.
+Bắt đầu bằng việc rang quả cà phê thành hạt, sau đó pha espresso rồi dùng espresso để pha Americano. Đây là quy trình kiểm tra cơ bản để đảm bảo Lò nướng, Máy pha chế và toàn bộ quá trình pha đồ uống đều hoạt động đúng trước khi thử thêm các loại sữa khác.

@@ -1,11 +1,11 @@
-# Tinh thông nấu ăn
+# Thành thạo nấu ăn
 
 <figure class="hl-figure">
   <img src="../../images/showcase/cooking-mastery.png" alt="Tinh thông nấu ăn thưởng cho việc thực hành lặp lại một công thức nhiều lần.">
   <figcaption>Tinh thông nấu ăn thưởng cho việc thực hành lặp lại một công thức nhiều lần.</figcaption>
 </figure>
 
-Tính năng Tinh thông nấu ăn ghi nhận số lần nấu mỗi công thức. Mức độ tinh thông được tính riêng cho từng công thức: nếu người chơi giỏi làm bánh kếp, điều đó không tự động giúp người chơi giỏi làm `Sushi`.
+Tính năng Tinh thông nấu ăn ghi nhận số lần người chơi nấu từng công thức. Mức độ tinh thông được tính riêng cho mỗi công thức. Vì vậy, nếu người chơi thành thạo làm bánh kếp thì điều đó không đồng nghĩa với việc họ cũng thành thạo làm `Sushi`.
 
 Lệnh:
 
@@ -24,4 +24,4 @@ Lệnh:
 | Chuyên gia (Expert) | 50 | +20% |
 | Bậc thầy (Master) | 80 | +30% |
 
-Mức thưởng này được cộng thêm vào chất lượng của món ăn sau khi chế biến. Nhờ đó, những món thường xuyên được nấu sẽ ngày càng cho kết quả ổn định hơn, thay vì khiến tất cả công thức đều trở nên dễ dàng hơn.
+Mức thưởng này sẽ được cộng vào chất lượng món ăn sau khi chế biến. Nhờ đó, những món được nấu thường xuyên sẽ cho kết quả ổn định hơn theo thời gian, thay vì làm cho tất cả các công thức đều trở nên dễ thực hiện hơn.

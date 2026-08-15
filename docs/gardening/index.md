@@ -39,8 +39,8 @@ Một cây trồng được tạo thành từ ba phần: khối đặt cây, th�
 
 ## Chất lượng và vật phẩm thu hoạch
 
-Cấu hình thu hoạch quyết định số lượng vật phẩm rơi ra, số lượng vật phẩm thưởng, khả năng trồng lại, âm thanh và tỷ lệ nhận được chất lượng. Phù phép Fortune có thể tăng số lượng vật phẩm thưởng theo cấu hình. Một số phù phép tùy chỉnh được hỗ trợ cũng có thể tăng may mắn hoặc giúp cây tự động trồng lại.
+Cấu hình thu hoạch quy định số lượng vật phẩm rơi ra, số lượng vật phẩm thưởng, khả năng trồng lại, âm thanh khi thu hoạch và tỷ lệ nhận được các mức chất lượng. Phù phép Fortune có thể làm tăng số lượng vật phẩm thưởng theo cấu hình của cây trồng. Ngoài ra, một số phù phép tùy chỉnh được hỗ trợ có thể tăng tỷ lệ may mắn hoặc cho phép cây tự động trồng lại.
 
 ## Cách nhận cây trồng
 
-Trong chế độ sinh tồn, người chơi có thể nhận cây trồng từ cỏ, túi hạt giống, chiến lợi phẩm trong rương và các loại cây xuất hiện tự nhiên. Những thế giới (worlds) đã được tạo từ trước có thể không có các loại cây mới được thêm vào trong quá trình tạo thế giới hoặc chiến lợi phẩm trong rương. Trong trường hợp đó, quản trị viên có thể cấp vật phẩm ban đầu hoặc túi hạt giống cho người chơi, hoặc tự trồng cây giúp mấy đứa nhỏ.
+Trong chế độ sinh tồn, người chơi có thể nhận cây trồng từ cỏ, túi hạt giống, chiến lợi phẩm trong rương và các loại cây mọc tự nhiên. Các thế giới đã được tạo từ trước có thể không chứa những loại cây mới được thêm vào trong quá trình tạo thế giới hoặc trong bảng chiến lợi phẩm của rương. Khi đó, quản trị viên có thể cấp vật phẩm khởi đầu hoặc túi hạt giống cho người chơi, hoặc tự tay trồng một số cây để giúp người chơi mới.
