@@ -22,3 +22,15 @@ No Water Bottle or bottle insertion is needed before blending. Before the first 
 Use three matching produce items for a pure juice used in recipes. Mixed batches blend their colours and list their ingredients. Juice inherits food effects, including harmful ones, and provides half the combined input nutrition. Drinking returns a Glass Bottle.
 
 Choose the three ingredients independently in the in-game recipe browser. Bring your pure juices to the [Mixology Table](mixology-shaker.md), or [grow and harvest fruit](mixology-fruit-harvesting.md).
+
+## Take it to the bar
+
+| Pure juice | Example use |
+| --- | --- |
+| Tomato Juice | Bloody Mary with Vodka, Lemon and Salt |
+| Mango or Banana Juice | Virgin Daiquiri with Lemon and Sugar |
+| Pineapple Juice | Shaken Piña Colada with Canned Coconut Milk and Sugar |
+
+These recipes need a pure juice made from three matching produce items. A mixed juice containing one tomato is not Tomato Juice. Follow the in-game recipe for optional extras such as ice.
+
+[Back to Mixology](mixology.md)

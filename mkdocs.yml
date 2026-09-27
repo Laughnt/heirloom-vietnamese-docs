@@ -59,10 +59,12 @@ nav:
       - Cooking Mastery: player-guide/mastery.md
       - Placeable Foods And Feasts: player-guide/placeable-foods.md
       - Seed Discovery: player-guide/seed-discovery.md
-  - Mixology Demonstrations:
+  - Mixology Tutorials:
+      - Overview: tutorials/mixology.md
       - Juicer: tutorials/mixology-juicer.md
       - Mixology Table: tutorials/mixology-shaker.md
-      - Fruit Harvesting: tutorials/mixology-fruit-harvesting.md
+      - Fruit Trees and Harvesting: tutorials/mixology-fruit-harvesting.md
+      - Espresso Martini: tutorials/mixology-espresso-martini.md
   - Cooking Stations:
       - Overview: stations/index.md
       - Oven: stations/oven.md
