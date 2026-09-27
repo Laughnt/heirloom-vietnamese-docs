@@ -59,6 +59,10 @@ nav:
       - Cooking Mastery: player-guide/mastery.md
       - Placeable Foods And Feasts: player-guide/placeable-foods.md
       - Seed Discovery: player-guide/seed-discovery.md
+  - Mixology Demonstrations:
+      - Juicer: tutorials/mixology-juicer.md
+      - Mixology Table: tutorials/mixology-shaker.md
+      - Fruit Harvesting: tutorials/mixology-fruit-harvesting.md
   - Cooking Stations:
       - Overview: stations/index.md
       - Oven: stations/oven.md
