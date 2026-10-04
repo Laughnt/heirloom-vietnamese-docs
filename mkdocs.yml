@@ -111,6 +111,80 @@ nav:
       - Cách thu thập hạt giống: customization/seed-acquisition.md
       - Thành tựu: customization/advancements.md
       - Tích hợp hình ảnh: customization/visuals-overview.md
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - First Meal: getting-started/first-meal.md
+      - First Farm: getting-started/first-farm.md
+      - Recipe Browser: getting-started/recipe-browser.md
+  - Player Guide:
+      - Overview: player-guide/index.md
+      - Cooking Basics: player-guide/cooking.md
+      - Recipe Search: player-guide/recipe-search.md
+      - Favourite Food: player-guide/favourite-food.md
+      - Food Quality: player-guide/quality.md
+      - Advancements: player-guide/advancements.md
+      - Cooking Mastery: player-guide/mastery.md
+      - Placeable Foods And Feasts: player-guide/placeable-foods.md
+      - Seed Discovery: player-guide/seed-discovery.md
+  - Mixology Tutorials:
+      - Overview: tutorials/mixology.md
+      - Juicer: tutorials/mixology-juicer.md
+      - Mixology Table: tutorials/mixology-shaker.md
+      - Fruit Trees and Harvesting: tutorials/mixology-fruit-harvesting.md
+      - Espresso Martini: tutorials/mixology-espresso-martini.md
+  - Cooking Stations:
+      - Overview: stations/index.md
+      - Oven: stations/oven.md
+      - Boiling Pot: stations/boiling-pot.md
+      - Mixing Bowl: stations/mixing-bowl.md
+      - Cutting Board: stations/cutting-board.md
+      - Frying Pan: stations/frying-pan.md
+      - Barista Machine: stations/barista-machine.md
+  - Recipes:
+      - Overview: recipes/index.md
+      - Default Recipe Index: recipes/default-recipes.md
+      - Oven Recipes: recipes/station-oven.md
+      - Boiling Pot Recipes: recipes/station-boiling-pot.md
+      - Mixing Bowl Recipes: recipes/station-mixing-bowl.md
+      - Cutting Board Recipes: recipes/station-cutting-board.md
+      - Frying Pan Recipes: recipes/station-frying-pan.md
+      - Barista Recipes: recipes/station-barista-machine.md
+      - Recipe Chains: recipes/recipe-chains.md
+  - Gardening:
+      - Overview: gardening/index.md
+      - Lettuce: gardening/lettuce.md
+      - Onion: gardening/onion.md
+      - Corn: gardening/corn.md
+      - Tomato: gardening/tomato.md
+      - Rice: gardening/rice.md
+      - Plant Types: gardening/plant-types.md
+      - Seed Packets: gardening/seed-packets.md
+      - Wild Discovery And Loot: gardening/wild-discovery.md
+      - EcoEnchants: gardening/ecoenchants.md
+  - Food Systems:
+      - Overview: food-systems/index.md
+      - Dietary Properties: food-systems/dietary-properties.md
+      - Food Properties: food-systems/food-properties.md
+      - Quality And Effects: food-systems/quality-and-effects.md
+      - Favourite And Social Bonuses: food-systems/favourite-social.md
+  - Server Owners:
+      - Overview: server-owners/index.md
+      - Configuration: server-owners/configuration.md
+      - Permissions: server-owners/permissions.md
+      - Commands: server-owners/commands.md
+      - Language Files: server-owners/language-files.md
+      - Region Protection: server-owners/region-protection.md
+      - Diagnostics: server-owners/diagnostics.md
+      - Updating: server-owners/updating.md
+  - Customization:
+      - Overview: customization/index.md
+      - Custom Foods: customization/custom-foods.md
+      - Custom Recipes: customization/custom-recipes.md
+      - Custom Crops: customization/custom-crops.md
+      - Seed Acquisition: customization/seed-acquisition.md
+      - Advancements: customization/advancements.md
+      - Visual Integrations: customization/visuals-overview.md
       - Nexo: customization/nexo.md
       - ItemsAdder: customization/itemsadder.md
       - Trình tạo web: customization/web-generator.md
