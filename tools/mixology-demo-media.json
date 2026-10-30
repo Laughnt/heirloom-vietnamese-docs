@@ -1,0 +1,57 @@
+[
+  {
+    "file": "juicer-demo.gif",
+    "pixels": [
+      400,
+      400
+    ],
+    "frames": 204,
+    "fps": 10,
+    "duration_seconds": 20.4,
+    "bytes": 6791033,
+    "sha256": "0d5ec95dc07b55a90798f081ea47698d31434c1fac166ff77d575a96cce60368",
+    "source": "juicerdemo.mp4",
+    "excluded_source_frames_inclusive_zero_based": [
+      [
+        93,
+        98
+      ],
+      [
+        132,
+        137
+      ],
+      [
+        174,
+        179
+      ]
+    ],
+    "source_fps": 60,
+    "timing": "Preserved; clean neighboring frames fill excluded intervals before 10 fps resampling."
+  },
+  {
+    "file": "shaker-demo.gif",
+    "pixels": [
+      400,
+      400
+    ],
+    "frames": 195,
+    "fps": 10,
+    "duration_seconds": 19.5,
+    "bytes": 5578659,
+    "sha256": "c2543ba3bf5896857f955f3f3c7bdd68dcf434fe1cae259f059a2c65b0ad6234",
+    "source": "mixologytable.mp4"
+  },
+  {
+    "file": "coconut-harvest.gif",
+    "pixels": [
+      400,
+      400
+    ],
+    "frames": 55,
+    "fps": 10,
+    "duration_seconds": 5.5,
+    "bytes": 1286154,
+    "sha256": "1db73b4e260efa74f7ccb9c734ae9508683434637bc124900dec2732f64832c8",
+    "source": "coconutgoodshader.mp4"
+  }
+]
